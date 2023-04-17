@@ -1,0 +1,15 @@
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\bin\Debug\net6.0\AlpTrips.Application.deps.json
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\bin\Debug\net6.0\AlpTrips.Application.dll
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\bin\Debug\net6.0\AlpTrips.Application.pdb
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\bin\Debug\net6.0\AlpTrips.Domain.dll
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\bin\Debug\net6.0\AlpTrips.Domain.pdb
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\AlpTrips.Application.csproj.AssemblyReference.cache
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\AlpTrips.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\AlpTrips.Application.AssemblyInfoInputs.cache
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\AlpTrips.Application.AssemblyInfo.cs
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\AlpTrips.Application.csproj.CoreCompileInputs.cache
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\AlpTrips.Application.csproj.CopyComplete
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\AlpTrips.Application.dll
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\refint\AlpTrips.Application.dll
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\AlpTrips.Application.pdb
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Application\obj\Debug\net6.0\ref\AlpTrips.Application.dll
