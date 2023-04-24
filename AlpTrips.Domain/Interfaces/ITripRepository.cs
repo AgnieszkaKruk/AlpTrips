@@ -1,9 +1,5 @@
 ﻿using AlpTrips.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace AlpTrips.Domain.Interfaces
 {
@@ -12,5 +8,10 @@ namespace AlpTrips.Domain.Interfaces
     {
         Task Create(Trip trip);
         Task <Trip?> GetByName(string name);
+        Task<Trip> GetByEncodedName(string encodedName);
+        Task<IEnumerable<Trip>> GetAll();
+        Task Delete(string encodedName);
+        Task Savechanges();
+        Task<IEnumerable<Trip>> GetTop6Trips();
     }
 }

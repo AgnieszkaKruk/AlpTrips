@@ -1,0 +1,95 @@
+﻿@model AlpTrips.Application.Dtos.TripDto;
+@{
+    ViewData["Title"] = "Usuń";
+}
+
+<div class="container">
+    <h4 class="display-4"> Usuń wycieczkę: @Model.Name</h4>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="\images\00ad4ebb-a0c5-47da-96e8-92677de2d5f4_licensed-image.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="\images\2ac9e792-6a28-463d-8c19-700549a86200_Mont_maudit.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="\images\9da083d5-2041-4f43-a5e6-5e523f1e0be0_Matterhorn_(3299188209).jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Szczegóły trasy</h1>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-primary">
+                    <span class="label label-primary">Autor: </span>
+                    <span class="monospaced">@Model.UserName</span>
+                </div>
+                <div class="col-md-12">
+                    <span>Pasmo górskie: @Model.MountainRange</span>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="description">@Model.Description</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="@Model.Link" target="_blank" class="btn btn-outline-primary">Link do relacji</a>
+
+                    </div>
+                </div>
+
+                <hr />
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="font-weight-bold">Poziom trudności: </span>@Model.Level</li>
+                    <li class="list-group-item"><span class="font-weight-bold">Długość trasy: </span>@Model.Time</li>
+                    <li class="list-group-item"><span class="font-weight-bold">Przewyższenie: </span>@Model.Elevation</li>
+
+
+                </ul>
+                <div class="form-group">
+                <form action="DeleteConfirm">
+                        < input type="hidden" asp-action="Delete" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName"/>
+                        <input type="submit" value="Usuń" class="btn btn-outline-danger" />
+                </form>
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <a asp-action="Index">Powrót do listy</a>
+    </div>

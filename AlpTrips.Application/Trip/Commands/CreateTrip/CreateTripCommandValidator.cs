@@ -1,13 +1,18 @@
-﻿using AlpTrips.Domain.Interfaces;
+﻿using AlpTrips.Application.Dtos;
+using AlpTrips.Domain.Interfaces;
 using FluentValidation;
+using Microsoft.AspNetCore.Http;
 
-namespace AlpTrips.Application.Dtos
+namespace AlpTrips.Application.Trip.Commands.CreateTrip
 {
-    public class TripDtoValidator : AbstractValidator<TripDto>
+    public class CreateTripCommandValidator : AbstractValidator<CreateTripCommand>
     {
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public TripDtoValidator(ITripRepository tripRepository)
+        public CreateTripCommandValidator(ITripRepository tripRepository, IHttpContextAccessor httpContextAccessor)
         {
+            _httpContextAccessor = httpContextAccessor;
+
             RuleFor(c => c.Name)
                 .NotEmpty()
                 .MinimumLength(3)
@@ -52,15 +57,19 @@ namespace AlpTrips.Application.Dtos
                 .LessThanOrEqualTo(5)
                 .WithMessage("Poziom trudności musi być między 1 i 5");
 
-            RuleFor(c => c.Email)
-               .NotEmpty()
-               .WithMessage("Adres email użytkownika jest wymagany")
-               .EmailAddress()
-               .WithMessage("Nieprawidłowy adres e-mail");
+            if (!_httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+            {
+                RuleFor(c => c.Email)
+                             .NotEmpty()
+                             .WithMessage("Adres email użytkownika jest wymagany")
+                             .EmailAddress()
+                             .WithMessage("Nieprawidłowy adres e-mail");
 
-            //RuleFor(c=>c.ImageUrl)
-            //    .Must(x => Uri.TryCreate(x, UriKind.Absolute, out Uri uriResult) && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps))
-            //.WithMessage("Wprowadź poprawny adres URL.");
+            }
+
+                  
+
+           
 
 
 

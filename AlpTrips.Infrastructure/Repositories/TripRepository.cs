@@ -26,9 +26,26 @@ namespace AlpTrips.Infrastructure.Repositories
             }
         }
 
-        public Task<Trip?> GetByName(string name)
+        public async  Task<IEnumerable<Trip>> GetAll()
+         =>  await _context.Trips.ToListAsync();
 
-          => _context.Trips.FirstOrDefaultAsync(t => t.Name.ToLower() == name.ToLower());
-        
+        public async Task<IEnumerable<Trip>> GetTop6Trips()
+        => await _context.Trips.Take(6).ToListAsync();
+
+        public async Task<Trip?> GetByName(string name)
+          => await _context.Trips.FirstOrDefaultAsync(t => t.Name.ToLower() == name.ToLower());
+
+        public async Task<Trip> GetByEncodedName(string encodedName)
+            => await _context.Trips.Include(t => t.User).FirstOrDefaultAsync(t=> t.EncodedName == encodedName);
+
+        public async Task Savechanges()
+         => await _context.SaveChangesAsync();
+
+        public async Task Delete(string encodedName)
+        {
+             var trip = await _context.Trips.FirstOrDefaultAsync(t =>t.EncodedName == encodedName);
+             _context.Trips.Remove(trip);
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -1,6 +1,43 @@
 html {
   font-size: 14px;
 }
+.card-text {
+    margin-left: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tekst {
+    margin: 10px;
+}
+.jumbotron.text-center {
+    background-image: url('/images/00ad4ebb-a0c5-47da-96e8-92677de2d5f4_licensed-image.jpg');
+}
+
+.card-title{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.text-muted {
+    margin-right:10px;
+}
+.trip-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.trip-info-item {
+    font-size: 13px;
+}
 
 @media (min-width: 768px) {
   html {
@@ -19,4 +56,21 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.btn-outline-secondary{
+    color:navy;
+    margin: 10px;
+}
+
+.btn-outline-primary {
+   
+    margin: 10px;
+}
+.control-label{
+    margin: 5px;
+}
+
+.grey{
+    color: gray;
 }

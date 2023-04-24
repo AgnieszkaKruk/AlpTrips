@@ -1,106 +1,168 @@
-﻿using AlpTrips.Application.Dtos;
-using AlpTrips.Application.Services;
-using AlpTrips.Infrastructure.Persistence;
-using AlpTrips.Infrastructure.Repositories;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿
+using AlpTrips.Application.Trip.Commands.CreateTrip;
+using AlpTrips.Application.Trip.Commands.DeleteTrip;
+using AlpTrips.Application.Trip.Commands.EditTrip;
+using AlpTrips.Application.Trip.Queries.GetAllTrips;
+using AlpTrips.Application.Trip.Queries.GetTripByEncodedName;
+using AutoMapper;
+using FluentValidation;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace AlpsTrips.MVC.Controllers
 {
     public class TripController : Controller
     {
-        private readonly ITripService _tripService;
-        private IWebHostEnvironment _webHostEnviroment;
-        public TripController(ITripService tripService, IWebHostEnvironment webHostEnviroment)
-        {
-            _tripService = tripService;
-            _webHostEnviroment = webHostEnviroment;
-        }
-        // GET: TripController
-        //public async Task<IActionResult> Index()
-        //{
-        //    return View(await _tripService.Trips.ToListAsync());
-        //}
 
-        // GET: TripController/Details/5
-        public ActionResult Details(int id)
+        private IWebHostEnvironment _webHostEnviroment;
+        private readonly IMediator _mediator;
+        private readonly IMapper _mapper;
+
+        public TripController(IWebHostEnvironment webHostEnviroment, IMediator mediator, IMapper mapper)
         {
-            return View();
+            _webHostEnviroment = webHostEnviroment;
+            _mediator = mediator;
+            _mapper = mapper;
+        }
+
+
+        // GET: Trip
+        public async Task<IActionResult> Index(bool isSuccess = false)
+
+        { 
+            ViewBag.IsSuccess = isSuccess;
+        
+            var allTrips = await _mediator.Send(new GetAllTripsQuery());
+            return View(allTrips);
+        }
+
+
+
+
+        // GET: Trip/encodedName/Details
+
+        [Route("Trip/{encodedName}/Details")]
+        public async Task<IActionResult> Details(string encodedName)
+        {
+            var tripDto = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
+            return View(tripDto);
         }
 
         // GET: Trip/Create
-        public IActionResult Create()
+        [Authorize]
+        public IActionResult Create(bool isSuccess = false)
         {
+            ViewBag.IsSuccess = isSuccess;
+            
+
             return View();
+
         }
 
-        // POST: Trip/Create
+
+
+        // POST: Trip
+        // /Create
         [HttpPost]
-  
-        public  async Task<IActionResult> Create(TripDto tripDto)
+       [Authorize]
+        public async Task<IActionResult> Create(CreateTripCommand createTripCommand, [FromServices] IValidator<CreateTripCommand> validator)
         {
 
             if (!ModelState.IsValid)
             {
-                return View(tripDto);
+                return View("Create", createTripCommand);
             }
-
-            if (tripDto.ImageFile != null)
+            else
             {
-                string folder = "images/";
-                folder += Guid.NewGuid().ToString() +"_"+ tripDto.ImageFile.FileName;
+                if (createTripCommand.ImageFile != null)
+                {
+                    string folder = "images/";
+                    folder += Guid.NewGuid().ToString() + "_" + createTripCommand.ImageFile.FileName;
 
-                tripDto.ImageUrl = "/"+ folder;
-                string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, folder);
+                    createTripCommand.ImageUrl = "/" + folder;
+                    string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, folder);
 
-                await tripDto.ImageFile.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                    await createTripCommand.ImageFile.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                }
+                await _mediator.Send(createTripCommand);
+                return RedirectToAction(nameof(Index), new { isSuccess = true });
+
+
             }
-            await _tripService.Create(tripDto);
-            return RedirectToAction(nameof(Create));   
+
+
         }
 
-        // GET: TripController/Edit/5
-        public ActionResult Edit(int id)
+
+
+        // GET: Trip/encodedName/Edit
+        [HttpGet]
+        [Route("Trip/{encodedName}/Edit")]
+        [Authorize]
+        public async Task<IActionResult> Edit(string encodedName)
         {
-            return View();
+            var tripDto = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
+            EditTripCommand model = _mapper.Map<EditTripCommand>(tripDto);
+            return View(model);
         }
 
-        // POST: TripController/Edit/5
+
+
+        // POST: Trip/encodedName/Edit
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        [Route("Trip/{encodedName}/Edit")]
+        [Authorize]
+        public async Task<IActionResult> Edit(string encodedName, EditTripCommand editTripCommand, [FromServices] IValidator<EditTripCommand> validator)
         {
-            try
+
+            if (!ModelState.IsValid)
             {
+                return View("Edit", editTripCommand);
+            }
+            else
+            {
+                if (editTripCommand.ImageFile != null)
+                {
+                    string folder = "images/";
+                    folder += Guid.NewGuid().ToString() + "_" + editTripCommand.ImageFile.FileName;
+
+                    editTripCommand.ImageUrl = "/" + folder;
+                    string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, folder);
+
+                    await editTripCommand.ImageFile.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                }
+                await _mediator.Send(editTripCommand);
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+
+
+
         }
 
-        // GET: TripController/Delete/5
-        public ActionResult Delete(int id)
+        
+        [Route("Trip/{encodedName}/Delete")]
+        [Authorize]
+        public async Task<IActionResult> Delete(string encodedName, DeleteTripCommand deleteTripCommand)
         {
-            return View();
+            var tripDto = await _mediator.Send(deleteTripCommand);
+            return RedirectToAction(nameof(Index));
+
         }
 
-        // POST: TripController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        [Route("Trip/{encodedName}/Delete")]
+        [Authorize]
+        public async Task<IActionResult> DeleteConfirm(string encodedName, DeleteTripCommand deleteTripCommand)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var tripDto = await _mediator.Send(deleteTripCommand);
+            return RedirectToAction(nameof(Index));
+
         }
+
+
+
+
+
     }
 }

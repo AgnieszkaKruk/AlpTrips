@@ -1,11 +1,7 @@
 ﻿using AlpTrips.Application.Dtos;
+using AlpTrips.Application.Trip.Commands.EditTrip;
 using AlpTrips.Domain.Entities;
 using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AlpTrips.Application.Mappings
 {
@@ -14,13 +10,17 @@ namespace AlpTrips.Application.Mappings
 
         public MappingProfile()
         {
-            CreateMap<TripDto, Trip>().ForMember(p => p.User, opt => opt.MapFrom(src => new User()
+            CreateMap<TripDto, Domain.Entities.Trip>().ForMember(p => p.User, opt => opt.MapFrom(src => new User()
             {
                 Name = src.UserName,
                 Email = src.Email
             }));
 
-            CreateMap<Trip,TripDto>();
+            CreateMap<Domain.Entities.Trip, TripDto>()
+                .ForMember(dto =>dto.UserName, opt =>opt.MapFrom(src =>src.User.Name))
+                .ForMember(dto => dto.Email, opt => opt.MapFrom(src => src.User.Email));
+
+            CreateMap<TripDto, EditTripCommand>();
 
         }
     }

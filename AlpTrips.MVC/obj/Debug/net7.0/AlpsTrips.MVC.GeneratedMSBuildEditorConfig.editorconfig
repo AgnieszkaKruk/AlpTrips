@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,8 +32,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Shared/Components/TopTrasy/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wVHJhc3lcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Shared/_OneTrip.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PbmVUcmlwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -38,6 +54,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Trip/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Trip/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Trip/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Trip/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/Trip/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/KOMPUTER/source/repos/AlpTrips/AlpTrips.MVC/Views/_ViewImports.cshtml]

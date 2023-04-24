@@ -74,4 +74,9 @@ C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\AutoMapper
 C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\FluentValidation.dll
 C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\MediatR.dll
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\obj\Debug\net7.0\AlpsTrips.MVC.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.MVC\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll

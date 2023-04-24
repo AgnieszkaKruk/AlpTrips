@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -22,7 +23,8 @@ namespace AlpTrips.Domain.Entities
         public int UserId { get; set; }
         public string? EncodedName { get; set; }
        
-
+        public string? CreatedById { get; set; }
+        public IdentityUser? CreatedBy { get; set; }
         public string? ImageUrl { get; set; }
 
         public void SetEncodedName() => EncodedName = Name.ToLower().Replace(" ","-");

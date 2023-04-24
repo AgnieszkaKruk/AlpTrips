@@ -1,0 +1,95 @@
+﻿@model AlpTrips.Application.Trip.Commands.EditTrip.EditTripCommand;
+@{
+    ViewData["Title"] = "Edycja";
+}
+
+
+<div class="container">
+    <h3 class="display-4">Edytuj wycieczkę @Model.Name</h3>
+    <hr />
+
+
+    <div class="row">
+        <div class="card m shadow-sm">
+        <div class="col-md-4">
+            
+                <form asp-action="Edit" enctype="multipart/form-data" method="post" asp-controller="Trip">
+
+                  
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Description">Opis</label>
+                        <textarea class="form-control"  asp-for="Description"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="MountainRange">Pasmo górskie</label>
+                        <input class="form-control" type="text" asp-for="MountainRange">
+                        <span asp-validation-for="MountainRange" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Level">Poziom trudności</label>
+                        <input class="form-control" type="number" asp-for="Level">
+                        <span asp-validation-for="Level" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Time">Czas przejścia</label>
+                        <input class="form-control" type="number" asp-for="Time">
+                        <span asp-validation-for="Time" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Length">Dystans</label>
+                        <input class="form-control" type="number" asp-for="Length">
+                        <span asp-validation-for="Length" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Elevation">Przewyższenie</label>
+                        <input class="form-control" type="number" asp-for="Elevation">
+                        <span asp-validation-for="Elevation" class="text-danger"></span>
+
+                    
+
+                        <div class="form-group mb-3">
+                            <label class="control-label" asp-for="Link">Link do relacji</label>
+                            <input class="form-control" type="text" asp-for="Link">
+                            <span asp-validation-for="Link" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="ImageFile" class="control-label">Image</label>
+                            <div class="custom-file">
+                                <input asp-for="ImageFile" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile"></label>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-outline-primary"> Dodaj</button>
+                            </div>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+        }
+    }
+
+
+
+</div>
+
+

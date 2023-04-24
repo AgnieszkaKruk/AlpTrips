@@ -1,8 +1,10 @@
-﻿using AlpTrips.Application.Dtos;
+﻿using AlpTrips.Application.ApplicationUser;
+using AlpTrips.Application.Dtos;
 using AlpTrips.Application.Mappings;
-using AlpTrips.Application.Services;
+using AlpTrips.Application.Trip.Commands.CreateTrip;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AlpTrips.Application.Extensions
@@ -11,12 +13,19 @@ namespace AlpTrips.Application.Extensions
     {
         public static void AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<ITripService, TripService>();
+            
             services.AddAutoMapper(typeof(MappingProfile));
 
-            services.AddValidatorsFromAssemblyContaining<TripDtoValidator>()
+            services.AddValidatorsFromAssemblyContaining<CreateTripCommandValidator>()
                 .AddFluentValidationAutoValidation()
                 .AddFluentValidationClientsideAdapters();
+
+            services.AddValidatorsFromAssemblyContaining<TripDto>();
+
+            services.AddMediatR(typeof(CreateTripCommand));
+
+            services.AddScoped<IUserContext,UserContext>();
+               
 
 
 

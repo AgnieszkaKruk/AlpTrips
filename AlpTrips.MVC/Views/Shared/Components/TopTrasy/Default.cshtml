@@ -1,0 +1,16 @@
+﻿@using AlpTrips.Application.Dtos;
+@model IEnumerable<TripDto>;
+
+
+<div class="row">
+    @foreach (var trip in Model)
+    {
+        <div class="col-md-4">
+            <partial name="_OneTrip" model="trip" />
+
+        </div>
+    }
+
+
+
+</div>
