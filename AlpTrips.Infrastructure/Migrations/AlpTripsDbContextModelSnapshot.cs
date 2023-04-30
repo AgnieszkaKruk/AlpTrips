@@ -22,6 +22,39 @@ namespace AlpTrips.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("AlpTrips.Domain.Entities.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("CreatedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Rate")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TripId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedById");
+
+                    b.HasIndex("TripId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
                 {
                     b.Property<int>("Id")
@@ -84,7 +117,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 4, 19, 18, 31, 54, 88, DateTimeKind.Local).AddTicks(3363),
+                            CreatedDate = new DateTime(2023, 4, 29, 16, 46, 11, 928, DateTimeKind.Local).AddTicks(7398),
                             Description = "3 najwyższy sczyt Austrii",
                             Elevation = 0,
                             Length = 0,
@@ -98,7 +131,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 4, 19, 18, 31, 54, 88, DateTimeKind.Local).AddTicks(3435),
+                            CreatedDate = new DateTime(2023, 4, 29, 16, 46, 11, 928, DateTimeKind.Local).AddTicks(7474),
                             Description = "Jeden z trudnijeszych szczytów w Alpach dla średniozaawansowanych",
                             Elevation = 0,
                             Length = 0,
@@ -112,7 +145,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 4, 19, 18, 31, 54, 88, DateTimeKind.Local).AddTicks(3444),
+                            CreatedDate = new DateTime(2023, 4, 29, 16, 46, 11, 928, DateTimeKind.Local).AddTicks(7485),
                             Description = "Trawers przez Ostgrat",
                             Elevation = 0,
                             Length = 0,
@@ -368,6 +401,21 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("AlpTrips.Domain.Entities.Comment", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById");
+
+                    b.HasOne("AlpTrips.Domain.Entities.Trip", null)
+                        .WithMany("Comments")
+                        .HasForeignKey("TripId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CreatedBy");
+                });
+
             modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "CreatedBy")
@@ -434,6 +482,11 @@ namespace AlpTrips.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
+                {
+                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("AlpTrips.Domain.Entities.User", b =>

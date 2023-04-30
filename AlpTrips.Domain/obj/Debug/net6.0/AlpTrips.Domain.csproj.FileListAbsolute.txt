@@ -10,3 +10,15 @@ C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrip
 C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\refint\AlpTrips.Domain.dll
 C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrips.Domain.pdb
 C:\Users\KOMPUTER\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\ref\AlpTrips.Domain.dll
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\bin\Debug\net6.0\AlpTrips.Domain.deps.json
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\bin\Debug\net6.0\AlpTrips.Domain.dll
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\bin\Debug\net6.0\AlpTrips.Domain.pdb
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrips.Domain.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrips.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrips.Domain.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrips.Domain.AssemblyInfo.cs
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrips.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrips.Domain.dll
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\refint\AlpTrips.Domain.dll
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\AlpTrips.Domain.pdb
+C:\Users\Dell\source\repos\AlpTrips\AlpTrips.Domain\obj\Debug\net6.0\ref\AlpTrips.Domain.dll

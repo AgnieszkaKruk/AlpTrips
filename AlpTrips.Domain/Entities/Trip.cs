@@ -26,6 +26,7 @@ namespace AlpTrips.Domain.Entities
         public string? CreatedById { get; set; }
         public IdentityUser? CreatedBy { get; set; }
         public string? ImageUrl { get; set; }
+        public List<Comment> Comments { get; set; } = new List<Comment>();
 
         public void SetEncodedName() => EncodedName = Name.ToLower().Replace(" ","-");
     }

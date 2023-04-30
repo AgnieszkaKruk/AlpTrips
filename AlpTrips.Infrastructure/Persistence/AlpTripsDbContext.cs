@@ -16,13 +16,18 @@ namespace AlpTrips.Infrastructure.Persistence
         {
 
         }
+        public DbSet<Comment> Comments { get; set; }
         public DbSet<Trip> Trips { get; set; }
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Trip>().HasOne(t => t.User).WithMany().HasForeignKey(t => t.UserId);
+            modelBuilder.Entity<Trip>(eb =>
+            {
+                eb.HasOne(t => t.User).WithMany().HasForeignKey(t => t.UserId);
+                eb.HasMany(t => t.Comments).WithOne().HasForeignKey(c => c.TripId);
+            });
 
            
 

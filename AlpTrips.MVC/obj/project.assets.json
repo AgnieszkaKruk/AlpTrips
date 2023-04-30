@@ -2948,19 +2948,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KOMPUTER\\.nuget\\packages\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\AlpsTrips.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\AlpsTrips.MVC.csproj",
       "projectName": "AlpsTrips.MVC",
-      "projectPath": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\AlpsTrips.MVC.csproj",
-      "packagesPath": "C:\\Users\\KOMPUTER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\AlpsTrips.MVC.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KOMPUTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2974,11 +2974,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.Application\\AlpTrips.Application.csproj": {
-              "projectPath": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.Application\\AlpTrips.Application.csproj"
+            "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.Application\\AlpTrips.Application.csproj": {
+              "projectPath": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.Application\\AlpTrips.Application.csproj"
             },
-            "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.Infrastructure\\AlpTrips.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.Infrastructure\\AlpTrips.Infrastructure.csproj"
+            "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.Infrastructure\\AlpTrips.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.Infrastructure\\AlpTrips.Infrastructure.csproj"
             }
           }
         }
@@ -3023,7 +3023,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

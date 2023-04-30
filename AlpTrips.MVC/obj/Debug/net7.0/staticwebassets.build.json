@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qVBL2NzHMXOZ9NUyQWemQL67RxekQWrUsDO6jletHZk=",
+  "Hash": "GCG7O9w40lSh+4DB0ollLI3Ez7D4YbiSSWg17SU96UQ=",
   "Source": "AlpsTrips.MVC",
   "BasePath": "_content/AlpsTrips.MVC",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AlpsTrips.MVC\\wwwroot",
       "Source": "AlpsTrips.MVC",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\AlpsTrips.MVC.styles.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\AlpsTrips.MVC.styles.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "AlpsTrips.MVC.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\AlpsTrips.MVC.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\AlpsTrips.MVC.styles.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\AlpsTrips.MVC.bundle.scp.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\AlpsTrips.MVC.bundle.scp.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "AlpsTrips.MVC.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\AlpsTrips.MVC.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\AlpsTrips.MVC.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\css\\site.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\favicon.ico",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\00ad4ebb-a0c5-47da-96e8-92677de2d5f4_licensed-image.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\00ad4ebb-a0c5-47da-96e8-92677de2d5f4_licensed-image.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/00ad4ebb-a0c5-47da-96e8-92677de2d5f4_licensed-image.jpg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\images\\00ad4ebb-a0c5-47da-96e8-92677de2d5f4_licensed-image.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\00c21ab5-ff33-4dc0-91dd-af79903b7e1e_Piz_Buin_vom_Ochsentaler_Gletscher_HQ.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\00c21ab5-ff33-4dc0-91dd-af79903b7e1e_Piz_Buin_vom_Ochsentaler_Gletscher_HQ.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/00c21ab5-ff33-4dc0-91dd-af79903b7e1e_Piz_Buin_vom_Ochsentaler_Gletscher_HQ.jpg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\00c21ab5-ff33-4dc0-91dd-af79903b7e1e_Piz_Buin_vom_Ochsentaler_Gletscher_HQ.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\06805b6c-6e71-432e-b902-4b1f236865c2_MonteRosaWestseite_gesehenVomGornergrat.JPG",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\06805b6c-6e71-432e-b902-4b1f236865c2_MonteRosaWestseite_gesehenVomGornergrat.JPG",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/06805b6c-6e71-432e-b902-4b1f236865c2_MonteRosaWestseite_gesehenVomGornergrat.JPG",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\06805b6c-6e71-432e-b902-4b1f236865c2_MonteRosaWestseite_gesehenVomGornergrat.JPG"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\0d1f122a-deb0-4ffe-9a20-d16350e6e843_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\0d1f122a-deb0-4ffe-9a20-d16350e6e843_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/0d1f122a-deb0-4ffe-9a20-d16350e6e843_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0d1f122a-deb0-4ffe-9a20-d16350e6e843_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\260c82a6-0059-44c8-ae33-2f3d1aa542f8_800px-Großglockner_from_South.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\260c82a6-0059-44c8-ae33-2f3d1aa542f8_800px-Großglockner_from_South.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/260c82a6-0059-44c8-ae33-2f3d1aa542f8_800px-Großglockner_from_South.jpg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\260c82a6-0059-44c8-ae33-2f3d1aa542f8_800px-Großglockner_from_South.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\2ac9e792-6a28-463d-8c19-700549a86200_Mont_maudit.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\2ac9e792-6a28-463d-8c19-700549a86200_Mont_maudit.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/2ac9e792-6a28-463d-8c19-700549a86200_Mont_maudit.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2ac9e792-6a28-463d-8c19-700549a86200_Mont_maudit.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\2bbfa321-8e56-4e8e-b511-2f2a562fe6de_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\2bbfa321-8e56-4e8e-b511-2f2a562fe6de_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/2bbfa321-8e56-4e8e-b511-2f2a562fe6de_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2bbfa321-8e56-4e8e-b511-2f2a562fe6de_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\2d20f9de-6ea5-47c9-b702-b11bc6938e61_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\2d20f9de-6ea5-47c9-b702-b11bc6938e61_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/2d20f9de-6ea5-47c9-b702-b11bc6938e61_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2d20f9de-6ea5-47c9-b702-b11bc6938e61_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\3bdb30b0-e5b5-41cf-8f7c-f6ad7de103f0_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\3bdb30b0-e5b5-41cf-8f7c-f6ad7de103f0_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/3bdb30b0-e5b5-41cf-8f7c-f6ad7de103f0_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3bdb30b0-e5b5-41cf-8f7c-f6ad7de103f0_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\47058ad3-da5c-442c-8232-96bc34f4bf82_800px-Großglockner_from_South.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\47058ad3-da5c-442c-8232-96bc34f4bf82_800px-Großglockner_from_South.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/47058ad3-da5c-442c-8232-96bc34f4bf82_800px-Großglockner_from_South.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\47058ad3-da5c-442c-8232-96bc34f4bf82_800px-Großglockner_from_South.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5444877f-05f0-4d80-8af0-f2c1d84b69ad_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5444877f-05f0-4d80-8af0-f2c1d84b69ad_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/5444877f-05f0-4d80-8af0-f2c1d84b69ad_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5444877f-05f0-4d80-8af0-f2c1d84b69ad_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5944b5fd-8cde-4f71-a250-75b2af26af31_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5944b5fd-8cde-4f71-a250-75b2af26af31_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/5944b5fd-8cde-4f71-a250-75b2af26af31_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5944b5fd-8cde-4f71-a250-75b2af26af31_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5b98138a-2d7d-4701-98c5-63ac1e47cef0_Piz_Buin_vom_Ochsentaler_Gletscher_HQ.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5b98138a-2d7d-4701-98c5-63ac1e47cef0_Piz_Buin_vom_Ochsentaler_Gletscher_HQ.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/5b98138a-2d7d-4701-98c5-63ac1e47cef0_Piz_Buin_vom_Ochsentaler_Gletscher_HQ.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5b98138a-2d7d-4701-98c5-63ac1e47cef0_Piz_Buin_vom_Ochsentaler_Gletscher_HQ.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5d19e5b3-fa16-46f9-a52c-d7a6d6678596_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5d19e5b3-fa16-46f9-a52c-d7a6d6678596_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/5d19e5b3-fa16-46f9-a52c-d7a6d6678596_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5d19e5b3-fa16-46f9-a52c-d7a6d6678596_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\675885e7-e422-4131-a548-9f43157a03e1_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\675885e7-e422-4131-a548-9f43157a03e1_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/675885e7-e422-4131-a548-9f43157a03e1_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\675885e7-e422-4131-a548-9f43157a03e1_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\77ff6d6e-e953-4f09-892a-cf2af984c7a1_800px-Großglockner_from_South.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\77ff6d6e-e953-4f09-892a-cf2af984c7a1_800px-Großglockner_from_South.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/77ff6d6e-e953-4f09-892a-cf2af984c7a1_800px-Großglockner_from_South.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\77ff6d6e-e953-4f09-892a-cf2af984c7a1_800px-Großglockner_from_South.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7ad77d2d-2d1c-4b8c-aae1-841abfb4e1f5_800px-Großglockner_from_South.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7ad77d2d-2d1c-4b8c-aae1-841abfb4e1f5_800px-Großglockner_from_South.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/7ad77d2d-2d1c-4b8c-aae1-841abfb4e1f5_800px-Großglockner_from_South.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7ad77d2d-2d1c-4b8c-aae1-841abfb4e1f5_800px-Großglockner_from_South.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7ce4516d-f8bd-45b6-a235-5ed348182e55_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7ce4516d-f8bd-45b6-a235-5ed348182e55_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/7ce4516d-f8bd-45b6-a235-5ed348182e55_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7ce4516d-f8bd-45b6-a235-5ed348182e55_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\9da083d5-2041-4f43-a5e6-5e523f1e0be0_Matterhorn_(3299188209).jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\9da083d5-2041-4f43-a5e6-5e523f1e0be0_Matterhorn_(3299188209).jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/9da083d5-2041-4f43-a5e6-5e523f1e0be0_Matterhorn_(3299188209).jpg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9da083d5-2041-4f43-a5e6-5e523f1e0be0_Matterhorn_(3299188209).jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\9f88bbe2-9556-4027-b266-35210016a019_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\9f88bbe2-9556-4027-b266-35210016a019_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/9f88bbe2-9556-4027-b266-35210016a019_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9f88bbe2-9556-4027-b266-35210016a019_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\a8fb0115-6b8a-473e-8cd1-a302b6c209b3_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\a8fb0115-6b8a-473e-8cd1-a302b6c209b3_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/a8fb0115-6b8a-473e-8cd1-a302b6c209b3_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a8fb0115-6b8a-473e-8cd1-a302b6c209b3_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\AlpTrips.png",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\AlpTrips.png",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/AlpTrips.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\AlpTrips.png"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\b33beb93-0f35-4c30-99c8-2de1caf9d767_licensed-image (1).jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\b33beb93-0f35-4c30-99c8-2de1caf9d767_licensed-image (1).jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/b33beb93-0f35-4c30-99c8-2de1caf9d767_licensed-image (1).jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b33beb93-0f35-4c30-99c8-2de1caf9d767_licensed-image (1).jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\bab93a63-6983-4590-bdbf-7bc536891719_800px-Großglockner_from_South.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\bab93a63-6983-4590-bdbf-7bc536891719_800px-Großglockner_from_South.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/bab93a63-6983-4590-bdbf-7bc536891719_800px-Großglockner_from_South.jpg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bab93a63-6983-4590-bdbf-7bc536891719_800px-Großglockner_from_South.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\be026821-fe69-45ca-954a-42f09b66b216_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\be026821-fe69-45ca-954a-42f09b66b216_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/be026821-fe69-45ca-954a-42f09b66b216_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\images\\be026821-fe69-45ca-954a-42f09b66b216_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\cf45c61e-2e0d-46a9-abeb-55fa74a9aaa4_Mont_maudit.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\cf45c61e-2e0d-46a9-abeb-55fa74a9aaa4_Mont_maudit.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/cf45c61e-2e0d-46a9-abeb-55fa74a9aaa4_Mont_maudit.jpg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cf45c61e-2e0d-46a9-abeb-55fa74a9aaa4_Mont_maudit.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\d1a80263-7b87-45bb-90ea-7f4c3f9bc0d6_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\d1a80263-7b87-45bb-90ea-7f4c3f9bc0d6_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/d1a80263-7b87-45bb-90ea-7f4c3f9bc0d6_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d1a80263-7b87-45bb-90ea-7f4c3f9bc0d6_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\ddc39b19-64fe-431e-9598-6cb35522f5d8_1920px-Wildspitzefromtiefenbachkogel.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\ddc39b19-64fe-431e-9598-6cb35522f5d8_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/ddc39b19-64fe-431e-9598-6cb35522f5d8_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ddc39b19-64fe-431e-9598-6cb35522f5d8_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "images/dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\js\\site.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\KOMPUTER\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
       "BasePath": "_content/AlpsTrips.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
