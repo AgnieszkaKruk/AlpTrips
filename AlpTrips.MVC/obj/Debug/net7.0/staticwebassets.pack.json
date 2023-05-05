@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\images\\3bdb30b0-e5b5-41cf-8f7c-f6ad7de103f0_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\3d5267bd-0e5f-4178-953d-7a009304ca23_Zinalrothorn01.jpg",
+      "PackagePath": "staticwebassets\\images\\3d5267bd-0e5f-4178-953d-7a009304ca23_Zinalrothorn01.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
@@ -101,6 +105,14 @@
       "PackagePath": "staticwebassets\\images\\AlpTrips.png"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\StarFade.gif",
+      "PackagePath": "staticwebassets\\images\\StarFade.gif"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\StarGlow.gif",
+      "PackagePath": "staticwebassets\\images\\StarGlow.gif"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\a8fb0115-6b8a-473e-8cd1-a302b6c209b3_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\a8fb0115-6b8a-473e-8cd1-a302b6c209b3_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
@@ -127,6 +139,10 @@
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\ddc39b19-64fe-431e-9598-6cb35522f5d8_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\ddc39b19-64fe-431e-9598-6cb35522f5d8_1920px-Wildspitzefromtiefenbachkogel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\dfce780c-5d82-4e37-aa75-8d9b75a5cdff_matt.jpg",
+      "PackagePath": "staticwebassets\\images\\dfce780c-5d82-4e37-aa75-8d9b75a5cdff_matt.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg",

@@ -30,6 +30,7 @@ namespace AlpTrips.Application.Dtos
         public string Email { get; set; }
         public string? EncodedName { get; set; }
 
-        
+        public List<Domain.Entities.Comment>? Comments { get; set; } = new List<Domain.Entities.Comment>();
+
     }
 }

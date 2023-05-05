@@ -11,6 +11,7 @@ namespace AlpTrips.Infrastructure.Extensions
         public static void AddInfrastructure(this IServiceCollection services)
         {
             services.AddScoped<ITripRepository, TripRepository>();
+            services.AddScoped<ICommentRepository,CommentRepository>();
             services.AddDefaultIdentity<IdentityUser>(options => {
                 options.Stores.MaxLengthForKeys = 450;
             })

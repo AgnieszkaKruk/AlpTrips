@@ -1,5 +1,24 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using AlpTrips.Domain.Entities;
+@model IEnumerable<Comment>;
+
+<div class="row">
+
+    @foreach (var comment in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+               
+                <div class="card body">
+                    <h3 class="card-title">@comment.Rate</h3>
+                    <p class="card-text">@comment.Text</p>
+                    <ul class="list-group">
+                    @*    <li class="list-group-item trip-info-item"><span class="trip-info-item">Poziom trudności: </span>@comment.CreatedBy.Id</li>*@
+                        <li class="list-group-item trip-info-item"><span class="trip-info-item">Utworzono: </span>@comment.CreatedDate</li>
+                   
+                    </ul>
+
+                 
+                </div>
+            </div>
+        </div>
+    }

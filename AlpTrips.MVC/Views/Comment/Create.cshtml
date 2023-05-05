@@ -1,5 +1,55 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using AlpTrips.Application.Comment.Commands.CreateComment;
+@model CreateCommentCommand;
+
+<div class="container">
+    <h3 class="display-4">Dodaj komentarz</h3>
+    <hr />
+
+    <div class="row">
+        <div class="card m shadow-sm">
+            <div class="col-md-4">
+
+                <form asp-action="Create" enctype="multipart/form-data" method="post" asp-controller="Comment">
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Text">Treść</label>
+                        <textarea class="form-control" asp-for="Text"></textarea>
+                        <span asp-validation-for="Text" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Rate">Ocena</label>
+                        <select class="form-control" asp-for="Rate" required>
+                            <option value="" class="grey">Wybierz poziom trudności trasy</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <span asp-validation-for="Rate" class="text-danger"></span>
+                    </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-outline-primary"> Dodaj</button>
+                            </div>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+  @*  @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+        }
+    }*@
+
+
+
+</div>
+
+

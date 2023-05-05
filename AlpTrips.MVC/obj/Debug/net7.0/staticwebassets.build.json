@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GCG7O9w40lSh+4DB0ollLI3Ez7D4YbiSSWg17SU96UQ=",
+  "Hash": "poBkLs2mD0TAosIdjiTGnqbk9NwvKhXNXYI2nPYWOts=",
   "Source": "AlpsTrips.MVC",
   "BasePath": "_content/AlpsTrips.MVC",
   "Mode": "Default",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\3bdb30b0-e5b5-41cf-8f7c-f6ad7de103f0_1920px-Wildspitzefromtiefenbachkogel.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\3d5267bd-0e5f-4178-953d-7a009304ca23_Zinalrothorn01.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/3d5267bd-0e5f-4178-953d-7a009304ca23_Zinalrothorn01.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3d5267bd-0e5f-4178-953d-7a009304ca23_Zinalrothorn01.jpg"
     },
     {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg",
@@ -578,6 +595,23 @@
       "OriginalItemSpec": "wwwroot\\images\\ddc39b19-64fe-431e-9598-6cb35522f5d8_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\dfce780c-5d82-4e37-aa75-8d9b75a5cdff_matt.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/dfce780c-5d82-4e37-aa75-8d9b75a5cdff_matt.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\dfce780c-5d82-4e37-aa75-8d9b75a5cdff_matt.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
@@ -593,6 +627,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\StarFade.gif",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/StarFade.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\StarFade.gif"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\StarGlow.gif",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/StarGlow.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\StarGlow.gif"
     },
     {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\js\\site.js",

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AlpTrips.Application.Comment.Queries.GetCommentsForTripQuery
 {
-    public class GetCommentsForTripQuery: IRequest<Domain.Entities.Comment>
+    public class GetCommentsForTripQuery: IRequest<IEnumerable<Domain.Entities.Comment>>
     {
 
         public string EncodedName { get; set; }

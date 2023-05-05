@@ -14,6 +14,7 @@ namespace AlpTrips.Domain.Entities
         public int Rate { get; set; }
         public DateTime CreatedDate { get; set; }
         public int TripId { get; set; }
+
         public string? CreatedById { get; set; }
         public IdentityUser? CreatedBy { get; set; }
 

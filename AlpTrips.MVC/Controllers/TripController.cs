@@ -1,4 +1,6 @@
 ﻿
+using AlpTrips.Application.Comment.Queries.GetAllCommentsQuery;
+using AlpTrips.Application.Comment.Queries.GetCommentsForTripQuery;
 using AlpTrips.Application.Trip.Commands.CreateTrip;
 using AlpTrips.Application.Trip.Commands.DeleteTrip;
 using AlpTrips.Application.Trip.Commands.EditTrip;
@@ -46,6 +48,26 @@ namespace AlpsTrips.MVC.Controllers
         public async Task<IActionResult> Details(string encodedName)
         {
             var tripDto = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
+            ViewBag.TripEncodedName = tripDto.EncodedName;
+
+            var comments = await _mediator.Send(new GetCommentsForTripQuery(encodedName));
+            ViewBag.Comments = comments;
+
+            var ratings = await _mediator.Send(new GetCommentsForTripQuery(encodedName));
+            if (ratings.Count() > 0)
+            {
+                var ratingSum = ratings.Sum(d => d.Rate);
+                ViewBag.RatingSum = ratingSum;
+                var ratingCount = ratings.Count();
+                ViewBag.RatingCount = ratingCount;
+            }
+            else
+            {
+                ViewBag.RatingSum = 0;
+                ViewBag.RatingCount = 0;
+            }
+
+
             return View(tripDto);
         }
 
