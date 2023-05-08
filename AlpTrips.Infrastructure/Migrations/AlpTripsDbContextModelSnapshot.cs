@@ -31,7 +31,7 @@ namespace AlpTrips.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CreatedById")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -46,11 +46,14 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.Property<int>("TripId")
                         .HasColumnType("int");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("CreatedById");
-
                     b.HasIndex("TripId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
                 });
@@ -117,7 +120,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 4, 29, 16, 46, 11, 928, DateTimeKind.Local).AddTicks(7398),
+                            CreatedDate = new DateTime(2023, 5, 8, 15, 27, 31, 26, DateTimeKind.Local).AddTicks(2683),
                             Description = "3 najwyższy sczyt Austrii",
                             Elevation = 0,
                             Length = 0,
@@ -131,7 +134,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 4, 29, 16, 46, 11, 928, DateTimeKind.Local).AddTicks(7474),
+                            CreatedDate = new DateTime(2023, 5, 8, 15, 27, 31, 26, DateTimeKind.Local).AddTicks(2745),
                             Description = "Jeden z trudnijeszych szczytów w Alpach dla średniozaawansowanych",
                             Elevation = 0,
                             Length = 0,
@@ -145,7 +148,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 4, 29, 16, 46, 11, 928, DateTimeKind.Local).AddTicks(7485),
+                            CreatedDate = new DateTime(2023, 5, 8, 15, 27, 31, 26, DateTimeKind.Local).AddTicks(2751),
                             Description = "Trawers przez Ostgrat",
                             Elevation = 0,
                             Length = 0,
@@ -403,17 +406,21 @@ namespace AlpTrips.Infrastructure.Migrations
 
             modelBuilder.Entity("AlpTrips.Domain.Entities.Comment", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "CreatedBy")
-                        .WithMany()
-                        .HasForeignKey("CreatedById");
-
-                    b.HasOne("AlpTrips.Domain.Entities.Trip", null)
+                    b.HasOne("AlpTrips.Domain.Entities.Trip", "Trip")
                         .WithMany("Comments")
                         .HasForeignKey("TripId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired();
+
+                    b.HasOne("AlpTrips.Domain.Entities.User", "User")
+                        .WithMany("CommentsList")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("CreatedBy");
+                    b.Navigation("Trip");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
@@ -491,6 +498,8 @@ namespace AlpTrips.Infrastructure.Migrations
 
             modelBuilder.Entity("AlpTrips.Domain.Entities.User", b =>
                 {
+                    b.Navigation("CommentsList");
+
                     b.Navigation("TripsList");
                 });
 #pragma warning restore 612, 618

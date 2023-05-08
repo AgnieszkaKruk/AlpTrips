@@ -26,7 +26,8 @@ namespace AlpTrips.Infrastructure.Persistence
             modelBuilder.Entity<Trip>(eb =>
             {
                 eb.HasOne(t => t.User).WithMany().HasForeignKey(t => t.UserId);
-                eb.HasMany(t => t.Comments).WithOne().HasForeignKey(c => c.TripId);
+                eb.HasMany(t => t.Comments).WithOne(c =>c.Trip).HasForeignKey(c => c.TripId).OnDelete(DeleteBehavior.ClientCascade);
+
             });
 
            
@@ -34,6 +35,7 @@ namespace AlpTrips.Infrastructure.Persistence
             modelBuilder.Entity<User>(eb =>
             {
                 eb.Property(p => p.Name).IsRequired();
+                eb.HasMany(p => p.CommentsList).WithOne(c => c.User);
                 eb.HasMany(p => p.TripsList).WithOne(c => c.User);
                 eb.HasData(new User() { Id = 1, Email = "dziku@gmail.com", Name = "Dziku" },
                     new User() { Name = "Aga", Id = 2, Email = "aga@w.pl" },

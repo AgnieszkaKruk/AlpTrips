@@ -31,7 +31,7 @@ namespace AlpsTrips.MVC.Controllers
         public async Task<IActionResult> Index()
 
         {
-            
+
 
             var allComments = await _mediator.Send(new GetAllCommentsQuery());
             return View(allComments);
@@ -59,13 +59,16 @@ namespace AlpsTrips.MVC.Controllers
 
 
         // POST: Comment/Create
-        
+
         [HttpPost]
         [Authorize]
+
         public async Task<IActionResult> Create(CreateCommentCommand createCommentCommand)
         {
-                await _mediator.Send(createCommentCommand);
-                return RedirectToAction(nameof(Index), new { isSuccess = true });
+            var tripId = (int)TempData["TripId"];
+            createCommentCommand.TripId = tripId;
+            await _mediator.Send(createCommentCommand);
+            return RedirectToAction(nameof(Index), new { isSuccess = true });
         }
 
 
@@ -89,9 +92,9 @@ namespace AlpsTrips.MVC.Controllers
         [Authorize]
         public async Task<IActionResult> Edit(int id, EditCommentCommand editCommentCommand)
         {
-                await _mediator.Send(editCommentCommand);
-                return RedirectToAction(nameof(Index));
-       
+            await _mediator.Send(editCommentCommand);
+            return RedirectToAction(nameof(Index));
+
         }
 
         //GET: Comments/id/Delete

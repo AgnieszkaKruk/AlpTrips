@@ -1,4 +1,5 @@
 ﻿using AlpTrips.Application.ApplicationUser;
+using AlpTrips.Application.Comment.Commands.CreateComment;
 using AlpTrips.Application.Dtos;
 using AlpTrips.Application.Mappings;
 using AlpTrips.Application.Trip.Commands.CreateTrip;
@@ -21,8 +22,11 @@ namespace AlpTrips.Application.Extensions
                 .AddFluentValidationClientsideAdapters();
 
             services.AddValidatorsFromAssemblyContaining<TripDto>();
-
+            
             services.AddMediatR(typeof(CreateTripCommand));
+            services.AddMediatR(typeof(CreateCommentCommand));
+
+
 
             services.AddScoped<IUserContext,UserContext>();
                

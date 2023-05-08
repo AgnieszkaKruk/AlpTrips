@@ -16,19 +16,24 @@ namespace AlpTrips.Application.Comment.Commands.CreateComment
         private readonly ICommentRepository _commentRepository;
         
         private readonly IUserContext _userContext;
+       
 
         public CreateCommentCommandHandler(ICommentRepository repository, IUserContext context)
         {
             _commentRepository = repository;
             _userContext = context;
-            
+
+          
+
         }
         public async Task<Unit> Handle(CreateCommentCommand request, CancellationToken cancellationToken)
         {
 
             request.CreatedById= _userContext.GetCurrentUser().Id;
             request.CreatedDate = DateTime.Now;
-            request.TripId = 1;
+            request.User = new User();
+            request.User.Email = _userContext.GetCurrentUser().Email;
+            request.User.Name = _userContext.GetCurrentUser().Name;
 
             await _commentRepository.Create(request);
 

@@ -352,6 +352,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7ad77d2d-2d1c-4b8c-aae1-841abfb4e1f5_800px-Großglockner_from_South.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7b4159b9-6e24-4426-9130-8aed41f60ad2_Matterhorn Alpejski w Zermatt_1360x768_Imperiumtapet_com.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>images/7b4159b9-6e24-4426-9130-8aed41f60ad2_Matterhorn Alpejski w Zermatt_1360x768_Imperiumtapet_com.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7b4159b9-6e24-4426-9130-8aed41f60ad2_Matterhorn Alpejski w Zermatt_1360x768_Imperiumtapet_com.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7ce4516d-f8bd-45b6-a235-5ed348182e55_1920px-Wildspitzefromtiefenbachkogel.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AlpsTrips.MVC</SourceId>

@@ -47,7 +47,7 @@ namespace AlpsTrips.MVC.Controllers
         [Route("Trip/{encodedName}/Details")]
         public async Task<IActionResult> Details(string encodedName)
         {
-            var tripDto = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
+            var tripDto = await _mediator.Send(new GetTripDtoByEncodedNameQuery(encodedName));
             ViewBag.TripEncodedName = tripDto.EncodedName;
 
             var comments = await _mediator.Send(new GetCommentsForTripQuery(encodedName));
@@ -71,8 +71,18 @@ namespace AlpsTrips.MVC.Controllers
             return View(tripDto);
         }
 
-        // GET: Trip/Create
-        [Authorize]
+
+        [Route("Trip/{encodedName}/Details/Comments/Create")]
+        public async Task<IActionResult> CommentForTrip(string encodedName)
+        {
+            var trip = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
+            var tripId = trip.Id;
+            TempData["TripId"] = tripId;
+            return RedirectToAction("Create", "Comment", new { tripId});
+        }
+
+            // GET: Trip/Create
+            [Authorize]
         public IActionResult Create(bool isSuccess = false)
         {
             ViewBag.IsSuccess = isSuccess;
@@ -124,7 +134,7 @@ namespace AlpsTrips.MVC.Controllers
         [Authorize]
         public async Task<IActionResult> Edit(string encodedName)
         {
-            var tripDto = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
+            var tripDto = await _mediator.Send(new GetTripDtoByEncodedNameQuery(encodedName));
             EditTripCommand model = _mapper.Map<EditTripCommand>(tripDto);
             return View(model);
         }

@@ -9,5 +9,12 @@ namespace AlpTrips.Application.Comment.Commands.CreateComment
 {
     public class CreateCommentCommand : Domain.Entities.Comment, IRequest
     {
+       
+        public CreateCommentCommand()
+        {
+            
+        }
+
+        
     }
 }

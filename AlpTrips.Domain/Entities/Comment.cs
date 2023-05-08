@@ -1,10 +1,4 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace AlpTrips.Domain.Entities
 {
     public class Comment
@@ -16,7 +10,9 @@ namespace AlpTrips.Domain.Entities
         public int TripId { get; set; }
 
         public string? CreatedById { get; set; }
-        public IdentityUser? CreatedBy { get; set; }
+        public User User  { get; set; }
+        public int UserId { get; set; }
+        public Trip Trip { get; set; }
 
     }
 }
