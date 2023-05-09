@@ -1,4 +1,5 @@
 ﻿
+using AlpTrips.Application.Comment.Commands.CreateComment;
 using AlpTrips.Application.Comment.Queries.GetAllCommentsQuery;
 using AlpTrips.Application.Comment.Queries.GetCommentsForTripQuery;
 using AlpTrips.Application.Trip.Commands.CreateTrip;
@@ -48,7 +49,7 @@ namespace AlpsTrips.MVC.Controllers
         public async Task<IActionResult> Details(string encodedName)
         {
             var tripDto = await _mediator.Send(new GetTripDtoByEncodedNameQuery(encodedName));
-            ViewBag.TripEncodedName = tripDto.EncodedName;
+            ViewBag.EncodedName = tripDto.EncodedName;
 
             var comments = await _mediator.Send(new GetCommentsForTripQuery(encodedName));
             ViewBag.Comments = comments;
@@ -73,16 +74,18 @@ namespace AlpsTrips.MVC.Controllers
 
 
         [Route("Trip/{encodedName}/Details/Comments/Create")]
-        public async Task<IActionResult> CommentForTrip(string encodedName)
+        public async Task<IActionResult> CommentForTrip(CreateCommentCommand createCommentCommand,string encodedName)
         {
             var trip = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
             var tripId = trip.Id;
-            TempData["TripId"] = tripId;
-            return RedirectToAction("Create", "Comment", new { tripId});
+            createCommentCommand.TripId = tripId;
+            await _mediator.Send(createCommentCommand);
+            return RedirectToAction(nameof(Details), new { encodedName });
+           
         }
 
-            // GET: Trip/Create
-            [Authorize]
+        // GET: Trip/Create
+        [Authorize]
         public IActionResult Create(bool isSuccess = false)
         {
             ViewBag.IsSuccess = isSuccess;

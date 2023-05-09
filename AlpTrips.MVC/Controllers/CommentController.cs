@@ -5,6 +5,7 @@ using AlpTrips.Application.Comment.Commands.EditComment;
 using AlpTrips.Application.Comment.Queries.GetAllCommentsQuery;
 using AlpTrips.Application.Comment.Queries.GetCommentByIdQuery;
 using AlpTrips.Application.Comment.Queries.GetCommentsForTripQuery;
+using AlpTrips.Application.Trip.Queries.GetTripByEncodedName;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -56,20 +57,6 @@ namespace AlpsTrips.MVC.Controllers
             return View();
         }
 
-
-
-        // POST: Comment/Create
-
-        [HttpPost]
-        [Authorize]
-
-        public async Task<IActionResult> Create(CreateCommentCommand createCommentCommand)
-        {
-            var tripId = (int)TempData["TripId"];
-            createCommentCommand.TripId = tripId;
-            await _mediator.Send(createCommentCommand);
-            return RedirectToAction(nameof(Index), new { isSuccess = true });
-        }
 
 
 

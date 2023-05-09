@@ -23,6 +23,7 @@ namespace AlpTrips.Infrastructure.Repositories
             try
             {
                 _context.Comments.Add(comment);
+               
                 await _context.SaveChangesAsync();
             }
             catch (Exception ex)
