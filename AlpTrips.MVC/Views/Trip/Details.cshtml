@@ -20,7 +20,7 @@
 
 <div class="container">
     <h4 class="display-4">@Model.Name</h4>
-   
+
 
     <div class="row">
         <div class="col-md-6">
@@ -58,7 +58,17 @@
                 <div class="col-md-12">
                     <h1> Szczegóły trasy: @Model.Name</h1>
                     <div>
-                        <span id="sRate1" class="{{ totalRating >= 1 ? 'starFadeN' : 'starGlow' }}"></span><span class="starFadeN" id="sRate2"></span><span class="starFadeN" id="sRate3"></span><span class="starFadeN" id="sRate4"></span><span class="starFadeN" id="sRate5"></span>
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (totalRating >= i)
+                            {
+                                <span class="starGlow" id="sRate@i"></span>
+                            }
+                            else
+                            {
+                                <span class="starFadeN" id="sRate@i"></span>
+                            }
+                        }
                     </div>
 
                 </div>
@@ -103,13 +113,13 @@
 
     <hr />
 
-    
 
-   
-    
+
+
+
     @foreach (var c in comments)
     {
-     
+
         <div class="row">
             <div class="col-md-3">
                 <i>@c.CreatedDate</i>
@@ -131,7 +141,7 @@
         </div>
         <hr />
     }
-    
+
     @Html.Partial("_CommentBox")
 
     <script>
@@ -146,7 +156,7 @@
         });
 
     </script>
-    
+
 
 
 
