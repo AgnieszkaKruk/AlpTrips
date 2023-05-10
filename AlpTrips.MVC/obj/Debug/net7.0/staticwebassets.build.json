@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "elw/IVQt9bHk/zS37zDYK5MNVqNUzIp67uypnfSCEM0=",
+  "Hash": "9d/22D1UMU3ZsKH+BF7cgDrxcNfp4wExWkVFuM5ZPWM=",
   "Source": "AlpsTrips.MVC",
   "BasePath": "_content/AlpsTrips.MVC",
   "Mode": "Default",
@@ -746,6 +746,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\g.gif"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\smile.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/smile.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\smile.jpg"
     },
     {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\StarFade.gif",

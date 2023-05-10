@@ -177,6 +177,10 @@
       "PackagePath": "staticwebassets\\images\\g.gif"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\smile.jpg",
+      "PackagePath": "staticwebassets\\images\\smile.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
