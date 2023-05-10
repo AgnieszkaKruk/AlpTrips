@@ -10,7 +10,16 @@ html {
     text-overflow: ellipsis;
 }
 .tekst {
-    margin: 10px;
+    margin-top: 50px;
+    margin-left: 3px;
+}
+.monospaced {
+    margin-left:6px;
+}
+
+.list-group {
+    margin-top:20px;
+    margin-bottom:70px;
 }
 .jumbotron.text-center {
     background-image: url('/images/00ad4ebb-a0c5-47da-96e8-92677de2d5f4_licensed-image.jpg');
@@ -87,6 +96,7 @@ body {
     min-height: 30px;
     display: inline-block;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .starFadeN {
@@ -94,19 +104,61 @@ body {
     min-width: 30px;
     min-height: 30px;
     display: inline-block;
+    margin-top: 20px;
 }
 
 .starGlow {
-    background-image: url('/images/starglow.gif');
+    background-image: url('/images/StarGlow.gif');
     min-width: 30px;
     min-height: 30px;
     display: inline-block;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .starGlowN {
-    background-image: url('/images/starglow.gif');
+    background-image: url('/images/StarGlow.gif');
     min-width: 30px;
     min-height: 30px;
     display: inline-block;
+    margin-top: 20px;
 }
+
+.profile-pic {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.profile-pic {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  
+}
+
+    .profile-pic i {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+
+    .profile-pic img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }

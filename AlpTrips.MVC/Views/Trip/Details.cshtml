@@ -20,6 +20,20 @@
 
 <div class="container">
     <h4 class="display-4">@Model.Name</h4>
+    <span>Pasmo górskie: @Model.MountainRange</span>
+    <div>
+        @for (int i = 1; i <= 5; i++)
+        {
+            if (totalRating >= i)
+            {
+                <span class="starGlow" id="sRate@i"></span>
+            }
+            else
+            {
+                <span class="starFadeN" id="sRate@i"></span>
+            }
+        }
+    </div>
 
 
     <div class="row">
@@ -50,39 +64,43 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <ul class="list-group">
+                <li class="list-group-item"><span class="font-weight-bold">Poziom trudności: </span>@Model.Level</li>
+                <li class="list-group-item"><span class="font-weight-bold">Długość trasy: </span>@Model.Time</li>
+                <li class="list-group-item"><span class="font-weight-bold">Przewyższenie: </span>@Model.Elevation</li>
+
+
+            </ul>
+            <a asp-action="Edit" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Edytuj</a>
+            <a asp-action="Delete" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Usuń</a>
         </div>
 
         <div class="col-md-6">
 
             <div class="row">
                 <div class="col-md-12">
-                    <h1> Szczegóły trasy: @Model.Name</h1>
-                    <div>
-                        @for (int i = 1; i <= 5; i++)
-                        {
-                            if (totalRating >= i)
-                            {
-                                <span class="starGlow" id="sRate@i"></span>
-                            }
-                            else
-                            {
-                                <span class="starFadeN" id="sRate@i"></span>
-                            }
-                        }
-                    </div>
-
+            
                 </div>
+            </div>
+            <div class="col-md-12">
+              
+
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-primary">
+                <div class="col-md-12 text-primary" style="display: flex; align-items: center;">
                     <span class="label label-primary">Autor: </span>
-                    <span class="monospaced">@Model.UserName</span>
+                    <span class="monospaced">  @Model.UserName</span>
+                    <div class="profile-pic" style="background-image: url('/images/00-Monte-Altissimo-Lago-di-Garda-Prati-di-Nago-360gardalife-1200x798.jpg'); width: 100px; height: 100px;">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
                 </div>
-                <div class="col-md-12">
-                    <span>Pasmo górskie: @Model.MountainRange</span>
+                
+            </div>
 
-                </div>
+
+
+                
 
                 <div class="row">
                     <div class="col-md-12">
@@ -97,16 +115,7 @@
                     </div>
                 </div>
 
-                <hr />
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="font-weight-bold">Poziom trudności: </span>@Model.Level</li>
-                    <li class="list-group-item"><span class="font-weight-bold">Długość trasy: </span>@Model.Time</li>
-                    <li class="list-group-item"><span class="font-weight-bold">Przewyższenie: </span>@Model.Elevation</li>
-
-
-                </ul>
-                <a asp-action="Edit" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Edytuj</a>
-                <a asp-action="Delete" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Usuń</a>
+               
             </div>
         </div>
     </div>
@@ -144,18 +153,6 @@
 
     @Html.Partial("_CommentBox")
 
-    <script>
-        function SCRate() {
-            for (var i = 1; i <= @totalRating; i++) {
-                $("#sRate" + i).removeClass('starFadeN').addClass('starGlowN');
-            }
-        }
-
-        $(function () {
-            SCRate();
-        });
-
-    </script>
 
 
 
