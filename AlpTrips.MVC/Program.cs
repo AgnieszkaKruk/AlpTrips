@@ -12,6 +12,8 @@ builder.Services.AddDbContext<AlpTripsDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("MyAlpTripsConnectionString"))
     );
 
+
+
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     //.AddEntityFrameworkStores<AlpTripsDbContext>();
 
