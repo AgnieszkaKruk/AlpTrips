@@ -17,10 +17,10 @@ namespace AlpTrips.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.15")
+                .HasAnnotation("ProductVersion", "7.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("AlpTrips.Domain.Entities.Comment", b =>
                 {
@@ -28,7 +28,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedById")
                         .HasColumnType("nvarchar(max)");
@@ -64,7 +64,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedById")
                         .HasColumnType("nvarchar(450)");
@@ -120,7 +120,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 5, 8, 15, 27, 31, 26, DateTimeKind.Local).AddTicks(2683),
+                            CreatedDate = new DateTime(2023, 5, 29, 10, 43, 23, 884, DateTimeKind.Local).AddTicks(6049),
                             Description = "3 najwyższy sczyt Austrii",
                             Elevation = 0,
                             Length = 0,
@@ -134,7 +134,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 5, 8, 15, 27, 31, 26, DateTimeKind.Local).AddTicks(2745),
+                            CreatedDate = new DateTime(2023, 5, 29, 10, 43, 23, 884, DateTimeKind.Local).AddTicks(6104),
                             Description = "Jeden z trudnijeszych szczytów w Alpach dla średniozaawansowanych",
                             Elevation = 0,
                             Length = 0,
@@ -148,7 +148,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 5, 8, 15, 27, 31, 26, DateTimeKind.Local).AddTicks(2751),
+                            CreatedDate = new DateTime(2023, 5, 29, 10, 43, 23, 884, DateTimeKind.Local).AddTicks(6108),
                             Description = "Trawers przez Ostgrat",
                             Elevation = 0,
                             Length = 0,
@@ -161,13 +161,39 @@ namespace AlpTrips.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("AlpTrips.Domain.Entities.TripGallery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TripId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TripId");
+
+                    b.ToTable("Galleries");
+                });
+
             modelBuilder.Entity("AlpTrips.Domain.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -235,7 +261,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -325,7 +351,7 @@ namespace AlpTrips.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -440,6 +466,17 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AlpTrips.Domain.Entities.TripGallery", b =>
+                {
+                    b.HasOne("AlpTrips.Domain.Entities.Trip", "Trip")
+                        .WithMany("Gallery")
+                        .HasForeignKey("TripId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Trip");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -494,6 +531,8 @@ namespace AlpTrips.Infrastructure.Migrations
             modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Gallery");
                 });
 
             modelBuilder.Entity("AlpTrips.Domain.Entities.User", b =>

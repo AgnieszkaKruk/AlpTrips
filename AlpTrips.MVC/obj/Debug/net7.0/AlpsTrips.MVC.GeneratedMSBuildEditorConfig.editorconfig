@@ -16,10 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Dell\source\repos\AlpTrips\AlpTrips.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Dell/source/repos/AlpTrips/AlpTrips.MVC/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Dell/source/repos/AlpTrips/AlpTrips.MVC/Views/Comment/CommentsForTrip.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxDb21tZW50c0ZvclRyaXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

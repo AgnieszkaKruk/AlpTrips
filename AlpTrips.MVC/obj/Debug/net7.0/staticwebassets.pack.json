@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\0d1f06a6-73be-4453-a932-21a0d061a455_montblanc.jpg",
+      "PackagePath": "staticwebassets\\gallery\\0d1f06a6-73be-4453-a932-21a0d061a455_montblanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\253ba3eb-f667-4577-bac0-58abafd3385c_Piz_Palu_01.jpg",
+      "PackagePath": "staticwebassets\\gallery\\253ba3eb-f667-4577-bac0-58abafd3385c_Piz_Palu_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\2cc3c87b-3fd6-4e37-a150-9f1e1884939d_Weisshorn-RG_front_large.jpg",
+      "PackagePath": "staticwebassets\\gallery\\2cc3c87b-3fd6-4e37-a150-9f1e1884939d_Weisshorn-RG_front_large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\836363eb-83c0-4b92-9bb1-97beab9d4f29_Zinalrothorn01 (1).jpg",
+      "PackagePath": "staticwebassets\\gallery\\836363eb-83c0-4b92-9bb1-97beab9d4f29_Zinalrothorn01 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\bf1ee333-a9e6-41ea-9dfd-646d6768f8f4_Piz_Palu_01.jpg",
+      "PackagePath": "staticwebassets\\gallery\\bf1ee333-a9e6-41ea-9dfd-646d6768f8f4_Piz_Palu_01.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\00-Monte-Altissimo-Lago-di-Garda-Prati-di-Nago-360gardalife-1200x798.jpg",
       "PackagePath": "staticwebassets\\images\\00-Monte-Altissimo-Lago-di-Garda-Prati-di-Nago-360gardalife-1200x798.jpg"
     },
@@ -45,6 +65,10 @@
       "PackagePath": "staticwebassets\\images\\0d1f122a-deb0-4ffe-9a20-d16350e6e843_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\1d17b2e3-0ba4-4b88-9d13-f851e3ca5881_Weisshorn-RG_front_large.jpg",
+      "PackagePath": "staticwebassets\\images\\1d17b2e3-0ba4-4b88-9d13-f851e3ca5881_Weisshorn-RG_front_large.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\260c82a6-0059-44c8-ae33-2f3d1aa542f8_800px-Großglockner_from_South.jpg",
       "PackagePath": "staticwebassets\\images\\260c82a6-0059-44c8-ae33-2f3d1aa542f8_800px-Großglockner_from_South.jpg"
     },
@@ -61,6 +85,14 @@
       "PackagePath": "staticwebassets\\images\\2d20f9de-6ea5-47c9-b702-b11bc6938e61_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\39075e22-b7e2-4a1e-b0c4-197200de4b95_csm_1551199183_561951231master_cf7262b6ea.jpg",
+      "PackagePath": "staticwebassets\\images\\39075e22-b7e2-4a1e-b0c4-197200de4b95_csm_1551199183_561951231master_cf7262b6ea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\39e7480f-cb94-44b7-8470-ac0fe0ad34e5_Piz_Palu_01.jpg",
+      "PackagePath": "staticwebassets\\images\\39e7480f-cb94-44b7-8470-ac0fe0ad34e5_Piz_Palu_01.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\3bdb30b0-e5b5-41cf-8f7c-f6ad7de103f0_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\3bdb30b0-e5b5-41cf-8f7c-f6ad7de103f0_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
@@ -69,12 +101,28 @@
       "PackagePath": "staticwebassets\\images\\3d5267bd-0e5f-4178-953d-7a009304ca23_Zinalrothorn01.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\3e79a237-5ff3-4443-b2e6-88771be3cad5_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\3e79a237-5ff3-4443-b2e6-88771be3cad5_montblanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\3efc08a0-7a98-42af-b91f-508188c83927_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\3efc08a0-7a98-42af-b91f-508188c83927_montblanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\415f22b9-2225-43d1-a2b2-fecc7c792571_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\415f22b9-2225-43d1-a2b2-fecc7c792571_montblanc.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\443e5027-6f8b-4f87-b5a6-80af56a5ddcd_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\47058ad3-da5c-442c-8232-96bc34f4bf82_800px-Großglockner_from_South.jpg",
       "PackagePath": "staticwebassets\\images\\47058ad3-da5c-442c-8232-96bc34f4bf82_800px-Großglockner_from_South.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\527315f9-3e9c-469d-95dd-006a1e24b424_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\527315f9-3e9c-469d-95dd-006a1e24b424_montblanc.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5444877f-05f0-4d80-8af0-f2c1d84b69ad_1920px-Wildspitzefromtiefenbachkogel.jpg",
@@ -93,6 +141,22 @@
       "PackagePath": "staticwebassets\\images\\5d19e5b3-fa16-46f9-a52c-d7a6d6678596_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\6076bc4b-a8b5-4a7c-95a7-aaa2d539843b_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\6076bc4b-a8b5-4a7c-95a7-aaa2d539843b_montblanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\6089d697-c472-472c-a34c-08ee23f271c4_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\6089d697-c472-472c-a34c-08ee23f271c4_montblanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\6560316f-d80c-4fb3-8c1b-1acac9bb0f10_Zinalrothorn01 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\6560316f-d80c-4fb3-8c1b-1acac9bb0f10_Zinalrothorn01 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\6626545b-7cbc-427a-a778-42795182521d_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\6626545b-7cbc-427a-a778-42795182521d_montblanc.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\675885e7-e422-4131-a548-9f43157a03e1_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\675885e7-e422-4131-a548-9f43157a03e1_1920px-Wildspitzefromtiefenbachkogel.jpg"
     },
@@ -101,12 +165,20 @@
       "PackagePath": "staticwebassets\\images\\77ff6d6e-e953-4f09-892a-cf2af984c7a1_800px-Großglockner_from_South.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7968ce2c-567b-45e7-8346-f37e5fcef9fa_csm_1551199183_561951231master_cf7262b6ea.jpg",
+      "PackagePath": "staticwebassets\\images\\7968ce2c-567b-45e7-8346-f37e5fcef9fa_csm_1551199183_561951231master_cf7262b6ea.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7ad77d2d-2d1c-4b8c-aae1-841abfb4e1f5_800px-Großglockner_from_South.jpg",
       "PackagePath": "staticwebassets\\images\\7ad77d2d-2d1c-4b8c-aae1-841abfb4e1f5_800px-Großglockner_from_South.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7b4159b9-6e24-4426-9130-8aed41f60ad2_Matterhorn Alpejski w Zermatt_1360x768_Imperiumtapet_com.jpg",
       "PackagePath": "staticwebassets\\images\\7b4159b9-6e24-4426-9130-8aed41f60ad2_Matterhorn Alpejski w Zermatt_1360x768_Imperiumtapet_com.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7b4ff769-b3d9-4219-9a0a-1da2a9e83888_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\7b4ff769-b3d9-4219-9a0a-1da2a9e83888_montblanc.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7ce4516d-f8bd-45b6-a235-5ed348182e55_1920px-Wildspitzefromtiefenbachkogel.jpg",
@@ -133,8 +205,20 @@
       "PackagePath": "staticwebassets\\images\\StarGlow.gif"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\a4c0e463-8a43-4244-b736-ef7b7ebb2fbf_Weisshorn-RG_front_large.jpg",
+      "PackagePath": "staticwebassets\\images\\a4c0e463-8a43-4244-b736-ef7b7ebb2fbf_Weisshorn-RG_front_large.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\a8fb0115-6b8a-473e-8cd1-a302b6c209b3_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\a8fb0115-6b8a-473e-8cd1-a302b6c209b3_1920px-Wildspitzefromtiefenbachkogel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\ad5aa4f7-9433-45e3-b39e-0837712105cc_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\ad5aa4f7-9433-45e3-b39e-0837712105cc_montblanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\ae263ead-2f6c-47f7-8625-aa8ea37ae490_Piz_Palu_01.jpg",
+      "PackagePath": "staticwebassets\\images\\ae263ead-2f6c-47f7-8625-aa8ea37ae490_Piz_Palu_01.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\b33beb93-0f35-4c30-99c8-2de1caf9d767_licensed-image (1).jpg",
@@ -145,8 +229,24 @@
       "PackagePath": "staticwebassets\\images\\bab93a63-6983-4590-bdbf-7bc536891719_800px-Großglockner_from_South.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\bdd6b9c0-b3e4-465c-8828-69ad1d03b453_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\bdd6b9c0-b3e4-465c-8828-69ad1d03b453_montblanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\bde84dcf-6a2e-4c16-91dc-047963b0d647_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\bde84dcf-6a2e-4c16-91dc-047963b0d647_montblanc.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\be026821-fe69-45ca-954a-42f09b66b216_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\be026821-fe69-45ca-954a-42f09b66b216_1920px-Wildspitzefromtiefenbachkogel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\bfbd801a-4652-4569-ac7f-398faedddfe3_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\bfbd801a-4652-4569-ac7f-398faedddfe3_montblanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\c223300b-28b8-420b-94db-b1ff5b951869_Zinalrothorn01 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\c223300b-28b8-420b-94db-b1ff5b951869_Zinalrothorn01 (1).jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\cf45c61e-2e0d-46a9-abeb-55fa74a9aaa4_Mont_maudit.jpg",
@@ -155,6 +255,10 @@
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\d1a80263-7b87-45bb-90ea-7f4c3f9bc0d6_1920px-Wildspitzefromtiefenbachkogel.jpg",
       "PackagePath": "staticwebassets\\images\\d1a80263-7b87-45bb-90ea-7f4c3f9bc0d6_1920px-Wildspitzefromtiefenbachkogel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\d891d00e-3f35-460c-9479-b955e16e905c_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\d891d00e-3f35-460c-9479-b955e16e905c_montblanc.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\ddc39b19-64fe-431e-9598-6cb35522f5d8_1920px-Wildspitzefromtiefenbachkogel.jpg",
@@ -167,6 +271,10 @@
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg",
       "PackagePath": "staticwebassets\\images\\dfddf862-2507-4f82-b0f6-cbbb1de210f9_Piz_Palu_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\e3006ed5-44ed-4410-a3d2-f21cbc9aa1c8_montblanc.jpg",
+      "PackagePath": "staticwebassets\\images\\e3006ed5-44ed-4410-a3d2-f21cbc9aa1c8_montblanc.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\f.gif",

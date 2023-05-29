@@ -29,5 +29,8 @@ namespace AlpTrips.Domain.Entities
         public List<Comment>? Comments { get; set; } = new List<Comment>();
 
         public void SetEncodedName() => EncodedName = Name.ToLower().Replace(" ","-");
+
+        public ICollection<TripGallery> Gallery { get; set; }
+
     }
 }

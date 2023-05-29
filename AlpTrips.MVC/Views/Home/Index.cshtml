@@ -3,11 +3,11 @@
 }
 @using AlpTrips.Application.Dtos;
 
-<section class="jumbotron text-center">
+<section class="jumbotron text-center  card-body">
     <div class="container">
-        <h1>AlpTrips - wszsytkie trasy w jednym miejscu</h1>
+        <h1>AlpTrips - wszystkie trasy w jednym miejscu</h1>
         <p class="lead text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis purus lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi dictum nisl quis aliquam vulputate. Aenean sed nisl tortor. Maecenas scelerisque sapien vestibulum massa ultrices pellentesque. Etiam fringilla pellentesque lorem. Nullam eleifend auctor volutpat. In sem libero, congue sed neque in, placerat ullamcorper nunc.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis purus lacus. 
         </p>
         <p>
             <a href="#" class="btn btn-primary my-2">Znajdź wycieczkę</a>
@@ -20,21 +20,5 @@
         <h3 class="h3"> TOP Trasy w Alpach</h3>
         @await Component.InvokeAsync("TopTrasy")
 
-
-       @* <div class="row">
-            <div class="col-md-4">
-                @Html.Partial("_OneTrip", new TripDto())
-             
-            </div>
-            <div class="col-md-4">
-                @Html.Partial("_OneTrip", new TripDto())
-               
-            </div>
-            <div class="col-md-4">
-                @Html.Partial("_OneTrip", new TripDto())
-               
-            </div>
-
-        </div>*@
     </div>
 </div>

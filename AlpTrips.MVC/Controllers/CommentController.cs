@@ -1,11 +1,8 @@
-﻿
-using AlpTrips.Application.Comment.Commands.CreateComment;
-using AlpTrips.Application.Comment.Commands.DeleteComment;
+﻿using AlpTrips.Application.Comment.Commands.DeleteComment;
 using AlpTrips.Application.Comment.Commands.EditComment;
 using AlpTrips.Application.Comment.Queries.GetAllCommentsQuery;
 using AlpTrips.Application.Comment.Queries.GetCommentByIdQuery;
 using AlpTrips.Application.Comment.Queries.GetCommentsForTripQuery;
-using AlpTrips.Application.Trip.Queries.GetTripByEncodedName;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
