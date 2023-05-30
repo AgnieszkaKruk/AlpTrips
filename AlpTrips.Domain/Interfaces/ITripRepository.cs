@@ -13,5 +13,6 @@ namespace AlpTrips.Domain.Interfaces
         Task Delete(string encodedName);
         Task Savechanges();
         Task<IEnumerable<Trip>> GetTop6Trips();
+        Task<IEnumerable<Trip>> SearchTrip(string search);
     }
 }

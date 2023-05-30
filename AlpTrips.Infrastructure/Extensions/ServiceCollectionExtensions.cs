@@ -12,10 +12,7 @@ namespace AlpTrips.Infrastructure.Extensions
         {
             services.AddScoped<ITripRepository, TripRepository>();
             services.AddScoped<ICommentRepository,CommentRepository>();
-            services.AddDefaultIdentity<IdentityUser>(options => {
-                options.Stores.MaxLengthForKeys = 450;
-            })
-            .AddEntityFrameworkStores<AlpTripsDbContext>();
+       
         }
     }
 }

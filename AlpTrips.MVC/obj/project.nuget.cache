@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3u5o6tlQMJpKK6UtaUXZNEIDS2iR+jWDmLXNZixTHAOS1/Ejuz/nuFa10fwd2S5d4HursmllL2rcc3VTk2dcEw==",
+  "dgSpecHash": "MskbtmoCxXup85H5pl+3/eF/SzLh245mis6hXotiMMM2YGLzZwgwb9LCX9+L+2aRRR9br9fRvLbf1Dnb9OhVbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\AlpsTrips.MVC.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.5\\microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.5\\microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.5\\microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.5\\microsoft.entityframeworkcore.tools.7.0.5.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

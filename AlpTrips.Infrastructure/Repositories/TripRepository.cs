@@ -15,6 +15,7 @@ namespace AlpTrips.Infrastructure.Repositories
         }
         public async Task Create(Trip trip)
         {
+           
             try
             {
                 _context.Trips.Add(trip);
@@ -36,7 +37,7 @@ namespace AlpTrips.Infrastructure.Repositories
           => await _context.Trips.FirstOrDefaultAsync(t => t.Name.ToLower() == name.ToLower());
 
         public async Task<Trip> GetByEncodedName(string encodedName)
-            => await _context.Trips.Include(t => t.User).FirstOrDefaultAsync(t=> t.EncodedName == encodedName);
+            => await _context.Trips.Include(t => t.User).Include(t=>t.Gallery).FirstOrDefaultAsync(t=> t.EncodedName == encodedName);
 
         public async Task Savechanges()
          => await _context.SaveChangesAsync();
@@ -46,6 +47,13 @@ namespace AlpTrips.Infrastructure.Repositories
              var trip = await _context.Trips.FirstOrDefaultAsync(t =>t.EncodedName == encodedName);
              _context.Trips.Remove(trip);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Trip>> SearchTrip(string search)
+        {
+            var searchingTrips = await _context.Trips.Where(t=>t.Name.Contains(search))
+                .Include(t=>t.Gallery).ToListAsync();
+            return searchingTrips;
         }
     }
 }

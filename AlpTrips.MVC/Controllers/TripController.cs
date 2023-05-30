@@ -1,4 +1,5 @@
 ﻿
+using AlpTrips.Application;
 using AlpTrips.Application.Comment.Commands.CreateComment;
 using AlpTrips.Application.Comment.Queries.GetAllCommentsQuery;
 using AlpTrips.Application.Comment.Queries.GetCommentsForTripQuery;
@@ -33,9 +34,9 @@ namespace AlpsTrips.MVC.Controllers
         // GET: Trip
         public async Task<IActionResult> Index(bool isSuccess = false)
 
-        { 
+        {
             ViewBag.IsSuccess = isSuccess;
-        
+
             var allTrips = await _mediator.Send(new GetAllTripsQuery());
             return View(allTrips);
         }
@@ -74,14 +75,14 @@ namespace AlpsTrips.MVC.Controllers
 
 
         [Route("Trip/{encodedName}/Details/Comments/Create")]
-        public async Task<IActionResult> CommentForTrip(CreateCommentCommand createCommentCommand,string encodedName)
+        public async Task<IActionResult> CommentForTrip(CreateCommentCommand createCommentCommand, string encodedName)
         {
             var trip = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
             var tripId = trip.Id;
             createCommentCommand.TripId = tripId;
             await _mediator.Send(createCommentCommand);
             return RedirectToAction(nameof(Details), new { encodedName });
-           
+
         }
 
         // GET: Trip/Create
@@ -89,7 +90,7 @@ namespace AlpsTrips.MVC.Controllers
         public IActionResult Create(bool isSuccess = false)
         {
             ViewBag.IsSuccess = isSuccess;
-            
+
 
             return View();
 
@@ -100,7 +101,7 @@ namespace AlpsTrips.MVC.Controllers
         // POST: Trip
         // /Create
         [HttpPost]
-       [Authorize]
+        [Authorize]
         public async Task<IActionResult> Create(CreateTripCommand createTripCommand, [FromServices] IValidator<CreateTripCommand> validator)
         {
 
@@ -113,21 +114,46 @@ namespace AlpsTrips.MVC.Controllers
                 if (createTripCommand.ImageFile != null)
                 {
                     string folder = "images/";
-                    folder += Guid.NewGuid().ToString() + "_" + createTripCommand.ImageFile.FileName;
-
-                    createTripCommand.ImageUrl = "/" + folder;
-                    string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, folder);
-
-                    await createTripCommand.ImageFile.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                    createTripCommand.ImageUrl = await UploadImage(createTripCommand, folder);
                 }
+
+                if (createTripCommand.GalleryFiles != null)
+                {
+                    string folder = "gallery/";
+                    createTripCommand.Gallery = new List<GalleryDto>();
+
+                    foreach (var file in createTripCommand.GalleryFiles)
+                    {
+                        var gallery = new GalleryDto()
+                        {
+                            Name = file.FileName,
+                            Url = folder + Guid.NewGuid().ToString() + "_" + file.FileName
+
+                        };
+                        string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, gallery.Url);
+                        file.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+
+                        createTripCommand.Gallery.Add(gallery);
+                    }
+
+                }
+
                 await _mediator.Send(createTripCommand);
                 return RedirectToAction(nameof(Index), new { isSuccess = true });
-
-
             }
-
-
         }
+        private async Task<string> UploadImage(CreateTripCommand createTripCommand, string folderPath)
+        {
+
+            folderPath += Guid.NewGuid().ToString() + "_" + createTripCommand.ImageFile.FileName;
+
+            string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, folderPath);
+
+            await createTripCommand.ImageFile.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+
+            return "/" + folderPath;
+        }
+      
 
 
 
@@ -175,7 +201,7 @@ namespace AlpsTrips.MVC.Controllers
 
         }
 
-        
+
         [Route("Trip/{encodedName}/Delete")]
         [Authorize]
         public async Task<IActionResult> Delete(string encodedName, DeleteTripCommand deleteTripCommand)
@@ -201,3 +227,5 @@ namespace AlpsTrips.MVC.Controllers
 
     }
 }
+
+

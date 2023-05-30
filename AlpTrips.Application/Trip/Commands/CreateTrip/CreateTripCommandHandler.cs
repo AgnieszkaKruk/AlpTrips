@@ -21,11 +21,12 @@ namespace AlpTrips.Application.Trip.Commands.CreateTrip
         {
             var trip = _mapper.Map<Domain.Entities.Trip>(request);
             trip.SetEncodedName();
+          
 
             trip.CreatedById = _userContext.GetCurrentUser().Id;
             trip.User.Email = _userContext.GetCurrentUser().Email;
             trip.User.Name = _userContext.GetCurrentUser().Name;
-
+            
 
 
             await  _tripRepository.Create(trip);

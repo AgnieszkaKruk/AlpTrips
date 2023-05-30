@@ -32,5 +32,7 @@ namespace AlpTrips.Application.Dtos
 
         public List<Domain.Entities.Comment>? Comments { get; set; } = new List<Domain.Entities.Comment>();
 
+        public IFormFileCollection GalleryFiles { get; set; }
+        public List<GalleryDto> Gallery { get; set; }
     }
 }

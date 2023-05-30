@@ -15,12 +15,15 @@ namespace AlpTrips.Application.Mappings
                 Name = src.UserName,
                 Email = src.Email
             }));
+            
 
             CreateMap<Domain.Entities.Trip, TripDto>()
                 .ForMember(dto =>dto.UserName, opt =>opt.MapFrom(src =>src.User.Name))
                 .ForMember(dto => dto.Email, opt => opt.MapFrom(src => src.User.Email));
 
             CreateMap<TripDto, EditTripCommand>();
+            CreateMap<GalleryDto, TripGallery>();
+            CreateMap<TripGallery, GalleryDto>();
 
         }
     }
