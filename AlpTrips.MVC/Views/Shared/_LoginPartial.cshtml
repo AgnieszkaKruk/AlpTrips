@@ -10,12 +10,13 @@
                title="Manage">Hej @User.Identity.Name!</a>
         </li>
         <li class="nav-item">
-            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+            <form class="form-inline" asp-controller="Home" asp-action="Logout" asp-area="Identity"
               asp-route-returnUrl="@Url.Page("/", new { area = "" })"
                   method="post">
                 <button type="submit" class="nav-link btn btn-link text-dark">Wyloguj</button>
             </form>
         </li>
+
     }
     else
     {

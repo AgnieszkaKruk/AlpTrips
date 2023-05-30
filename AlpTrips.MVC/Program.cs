@@ -14,8 +14,8 @@ builder.Services.AddDbContext<AlpTripsDbContext>(
 
 
 
-//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    //.AddEntityFrameworkStores<AlpTripsDbContext>();
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<AlpTripsDbContext>();
 
 
 builder.Services.AddInfrastructure();

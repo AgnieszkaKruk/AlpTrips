@@ -16,12 +16,18 @@ html {
 .monospaced {
     margin-left:6px;
 }
+.zT³em {
+    background-image: url('/gallery/836363eb-83c0-4b92-9bb1-97beab9d4f29_Zinalrothorn01 (1).jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 
 .list-group {
     margin-top:20px;
     margin-bottom:70px;
 }
-.jumbotron.text-center {
+.zT³em1 {
     background-image: url('/images/00ad4ebb-a0c5-47da-96e8-92677de2d5f4_licensed-image.jpg');
 }
 
