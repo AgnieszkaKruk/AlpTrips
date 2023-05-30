@@ -8,7 +8,7 @@
 <hr />
 <div class="row">
     <div class="col-md-5 shadow-sm">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <form id="registerForm" asp-action="Register" asp-controller="Home" method="post">
 
            
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>

@@ -48,5 +48,12 @@ namespace AlpTrips.Infrastructure.Repositories
              _context.Trips.Remove(trip);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<Trip>> SearchTrip(string search)
+        {
+            var searchingTrips = await _context.Trips.Where(t=>t.Name.Contains(search))
+                .Include(t=>t.Gallery).ToListAsync();
+            return searchingTrips;
+        }
     }
 }
