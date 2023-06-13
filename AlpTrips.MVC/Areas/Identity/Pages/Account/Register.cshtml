@@ -8,9 +8,8 @@
 <hr />
 <div class="row">
     <div class="col-md-5 shadow-sm">
-        <form id="registerForm" asp-action="Register" asp-controller="Home" method="post">
+        <form id="registerForm" method="post">
 
-           
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
             <div class="form-floating mb-3">
                 <input asp-for="Input.Email" class="form-control" style="margin-top:10px;" autocomplete="username" aria-required="true" placeholder="name@example.com" />
@@ -30,6 +29,8 @@
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" style="margin-bottom:10px;">Zarejestruj</button>
         </form>
     </div>
+</div>
+
     @*<div class="col-md-6 col-md-offset-2">
         <section>
             <h3>Use another service to register.</h3>

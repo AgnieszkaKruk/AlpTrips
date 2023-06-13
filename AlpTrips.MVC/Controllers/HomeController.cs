@@ -65,7 +65,7 @@ public class HomeController : Controller
     public IActionResult Register()
     {
         TempData["register_message"] = "Zostałeś zarejestrowany.";
-        return RedirectToAction("Index");
+        return RedirectToAction("Index", new { isLogedin = true });
 
     }
 
