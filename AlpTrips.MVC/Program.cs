@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using AlpTrips.Application.Extensions;
 using AlpTrips.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Identity;
+using AlpsTrips.MVC.Models;
+using AlpsTrips.MVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,10 +15,10 @@ builder.Services.AddDbContext<AlpTripsDbContext>(
     );
 
 
-
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AlpTripsDbContext>();
-
+builder.Services.Configure<SMTPConfigModel>(builder.Configuration.GetSection("SMTPConfig"));
+builder.Services.AddScoped<IEmailService,EmailService>();
 
 builder.Services.AddInfrastructure();
 builder.Services.AddApplication();

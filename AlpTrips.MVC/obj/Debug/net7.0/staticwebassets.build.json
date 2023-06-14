@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5o7VBHXS39GyvQivjpDlt30OCBkqURyaiO1d2T8qGso=",
+  "Hash": "jIGxSLyVqfD8cq8u5EBSkJRhwJzt9+iKTjQd7w/ykyg=",
   "Source": "AlpsTrips.MVC",
   "BasePath": "_content/AlpsTrips.MVC",
   "Mode": "Default",
@@ -2225,6 +2225,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\g.gif"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\REJESTRACJA.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/REJESTRACJA.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\REJESTRACJA.jpg"
     },
     {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\smile.jpg",

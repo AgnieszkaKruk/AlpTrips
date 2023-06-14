@@ -36,6 +36,9 @@
                             <a class="nav-link text-dark @(currentUrl == "Trip/Create" ? "active" : "")" asp-area="" asp-controller="Trip" asp-action="Create">Dodaj nową</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark @(currentUrl == "Trip/SearchByParam" ? "active" : "")" asp-area="" asp-controller="Trip" asp-action="SearchByParam">Wyszukaj trasę wg potrzeb</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark @(currentUrl == "Privacy" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Privacy">Prywatność</a>
                         </li>
                         <li class="nav-item">

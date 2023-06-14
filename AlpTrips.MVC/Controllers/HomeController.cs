@@ -9,13 +9,13 @@ using AutoMapper;
 using MediatR;
 using AlpTrips.Application.Dtos;
 using AlpTrips.Application.Trip.Queries.SearchTripQuery;
+using AlpsTrips.MVC.Services;
 
 namespace AlpsTrips.MVC.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
     private readonly IMediator _mediator;
     private readonly IMapper _mapper;
 
@@ -24,11 +24,13 @@ public class HomeController : Controller
         _logger = logger;
         _mediator = mediator;
         _mapper = mapper;
+       
 
     }
 
-    public IActionResult Index()
+    public async Task<ViewResult> Index()
     {
+      
         return View();
     }
 

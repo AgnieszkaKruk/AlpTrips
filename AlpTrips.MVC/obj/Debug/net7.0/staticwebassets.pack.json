@@ -197,6 +197,10 @@
       "PackagePath": "staticwebassets\\images\\AlpTrips.png"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\REJESTRACJA.jpg",
+      "PackagePath": "staticwebassets\\images\\REJESTRACJA.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\StarFade.gif",
       "PackagePath": "staticwebassets\\images\\StarFade.gif"
     },
