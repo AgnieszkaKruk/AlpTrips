@@ -222,6 +222,16 @@ namespace AlpsTrips.MVC.Controllers
         }
 
 
+        [HttpGet]
+        [Route("Trip/SearchByParam")]
+
+        public ViewResult SearchByParam()
+        {
+            return View();
+            //var tripDto = await _mediator.Send(new SearchTripByParamQuery());
+
+        }
+
 
 
 

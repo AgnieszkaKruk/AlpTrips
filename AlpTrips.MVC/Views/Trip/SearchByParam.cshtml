@@ -1,0 +1,62 @@
+﻿@page
+@using AlpTrips.Application.Dtos;
+@model IEnumerable<TripDto>;
+
+<div class="container">
+    <h3 class="display-4">Wyszukaj trasę:</h3>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <form id="searchForm" method="get">
+                <div class="form-group  mb-3">
+                    <label class="control-label" for="Level">Poziom trudności</label>
+                    <select id="Level" name="Level" class="form-control">
+                        <option value="">Wybierz poziom</option>
+                        <option value="1">1 - Bardzo łatwy</option>
+                        <option value="2">2 - Łatwy</option>
+                        <option value="3">3 - Średni</option>
+                        <option value="4">4 - Trudny</option>
+                        <option value="5">5 - Bardzo trudny</option>
+                    </select>
+                </div>
+                <div class="form-group  mb-3">
+                    <label class="control-label" for="Length">Długość trasy (w km)</label>
+                    <select id="Length" name="Length" class="form-control">
+                        <option value="">Wybierz długość</option>
+                        <option value="0-10">0-10 km</option>
+                        <option value="11-15">11-15 km</option>
+                        <option value="16-20">16-20 km</option>
+                        <option value="21-25">21-25 km</option>
+                        <option value=">25">Powyżej 25 km</option>
+                    </select>
+                </div>
+                <div class="form-group  mb-3">
+                    <label class="control-label" for="Elevation">Przewyższenie (w metrach)</label>
+                    <select id="Elevation" name="Elevation" class="form-control">
+                        <option value="">Wybierz przewyższenie</option>
+                        <option value="0-1000">Do 1000 m n.p.m.</option>
+                        <option value="1001-1500">1001-1500 m n.p.m.</option>
+                        <option value="1501-2000">1501-2000 m n.p.m.</option>
+                        <option value="2001-2500">2001-2500 m n.p.m.</option>
+                        <option value=">2500">Powyżej 2500 m n.p.m.</option>
+                    </select>
+                </div>
+                <div class="form-group  mb-3">
+                    <label class="control-label" for="Time">Czas przejścia</label>
+                    <select id="Time" name="Time" class="form-control">
+                        <option value="">Wybierz czas</option>
+                        <option value="0-5">Do 5 godzin</option>
+                        <option value="6-10">6-10 godzin</option>
+                        <option value="11-15">11-15 godzin</option>
+                        <option value="16-20">16-20 godzin</option>
+                        <option value=">20">Powyżej 20 godzin</option>
+                    </select>
+                </div>
+                <div class="form-group  mb-3">
+                    <button id="searchSubmit" type="submit" class="btn btn-primary">Szukaj</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
