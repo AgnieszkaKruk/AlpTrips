@@ -3,11 +3,13 @@ using AlpTrips.Application;
 using AlpTrips.Application.Comment.Commands.CreateComment;
 using AlpTrips.Application.Comment.Queries.GetAllCommentsQuery;
 using AlpTrips.Application.Comment.Queries.GetCommentsForTripQuery;
+using AlpTrips.Application.Dtos;
 using AlpTrips.Application.Trip.Commands.CreateTrip;
 using AlpTrips.Application.Trip.Commands.DeleteTrip;
 using AlpTrips.Application.Trip.Commands.EditTrip;
 using AlpTrips.Application.Trip.Queries.GetAllTrips;
 using AlpTrips.Application.Trip.Queries.GetTripByEncodedName;
+using AlpTrips.Application.Trip.Queries.SearchTripByParam;
 using AutoMapper;
 using FluentValidation;
 using MediatR;
@@ -223,14 +225,25 @@ namespace AlpsTrips.MVC.Controllers
 
 
         [HttpGet]
-        [Route("Trip/SearchByParam")]
-
-        public ViewResult SearchByParam()
+       
+        public IActionResult SearchByParam()
         {
             return View();
-            //var tripDto = await _mediator.Send(new SearchTripByParamQuery());
-
         }
+
+        [HttpPost]
+        public async Task<IActionResult> SearchByParam(int? level, string? length, string? elevation, string? time)
+        {
+            var tripDtos = await _mediator.Send(new SearchTripByParamQuery(level,length,elevation, time));
+            return View("SearchResults",tripDtos);
+        }
+
+        
+        public async Task<IActionResult> SearchResults(IEnumerable<TripDto> tripDtos)
+        {
+            return View(tripDtos);
+        }
+
 
 
 

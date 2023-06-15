@@ -8,10 +8,10 @@
 
     <div class="row">
         <div class="col-md-4">
-            <form id="searchForm" method="get">
+            <form asp-action ="SearchByParam"  asp-controller="Trip">
                 <div class="form-group  mb-3">
-                    <label class="control-label" for="Level">Poziom trudności</label>
-                    <select id="Level" name="Level" class="form-control">
+                    <label class="control-label" for="level">Poziom trudności</label>
+                    <select id="level" name="level" class="form-control">
                         <option value="">Wybierz poziom</option>
                         <option value="1">1 - Bardzo łatwy</option>
                         <option value="2">2 - Łatwy</option>
@@ -21,8 +21,8 @@
                     </select>
                 </div>
                 <div class="form-group  mb-3">
-                    <label class="control-label" for="Length">Długość trasy (w km)</label>
-                    <select id="Length" name="Length" class="form-control">
+                    <label class="control-label" for="length">Długość trasy (w km)</label>
+                    <select id="length" name="length" class="form-control">
                         <option value="">Wybierz długość</option>
                         <option value="0-10">0-10 km</option>
                         <option value="11-15">11-15 km</option>
@@ -32,8 +32,8 @@
                     </select>
                 </div>
                 <div class="form-group  mb-3">
-                    <label class="control-label" for="Elevation">Przewyższenie (w metrach)</label>
-                    <select id="Elevation" name="Elevation" class="form-control">
+                    <label class="control-label" for="elevation">Przewyższenie (w metrach)</label>
+                    <select id="elevation" name="elevation" class="form-control">
                         <option value="">Wybierz przewyższenie</option>
                         <option value="0-1000">Do 1000 m n.p.m.</option>
                         <option value="1001-1500">1001-1500 m n.p.m.</option>
@@ -43,8 +43,8 @@
                     </select>
                 </div>
                 <div class="form-group  mb-3">
-                    <label class="control-label" for="Time">Czas przejścia</label>
-                    <select id="Time" name="Time" class="form-control">
+                    <label class="control-label" for="time">Czas przejścia</label>
+                    <select id="time" name="time" class="form-control">
                         <option value="">Wybierz czas</option>
                         <option value="0-5">Do 5 godzin</option>
                         <option value="6-10">6-10 godzin</option>

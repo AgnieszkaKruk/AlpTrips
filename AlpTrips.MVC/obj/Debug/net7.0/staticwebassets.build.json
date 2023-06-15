@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m6qPU1PsAdrMngvNZHnUj9jRglfH4UCW4xpqJEjd5vA=",
+  "Hash": "GitsHokZtKIRUhuILMsoj7PaeTerhPhGHjncoiuE/SI=",
   "Source": "AlpsTrips.MVC",
   "BasePath": "_content/AlpsTrips.MVC",
   "Mode": "Default",
@@ -3330,6 +3330,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\videos\\AlpTrips.mp4",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "videos/AlpTrips.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\videos\\AlpTrips.mp4"
     }
   ]
 }
