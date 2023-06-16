@@ -75,7 +75,7 @@ namespace AlpsTrips.MVC.Controllers
             return View(tripDto);
         }
 
-
+        [Authorize]
         [Route("Trip/{encodedName}/Details/Comments/Create")]
         public async Task<IActionResult> CommentForTrip(CreateCommentCommand createCommentCommand, string encodedName)
         {
@@ -155,7 +155,7 @@ namespace AlpsTrips.MVC.Controllers
 
             return "/" + folderPath;
         }
-      
+
 
 
 
@@ -164,10 +164,9 @@ namespace AlpsTrips.MVC.Controllers
         [Route("Trip/{encodedName}/Edit")]
         [Authorize]
         public async Task<IActionResult> Edit(string encodedName)
-        {
+        { 
             var tripDto = await _mediator.Send(new GetTripDtoByEncodedNameQuery(encodedName));
-            EditTripCommand model = _mapper.Map<EditTripCommand>(tripDto);
-            return View(model);
+            return View(tripDto);
         }
 
 

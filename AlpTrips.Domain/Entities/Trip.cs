@@ -20,11 +20,11 @@ namespace AlpTrips.Domain.Entities
         public string? Link { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
         public User User { get; set; } 
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public string? EncodedName { get; set; }
        
         public string? CreatedById { get; set; }
-        public IdentityUser? CreatedBy { get; set; }
+        public User? CreatedBy { get; set; }
         public string? ImageUrl { get; set; }
         public List<Comment>? Comments { get; set; } = new List<Comment>();
 

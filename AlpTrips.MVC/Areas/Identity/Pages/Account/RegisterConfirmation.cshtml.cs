@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AlpsTrips.MVC.Models;
 using AlpsTrips.MVC.Services;
+using AlpTrips.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -19,11 +20,11 @@ namespace AlpsTrips.MVC.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class RegisterConfirmationModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<User> _userManager;
         private readonly IEmailSender _sender;
         private readonly IEmailService _emailService;
 
-        public RegisterConfirmationModel(UserManager<IdentityUser> userManager, IEmailSender sender, IEmailService emailService)
+        public RegisterConfirmationModel(UserManager<User> userManager, IEmailSender sender, IEmailService emailService)
         {
             _userManager = userManager;
             _sender = sender;

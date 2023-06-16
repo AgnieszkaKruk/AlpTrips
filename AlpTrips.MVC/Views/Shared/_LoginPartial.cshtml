@@ -1,13 +1,17 @@
-﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+﻿@using AlpTrips.Domain.Entities
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
 
 <ul class="navbar-nav">
     @if (SignInManager.IsSignedIn(User))
     {
+        var user = await UserManager.GetUserAsync(User);
+       
+
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index"
-               title="Manage">Hej @User.Identity.Name!</a>
+               title="Manage">Hej @user.Name!</a>
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-page="/Account/Logout" asp-area="Identity"
@@ -16,7 +20,6 @@
                 <button type="submit" class="nav-link btn btn-link text-dark">Wyloguj</button>
             </form>
         </li>
-
     }
     else
     {

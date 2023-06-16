@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AlpTrips.Infrastructure.Persistence
 {
-    public class AlpTripsDbContext : IdentityDbContext
+    public class AlpTripsDbContext : IdentityDbContext<User>
     {
         public AlpTripsDbContext(DbContextOptions<AlpTripsDbContext> options) : base(options)
         {
@@ -13,48 +13,31 @@ namespace AlpTrips.Infrastructure.Persistence
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Trip> Trips { get; set; }
         public DbSet<TripGallery> Galleries { get; set; }
-        public DbSet<User> Users { get; set; }
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Trip>(eb =>
             {
                 eb.HasOne(t => t.User).WithMany().HasForeignKey(t => t.UserId);
-                eb.HasMany(t => t.Comments).WithOne(c =>c.Trip).HasForeignKey(c => c.TripId).OnDelete(DeleteBehavior.ClientCascade);
+                eb.HasMany(t => t.Comments).WithOne(c => c.Trip).HasForeignKey(c => c.TripId).OnDelete(DeleteBehavior.ClientCascade);
 
             });
 
-           
+
 
             modelBuilder.Entity<User>(eb =>
             {
                 eb.Property(p => p.Name).IsRequired();
                 eb.HasMany(p => p.CommentsList).WithOne(c => c.User);
                 eb.HasMany(p => p.TripsList).WithOne(c => c.User);
-                eb.HasData(new User() { Id = 1, Email = "dziku@gmail.com", Name = "Dziku" },
-                    new User() { Name = "Aga", Id = 2, Email = "aga@w.pl" },
-                    new User() { Email = "tomake@w.pl", Id = 3, Name = "Tomek" });
+                
             });
             modelBuilder.Entity<Trip>(eb =>
             {
                 eb.Property(p => p.Name).IsRequired();
                 eb.Property(p => p.CreatedDate).HasPrecision(3);
-
-                eb.HasData(new Trip()
-                {
-                    Id = 1,
-                    CreatedDate = DateTime.Now,
-                    Name = "Weisskugel 3739m npm",
-                    Description = "3 najwyższy sczyt Austrii",
-                    Level = 2,
-                    MountainRange = "Alpy Ötztalskie",
-                    Link = "https://dzikumaniak.pl/2022/10/28/weiskugel/",
-                    UserId = 1
-                },
-                    new Trip() { Id = 2, CreatedDate = DateTime.Now, Name = "Weisshorn 4505m npm", Description = "Jeden z trudnijeszych szczytów w Alpach dla średniozaawansowanych", Level = 4, MountainRange = "Alpy Pennińskie", Time = 7, Link = "https://dzikumaniak.pl/2022/08/14/weisshorn-4505m-48h/", UserId = 2 },
-                    new Trip() { Id = 3, CreatedDate = DateTime.Now, Name = "Trawers Wildspitze 3768m npm", Description = "Trawers przez Ostgrat", Level = 2, MountainRange = "Alpy Ötztalskie", Link = "https://dzikumaniak.pl/2022/06/08/trawers-wildspitze/", UserId = 3 }
-                    );
+  
 
             });
 

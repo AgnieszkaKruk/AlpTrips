@@ -14,8 +14,8 @@ namespace AlpTrips.Application.Trip.Commands.CreateTrip
             _httpContextAccessor = httpContextAccessor;
 
             RuleFor(c => c.Name)
-                .NotEmpty()
-                .MinimumLength(3)
+                .NotEmpty().WithMessage("Nazwa wycieczki musi mieć co najmniej 3 litery")
+                .MinimumLength(3).WithMessage("Nazwa wycieczki musi mieć co najmniej 3 litery")
                 .WithMessage("Nazwa wycieczki musi mieć co najmniej 3 litery")
                 .MaximumLength(25)
                 .Custom((value, context) =>
@@ -30,30 +30,29 @@ namespace AlpTrips.Application.Trip.Commands.CreateTrip
                 );
 
             RuleFor(c => c.MountainRange)
-                .NotEmpty()
-                .MinimumLength(3)
+                .NotEmpty().WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
+                .MinimumLength(3).WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
                 .WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
                 .MaximumLength(25);
 
             RuleFor(c => c.Elevation)
-                .NotEmpty()
+                .NotEmpty().WithMessage("Przewyższenie musi być wartoscią dodatnią")
                 .GreaterThan(0)
                 .WithMessage("Przewyższenie musi być wartoscią dodatnią");
 
             RuleFor(c => c.Length)
-                .NotEmpty()
+                .NotEmpty().WithMessage("Długość trasy musi być wartoscią dodatnią")
                 .GreaterThan(0)
                 .WithMessage("Długość trasy musi być wartoscią dodatnią");
 
             RuleFor(c => c.Time)
-                .NotEmpty()
+                .NotEmpty().WithMessage("Czas przejścia musi być wartoscią dodatnią")
                 .GreaterThan(0)
                 .WithMessage("Czas przejścia musi być wartoscią dodatnią");
 
             RuleFor(c => c.Level)
-                .NotEmpty()
-                .GreaterThan(0)
-                .WithMessage("Poziom trudności musi być między 1 i 5")
+                .NotEmpty().WithMessage("Poziom trudności musi być między 1 i 5")
+                .GreaterThan(0).WithMessage("Poziom trudności musi być między 1 i 5")
                 .LessThanOrEqualTo(5)
                 .WithMessage("Poziom trudności musi być między 1 i 5");
 

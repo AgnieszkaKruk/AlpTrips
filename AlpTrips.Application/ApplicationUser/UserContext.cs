@@ -31,5 +31,6 @@ namespace AlpTrips.Application.ApplicationUser
 
             return new CurrentUser(userId, userEmail, userName);
         }
+
     }
 }

@@ -12,6 +12,7 @@ namespace AlpTrips.Infrastructure.Extensions
         {
             services.AddScoped<ITripRepository, TripRepository>();
             services.AddScoped<ICommentRepository,CommentRepository>();
+            services.AddScoped<IUserRepository,UserRepository>();
        
         }
     }
