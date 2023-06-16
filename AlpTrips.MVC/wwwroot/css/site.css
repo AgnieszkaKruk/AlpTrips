@@ -13,9 +13,22 @@ html {
     margin-top: 50px;
     margin-left: 3px;
 }
+.widerinput {
+    width: 50%;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
 .monospaced {
     margin-left:6px;
 }
+.time-frame {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .zT³em {
     background-image: url('/gallery/836363eb-83c0-4b92-9bb1-97beab9d4f29_Zinalrothorn01 (1).jpg');
     background-size: cover;

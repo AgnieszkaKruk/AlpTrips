@@ -71,6 +71,31 @@
                 <li class="list-group-item"><span class="font-weight-bold">Poziom trudności: </span>@Model.Level</li>
                 <li class="list-group-item"><span class="font-weight-bold">Długość trasy: </span>@Model.Length</li>
                 <li class="list-group-item"><span class="font-weight-bold">Przewyższenie: </span>@Model.Elevation</li>
+                @if (TempData["Time"] != null)
+                {
+                    <li class="list-group-item">
+                        <div class="time-frame">
+                            <span class="font-weight-bold">@TempData["Time"]</span>
+                        </div>
+                    </li>
+                }
+                else
+                {
+                    <li class="list-group-item">
+                        <span class="font-weight-bold">
+                            <form method="post" asp-action="CountTime" asp-controller="Trip">
+                                <input type="hidden" name="length" value="@Model.Length" />
+                                <input type="hidden" name="elevation" value="@Model.Elevation" />
+                                <input type="number" name="speed" placeholder="Prędkość marszu w km/h" required />
+                                <input class="widerinput" type="number" name="elevationSpeed" placeholder="Prędkość na przewyższeniach w m/h" required />
+                                <input type="hidden" name="encodedName" value="@Model.EncodedName" /> 
+                                <button type="submit" class="btn btn-outline-primary" style="margin-left:0px;">Oblicz szacowany czas przejścia</button>
+                            </form>
+                        </span>
+                    </li>
+                }
+               
+
 
 
             </ul>

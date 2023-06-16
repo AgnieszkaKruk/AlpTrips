@@ -197,9 +197,6 @@ namespace AlpsTrips.MVC.Controllers
                 await _mediator.Send(editTripCommand);
                 return RedirectToAction(nameof(Index));
             }
-
-
-
         }
 
 
@@ -223,8 +220,7 @@ namespace AlpsTrips.MVC.Controllers
         }
 
 
-        [HttpGet]
-       
+        [HttpGet]    
         public IActionResult SearchByParam()
         {
             return View();
@@ -242,6 +238,21 @@ namespace AlpsTrips.MVC.Controllers
         {
             return View(tripDtos);
         }
+
+        [HttpPost]
+        public IActionResult CountTime(int length, int elevation, int speed, int elevationSpeed, string encodedName)
+        {
+            var elevationInKm = (double)elevation / 1000;
+            var elevationSpeedInKm = (double)elevationSpeed / 1000;
+            var timee = length / speed + elevationInKm / elevationSpeedInKm;
+            var time = Math.Round(timee, 2);
+            string timeDistance = $"Twój orientacyjny czas przejścia to {time} godzin";
+
+            TempData["Time"] = timeDistance;
+
+            return RedirectToAction(nameof(Details), new { encodedName = encodedName });
+        }
+
 
 
 

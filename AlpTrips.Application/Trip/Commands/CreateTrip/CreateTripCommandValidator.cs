@@ -29,11 +29,11 @@ namespace AlpTrips.Application.Trip.Commands.CreateTrip
 
                 );
 
-            RuleFor(c => c.MountainRange)
-                .NotEmpty().WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
-                .MinimumLength(3).WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
-                .WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
-                .MaximumLength(25);
+            //RuleFor(c => c.MountainRange)
+            //    .NotEmpty().WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
+            //    .MinimumLength(3).WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
+            //    .WithMessage("Nazwa pasma górskiego musi mieć co najmniej 3 litery")
+            //    .MaximumLength(25);
 
             RuleFor(c => c.Elevation)
                 .NotEmpty().WithMessage("Przewyższenie musi być wartoscią dodatnią")
