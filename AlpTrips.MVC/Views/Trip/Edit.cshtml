@@ -15,8 +15,16 @@
             
                 <form asp-action="Edit" enctype="multipart/form-data" method="post" asp-controller="Trip">
 
-                  
-
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Name">Nazwa</label>
+                        <input class="form-control" type="text" asp-for="Name" id="name-input">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Height">Wysokość n.p.m.</label>
+                        <input class="form-control" type="text" asp-for="Height" id="height-input">
+                        <span asp-validation-for="Height" class="text-danger"></span>
+                    </div>
                     <div class="form-group mb-3">
                         <label class="control-label" asp-for="Description">Opis</label>
                         <textarea class="form-control"  asp-for="Description"></textarea>
@@ -25,57 +33,131 @@
 
                     <div class="form-group mb-3">
                         <label class="control-label" asp-for="MountainRange">Pasmo górskie</label>
-                        <input class="form-control" type="text" asp-for="MountainRange">
-                        <span asp-validation-for="MountainRange" class="text-danger"></span>
+                        <select class="form-control" id="MountainRange" asp-for="MountainRange" onchange="showSubMountainRanges(this);">
+                            <option value="">Wybierz pasmo górskie</option>
+                            <option value="Alpy Wschodnie">Alpy Wschodnie</option>
+                            <option value="Alpy Centralne">Alpy Centralne</option>
+                            <option value="Alpy Zachodnie">Alpy Zachodnie</option>
+                            <option value="Alpy Południowe">Alpy Południowe</option>
+                        </select>
+                        <span asp-validation-for="MountainRange" class="text-danger" id="mountainRangeInvalidFeedback" style="display: none">Wybierz pasmo górskie</span>
                     </div>
+
+                    <div class="form-group mb-3" id="subMountainRangeContainer" style="display: none">
+                        <label class="control-label" asp-for="MountainSubRange">Podregion górski (Alpy Wschodnie)</label>
+                        <select class="form-control" asp-for="MountainSubRange">
+                            <option value="">Wybierz podregion górski</option>
+                            <option value="Alpy Julijskie">Alpy Julijskie</option>
+                            <option value="Dolomity">Dolomity</option>
+                            <option value="BerninaGruppe">BerninaGruppe</option>
+                            <!-- Dodaj inne opcje dla Alp Wschodnich -->
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3" id="subMountainRangeContainer2" style="display: none">
+                        <label class="control-label" asp-for="MountainSubRange">Podregion górski (Alpy Centralne)</label>
+                        <select class="form-control" asp-for="MountainSubRange">
+                            <option value="">Wybierz podregion górski</option>
+                            <option value="Berner Oberland">Berner Oberland</option>
+                            <option value="Pennińskie Alpy Centralne">Pennińskie Alpy Centralne</option>
+                            <option value="Glarner Alpen">Glarner Alpen</option>
+                            <!-- Dodaj inne opcje dla Alp Centralnych -->
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3" id="subMountainRangeContainer3" style="display: none">
+                        <label class="control-label" asp-for="MountainSubRange">Podregion górski (Alpy Zachodnie)</label>
+                        <select class="form-control" asp-for="MountainSubRange">
+                            <option value="">Wybierz podregion górski</option>
+                            <option value="Mont Blanc">Mont Blanc</option>
+                            <option value="Grandes Rousses">Grandes Rousses</option>
+                            <option value="Vanoise">Vanoise</option>
+                            <option value="Écrins">Écrins</option>
+                            <!-- Dodaj inne opcje dla Alp Zachodnich -->
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3" id="subMountainRangeContainer4" style="display: none">
+                        <label class="control-label" asp-for="MountainSubRange">Podregion górski (Alpy Południowe)</label>
+                        <select class="form-control" asp-for="MountainSubRange">
+                            <option value="">Wybierz podregion górski</option>
+                            <option value="Monte Rosa">Monte Rosa</option>
+                            <!-- Dodaj inne opcje dla Alp Południowych -->
+                        </select>
+                    </div>
+
 
 
                     <div class="form-group mb-3">
                         <label class="control-label" asp-for="Level">Poziom trudności</label>
-                        <input class="form-control" type="number" asp-for="Level">
+                        <select class="form-control" asp-for="Level" required>
+                            <option value="" class="grey">
+                                Wybierz poziom trudności trasy
+                                (<a href="http://www.albumwypraw.waw.pl/gory/alpejska_skala_trudnosci/index.html" target="_blank">skala alpejska</a>)
+                            </option>
+                            <option value="1">1 - Bardzo łatwy (F)</option>
+                            <option value="2">2 - Łatwy (PD)</option>
+                            <option value="3">3 - Średni (AD)</option>
+                            <option value="4">4 - Trudny (D)</option>
+                            <option value="5">5 - Bardzo trudny (TD)</option>
+                        </select>
                         <span asp-validation-for="Level" class="text-danger"></span>
                     </div>
 
                     <div class="form-group mb-3">
-                        <label class="control-label" asp-for="Time">Czas przejścia</label>
+                        <label class="control-label" asp-for="Time">Szacowany czas przejścia (ilość godzin)</label>
                         <input class="form-control" type="number" asp-for="Time">
                         <span asp-validation-for="Time" class="text-danger"></span>
                     </div>
 
                     <div class="form-group mb-3">
-                        <label class="control-label" asp-for="Length">Dystans</label>
+                        <label class="control-label" asp-for="Length">Dystans (w kilomatrach)</label>
                         <input class="form-control" type="number" asp-for="Length">
                         <span asp-validation-for="Length" class="text-danger"></span>
                     </div>
 
                     <div class="form-group mb-3">
-                        <label class="control-label" asp-for="Elevation">Przewyższenie</label>
+                        <label class="control-label" asp-for="Elevation">Przewyższenie (w metrach)</label>
                         <input class="form-control" type="number" asp-for="Elevation">
                         <span asp-validation-for="Elevation" class="text-danger"></span>
+                    </div>
 
-                    
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Link">Link do relacji</label>
+                        <input class="form-control" type="text" asp-for="Link">
+                        <span asp-validation-for="Link" class="text-danger"></span>
+                    </div>
 
-                        <div class="form-group mb-3">
-                            <label class="control-label" asp-for="Link">Link do relacji</label>
-                            <input class="form-control" type="text" asp-for="Link">
-                            <span asp-validation-for="Link" class="text-danger"></span>
+                    <div class="form-group mb-3">
+                        <label asp-for="ImageFile" class="control-label">Zdjęcie główne</label>
+                        <div class="custom-file">
+                            <input asp-for="ImageFile" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile"></label>
                         </div>
+                    </div>
 
-                        <div class="form-group mb-3">
-                            <label asp-for="ImageFile" class="control-label">Image</label>
-                            <div class="custom-file">
-                                <input asp-for="ImageFile" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile"></label>
-                            </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="GalleryFiles" class="control-label">Zdjęcia do galerii</label>
+                        <div class="custom-file">
+                            <input asp-for="GalleryFiles" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile"></label>
                         </div>
-
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <button type="submit" class="btn btn-outline-primary"> Dodaj</button>
-                            </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="control-label">Sprawdź i wyszukaj lokalizację</label>
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="location-input" placeholder="Wyszukaj lokalizację" style="font-weight: bold;">
+                            <div id="map" style="width: 100%; height: 300px; margin-top: 10px;"></div>
+                            <input type="hidden" name="latitude" id="latitude">
+                            <input type="hidden" name="longitude" id="longitude">
                         </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-outline-primary">Zapisz</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -84,9 +166,69 @@
     @section Scripts {
         @{
             await Html.RenderPartialAsync("_ValidationScriptsPartial");
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdOJoosCHEQU_6Jj7u3Ad7OcJkDjt_Vgo&libraries=places"></script>
+            <script>
+                function initMap() {
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: { lat: 0, lng: 0 },
+                        zoom: 8
+                    });
+
+                    var marker = new google.maps.Marker({
+                        map: map
+                    });
+
+                    var input = document.getElementById('location-input');
+                    var autocomplete = new google.maps.places.Autocomplete(input);
+
+                    autocomplete.addListener('place_changed', function () {
+                        var place = autocomplete.getPlace();
+                        if (place.geometry && place.geometry.location) {
+                            var location = place.geometry.location;
+                            map.setCenter(location);
+                            marker.setPosition(location);
+
+                            // Pobranie współrzędnych i wywołanie funkcji geocodeAddress()
+                            var latitude = location.lat();
+                            var longitude = location.lng();
+                            geocodeAddress(latitude, longitude);
+                        }
+                    });
+                }
+                initMap();
+                function geocodeAddress(latitude, longitude) {
+
+                    document.getElementById('latitude').value = latitude;
+                    document.getElementById('longitude').value = longitude;
+                    console.log(latitude, longitude);
+                }
+
+
+
+
+            </script>
+            <script>
+                function FillInput() {
+                    console.log("FillInput() function has been called.");
+                    var nameInput = document.getElementById("name-input");
+                    var locationInput = document.getElementById("location-input");
+
+                    nameInput.addEventListener("input", function () {
+                        locationInput.value = nameInput.value;
+                    });
+                }
+
+                FillInput();
+
+            </script>
 
         }
     }
+
+        
+    
 
 
 

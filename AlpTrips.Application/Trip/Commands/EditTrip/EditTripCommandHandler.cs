@@ -26,7 +26,10 @@ namespace AlpTrips.Application.Trip.Commands.EditTrip
             trip.CreatedDate = DateTime.Now;
             trip.ImageUrl = request.ImageUrl;
             trip.Link = request.Link;
-           
+            trip.Latitude = request.Latitude;
+            trip.Longitude = request.Longitude;
+            trip.MountainSubRange = request.MountainSubRange;
+
             trip.MountainRange = request.MountainRange;
            
 

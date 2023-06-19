@@ -176,7 +176,7 @@ namespace AlpsTrips.MVC.Controllers
         [HttpPost]
         [Route("Trip/{encodedName}/Edit")]
         [Authorize]
-        public async Task<IActionResult> Edit(string encodedName, EditTripCommand editTripCommand, [FromServices] IValidator<EditTripCommand> validator)
+        public async Task<IActionResult> Edit(string encodedName, EditTripCommand editTripCommand, [FromServices] IValidator<EditTripCommand> validator, string latitude, string longitude)
         {
 
             if (!ModelState.IsValid)
@@ -195,6 +195,27 @@ namespace AlpsTrips.MVC.Controllers
 
                     await editTripCommand.ImageFile.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
                 }
+                if (editTripCommand.GalleryFiles != null)
+                {
+                    string folder = "gallery/";
+                    editTripCommand.Gallery = new List<GalleryDto>();
+
+                    foreach (var file in editTripCommand.GalleryFiles)
+                    {
+                        var gallery = new GalleryDto()
+                        {
+                            Name = file.FileName,
+                            Url = folder + Guid.NewGuid().ToString() + "_" + file.FileName
+
+                        };
+                        string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, gallery.Url);
+                        file.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+
+                        editTripCommand.Gallery.Add(gallery);
+                    }
+
+                }
+
                 await _mediator.Send(editTripCommand);
                 return RedirectToAction(nameof(Index));
             }

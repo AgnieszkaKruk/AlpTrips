@@ -29,6 +29,7 @@ namespace AlpTrips.Application.Trip.Commands.CreateTrip
             trip.UserId = trip.CreatedById;
             trip.Latitude = request.Latitude;
             trip.Longitude= request.Longitude;
+            trip.MountainSubRange = request.MountainSubRange;
 
             await _tripRepository.Create(trip);
             
