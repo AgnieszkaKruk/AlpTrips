@@ -19,8 +19,9 @@
 }
 
 <div class="container">
-    <h4 class="display-4">@Model.Name</h4>
-    <span>Pasmo górskie: @Model.MountainRange</span>
+    <h4 class="display-4">@Model.Name @Model.Height.ToString().Trim()m n.p.m.</h4>
+
+    <span>Pasmo górskie: @Model.MountainRange, @Model.MountainSubRange </span>
     <div>
         @for (int i = 1; i <= 5; i++)
         {
@@ -68,9 +69,32 @@
                 </button>
             </div>
             <ul class="list-group">
-                <li class="list-group-item"><span class="font-weight-bold">Poziom trudności: </span>@Model.Level</li>
-                <li class="list-group-item"><span class="font-weight-bold">Długość trasy: </span>@Model.Length</li>
-                <li class="list-group-item"><span class="font-weight-bold">Przewyższenie: </span>@Model.Elevation</li>
+                <li class="list-group-item">
+                    <span class="font-weight-bold">Poziom trudności: </span>
+                    @switch (Model.Level)
+                    {
+                        case 1:
+                            <span>1 - Bardzo łatwy (F)</span>
+                            break;
+                        case 2:
+                            <span>2 - Łatwy (PD)</span>
+                            break;
+                        case 3:
+                            <span>3 - Średni (AD)</span>
+                            break;
+                        case 4:
+                            <span>4 - Trudny (D)</span>
+                            break;
+                        case 5:
+                            <span>5 - Bardzo trudny (TD)</span>
+                            break;
+                        default:
+                            <span>Nieznany poziom trudności</span>
+                            break;
+                    }
+                </li>
+                <li class="list-group-item"><span class="font-weight-bold">Długość trasy: </span>@Model.Length.ToString().Trim()km </li>
+                <li class="list-group-item"><span class="font-weight-bold">Przewyższenie: </span>@Model.Elevation.ToString().Trim()m </li>
                 @if (TempData["Time"] != null)
                 {
                     <li class="list-group-item">

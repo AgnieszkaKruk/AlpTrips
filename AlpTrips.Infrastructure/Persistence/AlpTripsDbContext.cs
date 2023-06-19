@@ -13,6 +13,8 @@ namespace AlpTrips.Infrastructure.Persistence
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Trip> Trips { get; set; }
         public DbSet<TripGallery> Galleries { get; set; }
+
+       
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -40,6 +42,7 @@ namespace AlpTrips.Infrastructure.Persistence
   
 
             });
+          
 
 
 

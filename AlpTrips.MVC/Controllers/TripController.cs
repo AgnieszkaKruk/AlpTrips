@@ -104,7 +104,7 @@ namespace AlpsTrips.MVC.Controllers
         // /Create
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> Create(CreateTripCommand createTripCommand, [FromServices] IValidator<CreateTripCommand> validator)
+        public async Task<IActionResult> Create(CreateTripCommand createTripCommand, [FromServices] IValidator<CreateTripCommand> validator, string latitude, string longitude)
         {
 
             if (!ModelState.IsValid)
@@ -134,11 +134,12 @@ namespace AlpsTrips.MVC.Controllers
                         };
                         string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, gallery.Url);
                         file.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
-
+                      
                         createTripCommand.Gallery.Add(gallery);
                     }
 
                 }
+             
 
                 await _mediator.Send(createTripCommand);
                 return RedirectToAction(nameof(Index), new { isSuccess = true });

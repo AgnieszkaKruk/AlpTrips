@@ -27,7 +27,7 @@ namespace AlpTrips.Infrastructure.Repositories
                 return user.Name;
             }
 
-            return null; // lub inna wartość domyślna, jeśli użytkownik o danym ID nie został znaleziony
+            return null; 
         }
 
 

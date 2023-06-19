@@ -33,3 +33,41 @@
     }
 }
 
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 0, lng: 0 },
+        zoom: 8
+    });
+
+    var marker = new google.maps.Marker({
+        map: map
+    });
+
+    var input = document.getElementById('location-input');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+
+    autocomplete.addListener('place_changed', function () {
+        var place = autocomplete.getPlace();
+        if (place.geometry && place.geometry.location) {
+            var location = place.geometry.location;
+            map.setCenter(location);
+            marker.setPosition(location);
+        }
+    });
+}
+
+function FillInput() {
+    console.log("FillInput() function has been called.");
+    var nameInput = document.getElementById("name-input");
+    var locationInput = document.getElementById("location-input");
+
+    nameInput.addEventListener("input", function () {
+        locationInput.value = nameInput.value;
+    });
+}
+
+
+
+
+
+

@@ -27,10 +27,10 @@ namespace AlpTrips.Application.Trip.Commands.CreateTrip
             trip.User.Email = _userContext.GetCurrentUser().Email;
             trip.User.Name = _userContext.GetCurrentUser().Name;
             trip.UserId = trip.CreatedById;
-            
+            trip.Latitude = request.Latitude;
+            trip.Longitude= request.Longitude;
 
-
-            await  _tripRepository.Create(trip);
+            await _tripRepository.Create(trip);
             
             return Unit.Value;
         }

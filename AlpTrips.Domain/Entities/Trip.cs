@@ -12,6 +12,8 @@ namespace AlpTrips.Domain.Entities
         public string Name { get; set; }
         public string? Description { get; set; }
         public string MountainRange { get; set; }
+        public string? MountainSubRange { get; set; }
+        public int? Height { get; set; }
 
         public int Length { get; set; }
         public int Elevation { get; set; }
@@ -19,7 +21,10 @@ namespace AlpTrips.Domain.Entities
         public int Level { get; set; }
         public string? Link { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
-        public User User { get; set; } 
+        public User User { get; set; }
+       
+        public string Latitude { get; set; }
+        public string Longitude { get; set; }
         public string UserId { get; set; }
         public string? EncodedName { get; set; }
        

@@ -7,12 +7,19 @@ namespace AlpTrips.Application.Dtos
 {
     public class TripDto
     {
-       
+        public TripDto()
+        {
+            
+        }
+
         public string Name { get; set; }
         public string? Description { get; set; }
+        public int? Height { get; set; }
    
         public string MountainRange { get; set; }
-       
+        public string? MountainSubRange { get; set; }
+        public string Latitude { get; set; }
+        public string Longitude { get; set; }
         public int Length { get; set; }
        
         public int Elevation { get; set; }

@@ -12,9 +12,14 @@
                 <form asp-action="Create" enctype="multipart/form-data" method="post" asp-controller="Trip">
 
                     <div class="form-group mb-3">
-                        <label class="control-label" asp-for="Name">Nazwa</label>
-                        <input class="form-control" type="text" asp-for="Name">
+                        <label class="control-label" asp-for="Name" >Nazwa</label>
+                        <input class="form-control" type="text" asp-for="Name" id="name-input">
                         <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Height">Wysokość n.p.m.</label>
+                        <input class="form-control" type="text" asp-for="Height" id="height-input">
+                        <span asp-validation-for="Height" class="text-danger"></span>
                     </div>
 
                     <div class="form-group mb-3">
@@ -36,8 +41,8 @@
                     </div>
 
                     <div class="form-group mb-3" id="subMountainRangeContainer" style="display: none">
-                        <label class="control-label" asp-for="MountainRange">Podregion górski (Alpy Wschodnie)</label>
-                        <select class="form-control" asp-for="MountainRange">
+                        <label class="control-label" asp-for="MountainSubRange">Podregion górski (Alpy Wschodnie)</label>
+                        <select class="form-control" asp-for="MountainSubRange">
                             <option value="">Wybierz podregion górski</option>
                             <option value="Alpy Julijskie">Alpy Julijskie</option>
                             <option value="Dolomity">Dolomity</option>
@@ -47,8 +52,8 @@
                     </div>
 
                     <div class="form-group mb-3" id="subMountainRangeContainer2" style="display: none">
-                        <label class="control-label" asp-for="MountainRange">Podregion górski (Alpy Centralne)</label>
-                        <select class="form-control" asp-for="MountainRange">
+                        <label class="control-label" asp-for="MountainSubRange">Podregion górski (Alpy Centralne)</label>
+                        <select class="form-control" asp-for="MountainSubRange">
                             <option value="">Wybierz podregion górski</option>
                             <option value="Berner Oberland">Berner Oberland</option>
                             <option value="Pennińskie Alpy Centralne">Pennińskie Alpy Centralne</option>
@@ -58,8 +63,8 @@
                     </div>
 
                     <div class="form-group mb-3" id="subMountainRangeContainer3" style="display: none">
-                        <label class="control-label" asp-for="MountainRange">Podregion górski (Alpy Zachodnie)</label>
-                        <select class="form-control" asp-for="MountainRange">
+                        <label class="control-label" asp-for="MountainSubRange">Podregion górski (Alpy Zachodnie)</label>
+                        <select class="form-control" asp-for="MountainSubRange">
                             <option value="">Wybierz podregion górski</option>
                             <option value="Mont Blanc">Mont Blanc</option>
                             <option value="Grandes Rousses">Grandes Rousses</option>
@@ -70,8 +75,8 @@
                     </div>
 
                     <div class="form-group mb-3" id="subMountainRangeContainer4" style="display: none">
-                        <label class="control-label" asp-for="MountainRange">Podregion górski (Alpy Południowe)</label>
-                        <select class="form-control" asp-for="MountainRange">
+                        <label class="control-label" asp-for="MountainSubRange">Podregion górski (Alpy Południowe)</label>
+                        <select class="form-control" asp-for="MountainSubRange">
                             <option value="">Wybierz podregion górski</option>
                             <option value="Monte Rosa">Monte Rosa</option>
                             <!-- Dodaj inne opcje dla Alp Południowych -->
@@ -135,6 +140,15 @@
                             <label class="custom-file-label" for="customFile"></label>
                         </div>
                     </div>
+                    <div class="form-group mb-3">
+                        <label class="control-label">Sprawdź i wyszukaj lokalizację</label>
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="location-input" placeholder="Wyszukaj lokalizację" style="font-weight: bold;">
+                            <div id="map" style="width: 100%; height: 300px; margin-top: 10px;"></div>
+                            <input type="hidden" name="latitude" id="latitude">
+                            <input type="hidden" name="longitude"  id="longitude">
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-md-4">
@@ -150,6 +164,64 @@
         @{
             await Html.RenderPartialAsync("_ValidationScriptsPartial");
             <script src="~/js/site.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdOJoosCHEQU_6Jj7u3Ad7OcJkDjt_Vgo&libraries=places"></script>
+            <script>
+                function initMap() {
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: { lat: 0, lng: 0 },
+                        zoom: 8
+                    });
+
+                    var marker = new google.maps.Marker({
+                        map: map
+                    });
+
+                    var input = document.getElementById('location-input');
+                    var autocomplete = new google.maps.places.Autocomplete(input);
+
+                    autocomplete.addListener('place_changed', function () {
+                        var place = autocomplete.getPlace();
+                        if (place.geometry && place.geometry.location) {
+                            var location = place.geometry.location;
+                            map.setCenter(location);
+                            marker.setPosition(location);
+
+                            // Pobranie współrzędnych i wywołanie funkcji geocodeAddress()
+                            var latitude = location.lat();
+                            var longitude = location.lng();
+                            geocodeAddress(latitude, longitude);
+                        }
+                    });
+                }
+                initMap();
+                function geocodeAddress(latitude, longitude) {
+                  
+                    document.getElementById('latitude').value = latitude;
+                    document.getElementById('longitude').value = longitude;
+                    console.log(latitude, longitude);
+                }
+
+               
+               
+               
+            </script>
+            <script>
+                function FillInput() {
+                    console.log("FillInput() function has been called.");
+                    var nameInput = document.getElementById("name-input");
+                    var locationInput = document.getElementById("location-input");
+
+                    nameInput.addEventListener("input", function () {
+                        locationInput.value = nameInput.value;
+                    });
+                }
+
+                FillInput();
+               
+            </script>
+
         }
     }
 </div>

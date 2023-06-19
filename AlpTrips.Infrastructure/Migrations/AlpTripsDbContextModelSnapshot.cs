@@ -86,7 +86,14 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.Property<string>("EncodedName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("Height")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Latitude")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Length")
@@ -98,8 +105,15 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.Property<string>("Link")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Longitude")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("MountainRange")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MountainSubRange")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
