@@ -54,6 +54,8 @@ namespace AlpsTrips.MVC.Controllers
         [Route("Trip/{encodedName}/Details")]
         public async Task<IActionResult> Details(string encodedName)
         {
+            var trip = await _mediator.Send(new GetTripByEncodedNameQuery(encodedName));
+            ViewBag.UserId = trip.UserId;
             var tripDto = await _mediator.Send(new GetTripDtoByEncodedNameQuery(encodedName));
             ViewBag.EncodedName = tripDto.EncodedName;
 

@@ -1,7 +1,23 @@
-﻿@model AlpTrips.Application.Dtos.TripDto;
+﻿
 @using AlpTrips.Application.Dtos;
+@using AlpTrips.Domain.Entities;
+@using Microsoft.AspNetCore.Identity;
+
+
+@inject SignInManager<User> SignInManager;
+@inject UserManager<User> UserManager;
+
+
+@model AlpTrips.Application.Dtos.TripDto;
 @{
     ViewData["Title"] = "Szczegóły";
+
+    bool isCurrentUser = false;
+    if (SignInManager.IsSignedIn(User))
+    {
+        var currentUser = await UserManager.GetUserAsync(User);
+        isCurrentUser = currentUser?.Id == ViewBag.UserId.ToString();
+    }
 }
 
 @{
@@ -119,8 +135,13 @@
                     </li>
                 }
             </ul>
-            <a asp-action="Edit" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Edytuj</a>
-            <a asp-action="Delete" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Usuń</a>
+            @if (isCurrentUser)
+            {
+                <a asp-action="Edit" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Edytuj</a>
+                <a asp-action="Delete" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Usuń</a>
+            }
+            
+            
         </div>
 
         <div class="col-md-6">
