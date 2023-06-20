@@ -191,5 +191,59 @@ namespace AlpTrips.Infrastructure.Repositories
             return bestTrip;
         }
 
+        public async Task<Trip> FindBestWeatherNextWeek()
+        {
+            List<Trip> allTrips = await _context.Trips.Include(t => t.Gallery).ToListAsync();
+
+            Trip bestTrip = null;
+            int maxPoints = 0;
+
+            foreach (var trip in allTrips)
+            {
+                if (trip.Latitude.IsNullOrEmpty() || trip.Longitude.IsNullOrEmpty())
+                {
+                    continue;
+                }
+
+                WeatherApiClient weatherApi = new WeatherApiClient();
+                ForecastData forecastData = await weatherApi.GetWeatherForecastAsync(trip.Latitude, trip.Longitude);
+
+                int points = 0;
+
+                foreach (var forecastDay in forecastData.Forecast)
+                {
+                    if (forecastDay.Precipitation == 0)
+                        points += 3;
+
+                    if (forecastDay.Precipitation <= 1)
+                        points += 2;
+                    if (forecastDay.Precipitation > 1 && forecastDay.Precipitation <= 3)
+                        points++;
+
+                    if (forecastDay.WindStrength <= 10)
+                        points += 3;
+                    if (forecastDay.WindStrength > 10 && forecastDay.WindStrength <= 30)
+                        points += 2;
+                    if (forecastDay.WindStrength > 30 && forecastDay.WindStrength <= 50)
+                        points++;
+
+                    if (forecastDay.Condition == "Sunny")
+                        points += 3;
+                    if (forecastDay.Condition == "Partly cloudy")
+                        points += 2;
+                    if (forecastDay.Condition == "Cloudy")
+                        points++;
+                }
+
+                if (points > maxPoints)
+                {
+                    maxPoints = points;
+                    bestTrip = trip;
+                }
+            }
+
+            return bestTrip;
+        }
+
     }
 }

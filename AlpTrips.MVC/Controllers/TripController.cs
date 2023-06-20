@@ -1,4 +1,5 @@
 ﻿
+using AlpsTrips.MVC.Models;
 using AlpTrips.Application;
 using AlpTrips.Application.Comment.Commands.CreateComment;
 using AlpTrips.Application.Comment.Queries.GetAllCommentsQuery;
@@ -277,28 +278,17 @@ namespace AlpsTrips.MVC.Controllers
             return RedirectToAction(nameof(Details), new { encodedName = encodedName });
         }
 
-        public async Task<IActionResult> FindBestWeatherNow()
+        public async Task<IActionResult> FindBestWeather()
         {
-
-            var tripDto = await _mediator.Send(new FindBestWeatherNowQuery());
-            var encodedName = tripDto.EncodedName;
-            var comments = await _mediator.Send(new GetCommentsForTripQuery(encodedName));
-            ViewBag.Comments = comments;
-
-            var ratings = await _mediator.Send(new GetCommentsForTripQuery(encodedName));
-            if (ratings.Count() > 0)
+            var tripDtoNow= await _mediator.Send(new FindBestWeatherNowQuery());   
+            var tripDtoNextWeek = await _mediator.Send(new FindBestWeatherNextWeekQuery());
+           
+            TripsViewModel viewModel = new TripsViewModel
             {
-                var ratingSum = ratings.Sum(d => d.Rate);
-                ViewBag.RatingSum = ratingSum;
-                var ratingCount = ratings.Count();
-                ViewBag.RatingCount = ratingCount;
-            }
-            else
-            {
-                ViewBag.RatingSum = 0;
-                ViewBag.RatingCount = 0;
-            }
-            return View(tripDto);
+                TripDto1 = tripDtoNow,
+                TripDto2 = tripDtoNextWeek
+            };
+            return View(viewModel);
 
         }
 

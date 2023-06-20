@@ -1,10 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AlpTrips.Application.Weather
 {
@@ -37,6 +33,25 @@ namespace AlpTrips.Application.Weather
             }
         }
 
+        public async Task<ForecastData> GetWeatherForecastAsync(string latitude, string longitude)
+        {
+            string apiUrl = $"https://api.weatherapi.com/v1/forecast.json?key={apiKey}&q={latitude},{longitude}&days=7";
+
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                response.EnsureSuccessStatusCode();
+                string json = await response.Content.ReadAsStringAsync();
+                ForecastData forecastData = ParseForecastData(json);
+                return forecastData;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return null;
+            }
+        }
+
         private WeatherData ParseWeatherData(string json)
         {
 
@@ -59,6 +74,39 @@ namespace AlpTrips.Application.Weather
             weatherData.Precipitation = (double)jsonObject.forecast.forecastday[0].day.totalprecip_mm;
 
             return weatherData;
+        }
+
+        private ForecastData ParseForecastData(string json)
+        {
+            dynamic jsonObject = JsonConvert.DeserializeObject(json);
+
+            ForecastData forecastData = new ForecastData();
+            var forecastArray = jsonObject.forecast.forecastday;
+            forecastData.Forecast = new WeatherData[forecastArray.Count];
+
+            for (int i = 0; i < forecastArray.Count; i++)
+            {
+                dynamic forecastItem = forecastArray[i];
+
+                WeatherData weatherData = new WeatherData();
+                string dateString = forecastItem.date.ToString();
+                string format = "yyyy-MM-dd";
+                DateTime date;
+                DateTime.TryParseExact(dateString, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out date);
+
+                weatherData.Date = date;
+               
+                weatherData.MaxTemperature = (double)forecastItem.day.maxtemp_c;
+                weatherData.MinTemperature = (double)forecastItem.day.mintemp_c;
+                weatherData.Condition = (string)forecastItem.day.condition.text;
+                weatherData.IconUrl = (string)forecastItem.day.condition.icon;
+                weatherData.WindStrength = (double)forecastItem.day.maxwind_kph;
+                weatherData.Precipitation = (double)forecastItem.day.totalprecip_mm;
+
+                forecastData.Forecast[i] = weatherData;
+            }
+
+            return forecastData;
         }
 
     }
