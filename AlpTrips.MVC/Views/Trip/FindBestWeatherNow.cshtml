@@ -1,0 +1,304 @@
+﻿@model AlpTrips.Application.Dtos.TripDto;
+@using AlpTrips.Application.Dtos;
+@{
+    ViewData["Title"] = "Najlepsza pogoda";
+}
+
+@{
+    ViewBag.Title = Model.Name;
+    var comments = (IEnumerable<AlpTrips.Domain.Entities.Comment>)ViewBag.Comments;
+    var ratingSum = ViewBag.RatingSum;
+    var ratingCount = ViewBag.RatingCount;
+
+    decimal rating = 0;
+    if (ratingCount > 0)
+    {
+        rating = (ratingSum / ratingCount);
+    }
+    var totalRating = decimal.Parse(rating.ToString());
+}
+
+<div class="container">
+    <h2> Najlepsza pogoda obecnie:</h2>
+    <h4 class="display-4">@Model.Name @Model.Height.ToString().Trim()m n.p.m.</h4>
+
+    <span>Pasmo górskie: @Model.MountainRange, @Model.MountainSubRange </span>
+    <div>
+        @for (int i = 1; i <= 5; i++)
+        {
+            if (totalRating >= i)
+            {
+                <span class="starGlow" id="sRate@i"></span>
+            }
+            else
+            {
+                <span class="starFadeN" id="sRate@i"></span>
+            }
+        }
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+
+                    @for (int i = 0; i < Model.Gallery.Count(); i++)
+                    {
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@i" class="@(i == 0 ? "active" : "")" aria-current="true" aria-label="Slide 1"></button>
+                    }
+
+                </div>
+                <div class="carousel-inner">
+
+                    @for (int i = 0; i < Model.Gallery.Count(); i++)
+                    {
+                        <div class="@(i == 0 ? "carousel-item active" : "carousel-item")">
+                            <img src="/@Model.Gallery[i].Url" class="d-block w-100" alt="@Model.Gallery[i].Name">
+                        </div>
+                    }
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="font-weight-bold">Poziom trudności: </span>
+                    @switch (Model.Level)
+                    {
+                        case 1:
+                            <span>1 - Bardzo łatwy (F)</span>
+                            break;
+                        case 2:
+                            <span>2 - Łatwy (PD)</span>
+                            break;
+                        case 3:
+                            <span>3 - Średni (AD)</span>
+                            break;
+                        case 4:
+                            <span>4 - Trudny (D)</span>
+                            break;
+                        case 5:
+                            <span>5 - Bardzo trudny (TD)</span>
+                            break;
+                        default:
+                            <span>Nieznany poziom trudności</span>
+                            break;
+                    }
+                </li>
+                <li class="list-group-item"><span class="font-weight-bold">Długość trasy: </span>@Model.Length.ToString().Trim()km </li>
+                <li class="list-group-item"><span class="font-weight-bold">Przewyższenie: </span>@Model.Elevation.ToString().Trim()m </li>
+                @if (TempData["Time"] != null)
+                {
+                    <li class="list-group-item">
+                        <div class="time-frame">
+                            <span class="font-weight-bold">@TempData["Time"]</span>
+                        </div>
+                    </li>
+                }
+                else
+                {
+                    <li class="list-group-item">
+                        <span class="font-weight-bold">
+                            <form method="post" asp-action="CountTime" asp-controller="Trip">
+                                <input type="hidden" name="length" value="@Model.Length" />
+                                <input type="hidden" name="elevation" value="@Model.Elevation" />
+                                <input type="number" name="speed" placeholder="Prędkość marszu w km/h" required />
+                                <input class="widerinput" type="number" name="elevationSpeed" placeholder="Prędkość na przewyższeniach w m/h" required />
+                                <input type="hidden" name="encodedName" value="@Model.EncodedName" />
+                                <button type="submit" class="btn btn-outline-primary" style="margin-left:0px;">Oblicz szacowany czas przejścia</button>
+                            </form>
+                        </span>
+                    </li>
+                }
+            </ul>
+            <a asp-action="Edit" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Edytuj</a>
+            <a asp-action="Delete" asp-controller="Trip" asp-route-encodedName="@Model.EncodedName" class="tekst">Usuń</a>
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+            <div class="col-md-12">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-primary" style="display: flex; align-items: center;">
+                    <span class="label label-primary">Autor: </span>
+                    <span class="monospaced">  @Model.UserName</span>
+                    <div class="profile-pic" style="background-image: url('/images/smile.jpg'); width: 100px; height: 100px;">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="description">@Model.Description</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="@Model.Link" target="_blank" class="btn btn-outline-primary">Link do relacji</a>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<hr />
+<h4>Aktualna pogoda:</h4>
+<div>
+    <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
+    <div id="weather"></div>
+</div>
+
+<hr />
+<h4 style="margin-top= 10px">Prognoza na najbliższy tydzień</h4>
+<div id="weekly-weather" class="forecast-container"></div>
+
+<hr />
+
+
+
+
+@foreach (var c in comments)
+{
+
+    <div class="row">
+        <div class="col-md-3">
+            <i>@c.CreatedDate</i>
+            <br />
+            @for (var i = 1; i <= c.Rate; i++)
+            {
+                <span class="starGlowN"></span>
+            }
+            @for (var i = (c.Rate + 1); i <= 5; i++)
+            {
+                <span class="starFadeN"></span>
+            }
+        </div>
+        <div class="col-md-9">
+            @Html.Raw(c.Text.Replace("\n", "<br />"))
+
+
+        </div>
+    </div>
+    <hr />
+}
+
+@Html.Partial("_CommentBox")
+
+
+
+
+
+<div class="py-5 bg-light">
+    <h3 class="h3"> Podobne trasy:</h3>
+    <div class="row">
+        @await Component.InvokeAsync("TopTrasy")
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Powrót do listy</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var apiKey = '24456521918244a590a194429231506';
+        var latitude = @Model.Latitude; // pobierz szerokość geograficzną góry z Modelu
+        var longitude = @Model.Longitude; // pobierz długość geograficzną góry z Modelu
+
+        var apiUrl = 'https://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + latitude + ',' + longitude;
+
+        $.ajax({
+            url: apiUrl,
+            method: 'GET',
+            success: function (response) {
+                var weatherData = response.current;
+                var temperature = weatherData.temp_c;
+                var precipitation = weatherData.precip_mm;
+                var windSpeed = weatherData.wind_kph;
+                var iconUrl = weatherData.condition.icon;
+
+                // Zaktualizuj okienko z pogodą na stronie
+                $('#weather').html('Aktualna temperatura: ' + temperature + '°C, Siła wiatru: ' + windSpeed + ' km/h, Opady: ' + precipitation + ' mm');
+                $('#weather-icon').attr('src', 'https:' + iconUrl);
+                $('#weather-icon').attr('src', 'https:' + iconUrl);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        var apiKey = '24456521918244a590a194429231506';
+        var latitude = @Model.Latitude; // pobierz szerokość geograficzną góry z Modelu
+        var longitude = @Model.Longitude; // pobierz długość geograficzną góry z Modelu
+
+        var apiUrl = 'https://api.weatherapi.com/v1/forecast.json?key=' + apiKey + '&q=' + latitude + ',' + longitude + '&days=7';
+
+        $.ajax({
+            url: apiUrl,
+            method: 'GET',
+            success: function (response) {
+                var forecastData = response.forecast;
+                var forecastHtml = '';
+
+                for (var i = 1; i < forecastData.forecastday.length; i++) {
+                    var forecastDay = forecastData.forecastday[i];
+                    var date = forecastDay.date;
+                    var maxTemp = forecastDay.day.maxtemp_c;
+                    var minTemp = forecastDay.day.mintemp_c;
+                    var condition = forecastDay.day.condition.text;
+                    var iconUrl = forecastDay.day.condition.icon;
+                    var windStrength = forecastDay.day.maxwind_kph;
+                    var precipitation = forecastDay.day.totalprecip_mm;
+
+                    forecastHtml += '<div class="forecast-day">';
+                    forecastHtml += '<p style="margin-bottom: 5px;" class="forecast-date">' + date + '</p>';
+                    forecastHtml += '<img class="forecast-icon" src="https:' + iconUrl + '" alt="Weather Icon">';
+                    forecastHtml += '<p  style="text-align: left;margin-bottom: 5px;"" class="forecast-temperature">Max: ' + maxTemp + '°C, Min: ' + minTemp + '°C</p>';
+                    forecastHtml += '<p style="text-align: left;margin-bottom: 5px;"" class="forecast-wind">Wiatr: ' + windStrength + ' km/h</p>';
+                    forecastHtml += '<p style="text-align: left;margin-bottom: 5px;"" class="forecast-precipitation">Opady: ' + precipitation + ' mm</p>';
+                    forecastHtml += '</div>';
+                }
+
+                // Wyświetl prognozę na stronie
+                $('#weekly-weather').html(forecastHtml);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    });
+
+</script>
+

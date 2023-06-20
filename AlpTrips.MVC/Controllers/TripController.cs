@@ -7,6 +7,7 @@ using AlpTrips.Application.Dtos;
 using AlpTrips.Application.Trip.Commands.CreateTrip;
 using AlpTrips.Application.Trip.Commands.DeleteTrip;
 using AlpTrips.Application.Trip.Commands.EditTrip;
+using AlpTrips.Application.Trip.Queries.FindBestWeather;
 using AlpTrips.Application.Trip.Queries.GetAllTrips;
 using AlpTrips.Application.Trip.Queries.GetTripByEncodedName;
 using AlpTrips.Application.Trip.Queries.SearchTripByParam;
@@ -24,6 +25,7 @@ namespace AlpsTrips.MVC.Controllers
         private IWebHostEnvironment _webHostEnviroment;
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
+
 
         public TripController(IWebHostEnvironment webHostEnviroment, IMediator mediator, IMapper mapper)
         {
@@ -273,6 +275,31 @@ namespace AlpsTrips.MVC.Controllers
             TempData["Time"] = timeDistance;
 
             return RedirectToAction(nameof(Details), new { encodedName = encodedName });
+        }
+
+        public async Task<IActionResult> FindBestWeatherNow()
+        {
+
+            var tripDto = await _mediator.Send(new FindBestWeatherNowQuery());
+            var encodedName = tripDto.EncodedName;
+            var comments = await _mediator.Send(new GetCommentsForTripQuery(encodedName));
+            ViewBag.Comments = comments;
+
+            var ratings = await _mediator.Send(new GetCommentsForTripQuery(encodedName));
+            if (ratings.Count() > 0)
+            {
+                var ratingSum = ratings.Sum(d => d.Rate);
+                ViewBag.RatingSum = ratingSum;
+                var ratingCount = ratings.Count();
+                ViewBag.RatingCount = ratingCount;
+            }
+            else
+            {
+                ViewBag.RatingSum = 0;
+                ViewBag.RatingCount = 0;
+            }
+            return View(tripDto);
+
         }
 
 

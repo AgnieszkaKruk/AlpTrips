@@ -2496,7 +2496,8 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "AlpTrips.Application.dll": {}

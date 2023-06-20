@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c3KSk8QA1sPCr0KRksJ0h6kJ2u6y8t3D8fUCVV81WlvHLLRc7XIssbWMIq5+LWxAIxwzYBm5swRTj8fqq3oz9w==",
+  "dgSpecHash": "j+lVvjNoha7ycY77nq3OtbalcKMuve61HNoh/lnbW1nUN7RHTrDgIJ2KLAn4Al3JPL4Bvx9QvSFHTbx71A/pkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.Infrastructure\\AlpTrips.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -64,6 +64,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
