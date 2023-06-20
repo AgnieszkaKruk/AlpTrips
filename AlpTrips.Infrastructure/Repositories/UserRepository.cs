@@ -1,4 +1,5 @@
-﻿using AlpTrips.Domain.Entities;
+﻿using AlpTrips.Application.Dtos;
+using AlpTrips.Domain.Entities;
 using AlpTrips.Domain.Interfaces;
 using AlpTrips.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,11 @@ namespace AlpTrips.Infrastructure.Repositories
             return null; 
         }
 
+        public async Task<IEnumerable<Trip>> UserTrips(string userId)
+        {
+            var userTrips = await  _context.Trips.Include(t=>t.Gallery).Where(t=>t.UserId == userId).ToListAsync();
+            return userTrips;
+        }
 
     }
 }

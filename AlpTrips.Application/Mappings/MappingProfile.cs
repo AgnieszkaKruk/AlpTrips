@@ -10,7 +10,7 @@ namespace AlpTrips.Application.Mappings
 
         public MappingProfile()
         {
-            CreateMap<TripDto, Domain.Entities.Trip>().ForMember(p => p.User, opt => opt.MapFrom(src => new User()
+            CreateMap<TripDto, Domain.Entities.Trip>().ForMember(p => p.User, opt => opt.MapFrom(src => new Domain.Entities.User()
             {
                 Name = src.UserName,
                 Email = src.Email

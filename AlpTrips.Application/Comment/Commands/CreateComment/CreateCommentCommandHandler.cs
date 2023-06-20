@@ -31,7 +31,7 @@ namespace AlpTrips.Application.Comment.Commands.CreateComment
 
             request.CreatedById= _userContext.GetCurrentUser().Id;
             request.CreatedDate = DateTime.Now;
-            request.User = new User();
+            request.User = new Domain.Entities.User();
             request.User.Email = _userContext.GetCurrentUser().Email;
             request.User.Name = _userContext.GetCurrentUser().Name;
 
