@@ -35,18 +35,25 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark @(currentUrl == "Trip/Create" ? "active" : "")" asp-area="" asp-controller="Trip" asp-action="Create">Dodaj nową</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ramka">
                             <a class="nav-link text-dark @(currentUrl == "Trip/SearchByParam" ? "active" : "")" asp-area="" asp-controller="Trip" asp-action="SearchByParam">Wyszukaj trasę wg potrzeb</a>
                         </li>
-                        <li class="nav-item">
+                    </ul>
+                    <form asp-action="Search" asp-controller="Home"  class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Wyszukaj szczyt" aria-label="Search" name="search">
+                           
+                                <i class="fas fa-search"></i> <!-- Dodaj odpowiednią ikonę lupy, na przykład z biblioteki Font Awesome -->
+                            
+                        </form>
+                        @*<li class="nav-item">
                             <a class="nav-link text-dark @(currentUrl == "Privacy" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Privacy">Prywatność</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark @(currentUrl == "About" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="About">O aplikacji</a>
-                        </li>
+                        </li>*@
                         
                         
-                    </ul>
+                   
                     <partial name="_LoginPartial" />
                 </div>
             </div>

@@ -45,8 +45,16 @@
       "PackagePath": "staticwebassets\\gallery\\2cc3c87b-3fd6-4e37-a150-9f1e1884939d_Weisshorn-RG_front_large.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\2e0dd0bc-1388-4b25-b691-860272f51a3a_pobrane (15).jpg",
+      "PackagePath": "staticwebassets\\gallery\\2e0dd0bc-1388-4b25-b691-860272f51a3a_pobrane (15).jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\300ae4dc-f3be-4d79-8daf-3aae019156a5_pobrane (10).jpg",
       "PackagePath": "staticwebassets\\gallery\\300ae4dc-f3be-4d79-8daf-3aae019156a5_pobrane (10).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\30f2269b-04d3-4be2-8437-4e97bcfa1119_pobrane (14).jpg",
+      "PackagePath": "staticwebassets\\gallery\\30f2269b-04d3-4be2-8437-4e97bcfa1119_pobrane (14).jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\3229c361-6e04-42d6-a520-7271b2a6a953_MONTBLANC50.jpg",
@@ -97,6 +105,14 @@
       "PackagePath": "staticwebassets\\gallery\\6197bdb6-0a80-45d1-a620-cdc47a6e263c_pobrane (12).jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\66154aee-761a-45a2-9313-e59d87773d0d_pobrane (16).jpg",
+      "PackagePath": "staticwebassets\\gallery\\66154aee-761a-45a2-9313-e59d87773d0d_pobrane (16).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\6b83b1b2-ecc5-44db-8d3b-a58d0edb54de_pobrane (16).jpg",
+      "PackagePath": "staticwebassets\\gallery\\6b83b1b2-ecc5-44db-8d3b-a58d0edb54de_pobrane (16).jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\7820f62a-835d-4645-9877-57f4b306ea79_Skrlatica2.JPG",
       "PackagePath": "staticwebassets\\gallery\\7820f62a-835d-4645-9877-57f4b306ea79_Skrlatica2.JPG"
     },
@@ -119,6 +135,10 @@
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\8cf37387-33d1-4666-93c5-df37af2d6304_images.jpg",
       "PackagePath": "staticwebassets\\gallery\\8cf37387-33d1-4666-93c5-df37af2d6304_images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\8daaf9b0-a881-496a-a823-31793a6cbec0_pobrane (18).jpg",
+      "PackagePath": "staticwebassets\\gallery\\8daaf9b0-a881-496a-a823-31793a6cbec0_pobrane (18).jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\99200b0c-de86-41ca-9abc-feacdc6420cb_MONTBLANC50.jpg",
@@ -149,6 +169,10 @@
       "PackagePath": "staticwebassets\\gallery\\cf51189e-fab2-40c8-bda4-2a4fccb97694_pobrane (6).jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\d4bd9aec-06b8-4fc8-94b6-763c7a1a9b89_pobrane (17).jpg",
+      "PackagePath": "staticwebassets\\gallery\\d4bd9aec-06b8-4fc8-94b6-763c7a1a9b89_pobrane (17).jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\e0300dd7-4ef6-4e87-93c1-5232285d31d9_images.jpg",
       "PackagePath": "staticwebassets\\gallery\\e0300dd7-4ef6-4e87-93c1-5232285d31d9_images.jpg"
     },
@@ -161,6 +185,14 @@
       "PackagePath": "staticwebassets\\gallery\\e377e9fe-9bc3-466e-b09f-e4338f718766_pobrane (8).jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\e9090486-3922-4bf0-9831-8561c2f8752b_1.jpg",
+      "PackagePath": "staticwebassets\\gallery\\e9090486-3922-4bf0-9831-8561c2f8752b_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\e9e6f0c8-506f-4a0d-b310-baca10d1bce9_pobrane (18).jpg",
+      "PackagePath": "staticwebassets\\gallery\\e9e6f0c8-506f-4a0d-b310-baca10d1bce9_pobrane (18).jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\ee129c8e-ecb7-4deb-b3df-debb5e4a3cc8_pobrane (10).jpg",
       "PackagePath": "staticwebassets\\gallery\\ee129c8e-ecb7-4deb-b3df-debb5e4a3cc8_pobrane (10).jpg"
     },
@@ -169,12 +201,32 @@
       "PackagePath": "staticwebassets\\gallery\\f21f5491-aeb3-465d-9916-f4261c931aae_pobrane (5).jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\f6e01848-4734-4a72-8767-df7aeaa52165_pobrane (17).jpg",
+      "PackagePath": "staticwebassets\\gallery\\f6e01848-4734-4a72-8767-df7aeaa52165_pobrane (17).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\f96993a9-1bce-46be-b32f-43fbe4b4eb34_pobrane (16).jpg",
+      "PackagePath": "staticwebassets\\gallery\\f96993a9-1bce-46be-b32f-43fbe4b4eb34_pobrane (16).jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\fc01d7f2-667c-4297-8ce4-599b127f8ca3_pobrane (3).jpg",
       "PackagePath": "staticwebassets\\gallery\\fc01d7f2-667c-4297-8ce4-599b127f8ca3_pobrane (3).jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\fce392c1-aeb1-4384-a5c1-38f0b814645b_pobrane (17).jpg",
+      "PackagePath": "staticwebassets\\gallery\\fce392c1-aeb1-4384-a5c1-38f0b814645b_pobrane (17).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\0c5f1d45-8b78-414a-b5a3-7674264a3875_pobrane (16).jpg",
+      "PackagePath": "staticwebassets\\images\\0c5f1d45-8b78-414a-b5a3-7674264a3875_pobrane (16).jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\18575b4a-22ac-42bf-b594-26b8ee69e588_MONTBLANC62.jpg",
       "PackagePath": "staticwebassets\\images\\18575b4a-22ac-42bf-b594-26b8ee69e588_MONTBLANC62.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\1b11d11c-44a2-450b-9342-7e9027080669_pobrane (15).jpg",
+      "PackagePath": "staticwebassets\\images\\1b11d11c-44a2-450b-9342-7e9027080669_pobrane (15).jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\1f2135d2-c142-4cfd-982a-6b463e6590b7_mont-blanc.jpg",
@@ -205,6 +257,10 @@
       "PackagePath": "staticwebassets\\images\\42891853-1f0c-4539-b65e-fd31a00ed4f4_Škrlatica_(7928473178).jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\438200d9-4cab-48d4-a79a-2be02214fef1_pobrane (18).jpg",
+      "PackagePath": "staticwebassets\\images\\438200d9-4cab-48d4-a79a-2be02214fef1_pobrane (18).jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\5072f0c1-e570-4736-a265-fd13b6ff2b09_pobrane (2).jpg",
       "PackagePath": "staticwebassets\\images\\5072f0c1-e570-4736-a265-fd13b6ff2b09_pobrane (2).jpg"
     },
@@ -225,8 +281,16 @@
       "PackagePath": "staticwebassets\\images\\66f0ccd8-e97e-4b54-ae59-e1fe109e99a1_Skrlatica2.JPG"
     },
     {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\81c8bf9e-9377-4529-9be0-aae3e5819313_lag.jpg",
+      "PackagePath": "staticwebassets\\images\\81c8bf9e-9377-4529-9be0-aae3e5819313_lag.jpg"
+    },
+    {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\8796066e-16f5-4d77-b466-a8e5aa7ffb4c_mont-blanc.jpg",
       "PackagePath": "staticwebassets\\images\\8796066e-16f5-4d77-b466-a8e5aa7ffb4c_mont-blanc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\8bd2c038-4325-42c9-bb82-f9aead83d794_pobrane (17).jpg",
+      "PackagePath": "staticwebassets\\images\\8bd2c038-4325-42c9-bb82-f9aead83d794_pobrane (17).jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\930c23e6-2a64-4bed-9a9f-91e9c052ca34_mont-blanc.jpg",
@@ -263,6 +327,10 @@
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\daa2816a-f896-4613-a09d-93555999b635_240px-Großglockner_from_South.jpg",
       "PackagePath": "staticwebassets\\images\\daa2816a-f896-4613-a09d-93555999b635_240px-Großglockner_from_South.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\email.png",
+      "PackagePath": "staticwebassets\\images\\email.png"
     },
     {
       "Id": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\fcfb9b63-9db3-4324-9235-0addc0269060_Zinalrothorn01 (1).jpg",

@@ -1,4 +1,5 @@
-﻿using AlpTrips.Application.Dtos;
+﻿using AlpTrips.Application.ApplicationUser;
+using AlpTrips.Application.Dtos;
 using AlpTrips.Domain.Entities;
 using AlpTrips.Domain.Interfaces;
 using AlpTrips.Infrastructure.Persistence;
@@ -14,9 +15,11 @@ namespace AlpTrips.Infrastructure.Repositories
     public class UserRepository : IUserRepository
     {
         private AlpTripsDbContext _context;
-        public UserRepository(AlpTripsDbContext context)
+        private IUserContext _userContext;
+        public UserRepository(AlpTripsDbContext context, IUserContext userContext)
         {
             _context = context;
+            _userContext = userContext;
 
         }
         public async Task<string> GetUserNameById(string userId)
@@ -28,14 +31,33 @@ namespace AlpTrips.Infrastructure.Repositories
                 return user.Name;
             }
 
-            return null; 
+            return null;
         }
 
         public async Task<IEnumerable<Trip>> UserTrips(string userId)
         {
-            var userTrips = await  _context.Trips.Include(t=>t.Gallery).Where(t=>t.UserId == userId).ToListAsync();
+            var userTrips = await _context.Trips.Include(t => t.Gallery).Where(t => t.UserId == userId).ToListAsync();
             return userTrips;
         }
+
+        public async Task AddToFavourite(Trip trip)
+        {
+            var currentUser = _userContext.GetCurrentUser();
+            var user = _context.Users.Include(u => u.FavouriteTripsList).Where(u => u.Id == currentUser.Id).FirstOrDefault();
+            user.FavouriteTripsList.Add(trip);
+            await _context.SaveChangesAsync();
+
+        }
+
+        public async Task<IEnumerable<Trip>> UserFavouriteTrips(string userId)
+        {
+            var user = await _context.Users.Include(u => u.FavouriteTripsList).FirstOrDefaultAsync(u => u.Id == userId);
+            
+                var favouriteTrips = user.FavouriteTripsList.ToList();
+                return favouriteTrips;
+
+        }
+
 
     }
 }

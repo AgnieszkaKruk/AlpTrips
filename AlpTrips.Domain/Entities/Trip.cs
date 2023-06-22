@@ -22,7 +22,9 @@ namespace AlpTrips.Domain.Entities
         public string? Link { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
         public User User { get; set; }
-       
+        [NotMapped]
+        public User? FavouriteUser { get; set; }
+        public string? FavouriteUserId { get; set; }
         public string Latitude { get; set; }
         public string Longitude { get; set; }
         public string UserId { get; set; }

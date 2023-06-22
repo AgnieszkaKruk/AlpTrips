@@ -9,12 +9,26 @@ html {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.ramka {
+    text-decoration: underline;
+    
+}
 .tekst {
     margin-top: 50px;
     margin-left: 3px;
 }
+.user-icon {
+    width: 40px;
+    height: 40px;
+   
+}
 .widerinput {
     width: 50%;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .weather-heading {
     text-align: center;

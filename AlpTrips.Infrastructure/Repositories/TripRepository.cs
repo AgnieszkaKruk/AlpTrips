@@ -245,5 +245,7 @@ namespace AlpTrips.Infrastructure.Repositories
             return bestTrip;
         }
 
+       
+
     }
 }

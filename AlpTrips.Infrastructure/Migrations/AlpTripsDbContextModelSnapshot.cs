@@ -17,7 +17,7 @@ namespace AlpTrips.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.5")
+                .HasAnnotation("ProductVersion", "7.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -84,6 +84,9 @@ namespace AlpTrips.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("EncodedName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FavouriteUserId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("Height")
@@ -390,11 +393,11 @@ namespace AlpTrips.Infrastructure.Migrations
             modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
                 {
                     b.HasOne("AlpTrips.Domain.Entities.User", "CreatedBy")
-                        .WithMany()
+                        .WithMany("FavouriteTripsList")
                         .HasForeignKey("CreatedById");
 
                     b.HasOne("AlpTrips.Domain.Entities.User", "User")
-                        .WithMany("TripsList")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -477,7 +480,7 @@ namespace AlpTrips.Infrastructure.Migrations
                 {
                     b.Navigation("CommentsList");
 
-                    b.Navigation("TripsList");
+                    b.Navigation("FavouriteTripsList");
                 });
 #pragma warning restore 612, 618
         }

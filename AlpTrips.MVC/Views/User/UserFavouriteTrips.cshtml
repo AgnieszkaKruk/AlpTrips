@@ -1,0 +1,63 @@
+﻿@using AlpTrips.Application.Dtos;
+@model IEnumerable<TripDto>;
+
+<div class="container">
+    <h3 class="display-4">Moje ulubione trasy w Alpach</h3>
+    </hr>
+    <div class="row">
+
+        @foreach (var trip in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="@trip.ImageUrl" class="img-thumbnail" />
+                    <div class="card body">
+                        <h3 class="card-title">@trip.Name</h3>
+                        <p class="card-text">@trip.Description</p>
+                        <ul class="list-group">
+
+                            <li class="list-group-item">
+                                <span class="font-weight-bold">Poziom trudności: </span>
+                                @switch (@trip.Level)
+                                {
+                                    case 1:
+                                        <span>1 - Bardzo łatwy (F)</span>
+                                        break;
+                                    case 2:
+                                        <span>2 - Łatwy (PD)</span>
+                                        break;
+                                    case 3:
+                                        <span>3 - Średni (AD)</span>
+                                        break;
+                                    case 4:
+                                        <span>4 - Trudny (D)</span>
+                                        break;
+                                    case 5:
+                                        <span>5 - Bardzo trudny (TD)</span>
+                                        break;
+                                    default:
+                                        <span>Nieznany poziom trudności</span>
+                                        break;
+                                }
+                            </li>
+                            <li class="list-group-item"><span class="font-weight-bold">Długość trasy: </span>@trip.Length.ToString().Trim()km </li>
+                            <li class="list-group-item"><span class="font-weight-bold">Przewyższenie: </span>@trip.Elevation.ToString().Trim()m </li>
+
+                        </ul>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btnbtn-group">
+                                <a class="btn btn-sm btn-outline-secondary" asp-controller="Trip" asp-action="Details" asp-route-encodedName="@trip.EncodedName">Szczegóły</a>
+                            </div>
+                            <small class="text-muted">@trip.UserName</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+
+

@@ -35,7 +35,19 @@
 }
 
 <div class="container">
-    <h4 class="display-4">@Model.Name @Model.Height.ToString().Trim()m n.p.m.</h4>
+    <div class="container1">
+        <span>
+            <h4 class="display-4">
+                @Model.Name @Model.Height.ToString().Trim()m n.p.m.</span>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a href="@Url.Action("AddToFavourite", "User",new { encodedName = Model.EncodedName })" class="favourite-icon">
+                <img src="/images/email.png" alt="User Icon" class="user-icon" />
+            </a>
+        }
+
+    </h4>
+    </div>
 
     <span>Pasmo górskie: @Model.MountainRange, @Model.MountainSubRange </span>
     <div>
@@ -189,7 +201,7 @@
 </div>
 
 <hr />
-<h4>Aktualna pogoda:</h4>
+<h4>Aktualna pogoda</h4>
 <div>
     <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
     <div id="weather"></div>
@@ -201,7 +213,7 @@
 
 <hr />
 
-
+<h4>Komentarze:</h4>
 
 
 @foreach (var c in comments)

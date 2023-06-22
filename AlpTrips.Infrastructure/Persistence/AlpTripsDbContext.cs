@@ -32,7 +32,7 @@ namespace AlpTrips.Infrastructure.Persistence
             {
                 eb.Property(p => p.Name).IsRequired();
                 eb.HasMany(p => p.CommentsList).WithOne(c => c.User);
-                eb.HasMany(p => p.TripsList).WithOne(c => c.User);
+               
                 
             });
             modelBuilder.Entity<Trip>(eb =>
