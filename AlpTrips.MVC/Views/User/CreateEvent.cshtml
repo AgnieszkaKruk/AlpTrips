@@ -1,0 +1,148 @@
+﻿@using AlpTrips.Application.User.Commands.AddEvent;
+@model AddEventCommand;
+
+<div class="container">
+    <h3 class="display-4">Zaplanuj swoją wycieczkę!</h3>
+    <hr />
+
+    <div class="row">
+        <div class="card m shadow-sm">
+            <div class="col-md-4">
+
+                <form asp-action="CreateEvent" enctype="multipart/form-data" method="post" asp-controller="User">
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Destination">Cel wycieczki</label>
+                        <input class="form-control" type="text" asp-for="Destination" oninput="getSuggestions(this.value)">
+                        <span asp-validation-for="Destination" class="text-danger"></span>
+                        <div id="suggestions"></div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Start">Data rozpoczęcia</label>
+                        <input class="form-control" type="text" asp-for="Start">
+                        <span asp-validation-for="Start" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="End">Data zakończenia</label>
+                        <input class="form-control" type="text" asp-for="End">
+                        <span asp-validation-for="End" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label" asp-for="Text">Opis</label>
+                        <textarea class="form-control" asp-for="Text"></textarea>
+                        <span asp-validation-for="Text" class="text-danger"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-outline-primary">Dodaj plan wycieczki</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var currentFocus = -1;
+
+        function getSuggestions(query) {
+            // Wywołanie żądania asynchronicznego do serwera w celu pobrania sugestii
+            // Tutaj możesz użyć Ajax lub fetch, aby pobrać dane z serwera
+
+            // Przykład użycia fetch:
+            fetch('/User/GetDestinations?query=' + query)
+                .then(response => response.json())
+                .then(data => {
+                    const suggestionsContainer = document.getElementById('suggestions');
+                    suggestionsContainer.innerHTML = '';
+                    currentFocus = -1;
+
+                    const matchingSuggestions = data.filter(suggestion => suggestion.toLowerCase().startsWith(query.toLowerCase()));
+
+                    matchingSuggestions.forEach((suggestion, index) => {
+                        const suggestionItem = createSuggestionItem(suggestion, query);
+                        suggestionsContainer.appendChild(suggestionItem);
+                    });
+                });
+        }
+
+        function createSuggestionItem(suggestion, query) {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.innerText = suggestion;
+            suggestionItem.classList.add('suggestion-item');
+
+            suggestionItem.addEventListener('click', function () {
+                // Ustawienie wybranej sugestii jako wartości pola tekstowego
+                document.getElementById('Destination').value = suggestion;
+                document.getElementById('suggestions').innerHTML = '';
+            });
+
+            suggestionItem.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // Zapobieganie domyślnej akcji formularza
+                    document.getElementById('Destination').value = suggestion;
+                    document.getElementById('suggestions').innerHTML = '';
+                }
+            });
+
+            return suggestionItem;
+        }
+
+
+
+        function handleKeyboardNavigation(event) {
+            const suggestionsContainer = document.getElementById('suggestions');
+            const suggestionItems = suggestionsContainer.getElementsByClassName('suggestion-item');
+
+            if (event.key === 'ArrowDown') {
+                currentFocus++;
+                addActiveClass();
+            } else if (event.key === 'ArrowUp') {
+                currentFocus--;
+                addActiveClass();
+            } else if (event.key === 'Enter') {
+                event.preventDefault(); // Zapobieganie domyślnej akcji formularza
+                if (currentFocus > -1) {
+                    if (suggestionItems[currentFocus]) {
+                        // Ustawienie wybranej sugestii jako wartości pola tekstowego
+                        document.getElementById('Destination').value = suggestionItems[currentFocus].innerText;
+                    }
+                    suggestionsContainer.innerHTML = '';
+                }
+            }
+        }
+
+        function addActiveClass() {
+            const suggestionsContainer = document.getElementById('suggestions');
+            const suggestionItems = suggestionsContainer.getElementsByClassName('suggestion-item');
+
+            // Usunięcie klasy aktywnej z wszystkich sugestii
+            for (let i = 0; i < suggestionItems.length; i++) {
+                suggestionItems[i].classList.remove('active');
+            }
+
+            // Dodanie klasy aktywnej do aktualnie zaznaczonej sugestii
+            if (currentFocus >= suggestionItems.length) {
+                currentFocus = 0;
+            } else if (currentFocus < 0) {
+                currentFocus = suggestionItems.length - 1;
+            }
+
+            if (suggestionItems[currentFocus]) {
+                suggestionItems[currentFocus].classList.add('active');
+            }
+        }
+
+        document.getElementById('Destination').addEventListener('input', function () {
+            getSuggestions(this.value);
+        });
+
+        document.getElementById('Destination').addEventListener('keydown', function (event) {
+            handleKeyboardNavigation(event);
+        });
+
+
+    </script>

@@ -13,6 +13,8 @@ using AlpTrips.Application.User.Commands.AddEvent;
 using AlpTrips.Application.User.Queries.UserTrips;
 using AlpTrips.Application.User.Queries.UserFavouriteTrips;
 using AlpTrips.Application.User.Queries.UserEvents;
+using AlpTrips.Application.Trip.Queries.GetAllTrips;
+using AlpTrips.Domain.Entities;
 
 namespace AlpsTrips.MVC.Controllers
 {
@@ -75,6 +77,15 @@ namespace AlpsTrips.MVC.Controllers
         {
             var userEvents = await _mediator.Send(new UserEventsQuery());
             return View(userEvents);
+        }
+
+        [HttpGet]
+        public async Task <IActionResult> GetDestinations(string query)
+        {
+            // Pobranie sugestii z bazy danych na podstawie wpisanego query
+            var trips = await _mediator.Send(new GetAllTripsQuery());
+            var suggestions = trips.Select(trip => trip.Name).ToList();
+            return Json(suggestions);
         }
     }
 }

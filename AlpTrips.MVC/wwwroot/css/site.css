@@ -9,10 +9,16 @@ html {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.ramka {
-    text-decoration: underline;
-    
+.suggestion-item {
+    cursor: pointer;
+    padding: 8px 12px;
 }
+
+    .suggestion-item:hover,
+    .suggestion-item.active {
+        background-color: #f2f2f2;
+    }
+
 .tekst {
     margin-top: 50px;
     margin-left: 3px;

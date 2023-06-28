@@ -26,17 +26,20 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 nav-tabs">
-                        <li class="nav-item">
+                       @* <li class="nav-item">
                             <a class="nav-link text-dark @(currentUrl == "Index"? "active": "")" asp-area="" asp-controller="Home" asp-action="Index">Główna</a>
-                        </li>
+                        </li>*@
                         <li class="nav-item">
                             <a class="nav-link text-dark @(currentUrl == "Trip" ? "active" : "")" asp-area="" asp-controller="Trip" asp-action="Index">Wycieczki</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark @(currentUrl == "Trip/Create" ? "active" : "")" asp-area="" asp-controller="Trip" asp-action="Create">Dodaj nową</a>
                         </li>
-                        <li class="nav-item ramka">
+                        <li class="nav-item">
                             <a class="nav-link text-dark @(currentUrl == "Trip/SearchByParam" ? "active" : "")" asp-area="" asp-controller="Trip" asp-action="SearchByParam">Wyszukaj trasę wg potrzeb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(currentUrl == "User/CreateEvent" ? "active" : "")" asp-area="" asp-controller="User" asp-action="CreateEvent">Zaplanuj swoją wycieczkę</a>
                         </li>
                     </ul>
                     <form asp-action="Search" asp-controller="Home"  class="d-flex">
