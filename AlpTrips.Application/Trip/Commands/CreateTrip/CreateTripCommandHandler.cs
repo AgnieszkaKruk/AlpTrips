@@ -26,7 +26,7 @@ namespace AlpTrips.Application.Trip.Commands.CreateTrip
             trip.CreatedById = _userContext.GetCurrentUser().Id;
             trip.User.Email = _userContext.GetCurrentUser().Email;
             trip.User.Name = _userContext.GetCurrentUser().Name;
-            trip.UserId = trip.CreatedById;
+           // trip.UserId = trip.CreatedById;
             trip.Latitude = request.Latitude;
             trip.Longitude= request.Longitude;
             trip.MountainSubRange = request.MountainSubRange;

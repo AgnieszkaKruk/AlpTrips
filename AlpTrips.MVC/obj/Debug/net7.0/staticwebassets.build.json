@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I/O/4mY1xFVUcF7eS6jB6BMN/g8sJH7BELanLf4IeFY=",
+  "Hash": "scvqhR8UVpGXfjWVxGHs+uk7IDTxDV2A91KxRtveldA=",
   "Source": "AlpsTrips.MVC",
   "BasePath": "_content/AlpsTrips.MVC",
   "Mode": "Default",
@@ -1343,6 +1343,40 @@
       "OriginalItemSpec": "wwwroot\\gallery\\34bc810b-2450-4227-8ea8-f6bef791c24a_pobrane.jpg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\3648f8bb-a67d-4a49-8627-8f8178eced92_montmaudit1.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "gallery/3648f8bb-a67d-4a49-8627-8f8178eced92_montmaudit1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gallery\\3648f8bb-a67d-4a49-8627-8f8178eced92_montmaudit1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\3b93532b-9c52-4496-8cf2-bba65a632429_pobrane (17).jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "gallery/3b93532b-9c52-4496-8cf2-bba65a632429_pobrane (17).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gallery\\3b93532b-9c52-4496-8cf2-bba65a632429_pobrane (17).jpg"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\3eca37d1-e6c0-48d6-86b5-e95e1b513cc5_15pod-szczytem.jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
@@ -1375,6 +1409,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\gallery\\42c11901-7002-40aa-a0b3-b79954e02ef2_MONTBLANC50.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\4f4bbf8b-202e-4adf-bb6c-930ff8c099dc_pobrane (19).jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "gallery/4f4bbf8b-202e-4adf-bb6c-930ff8c099dc_pobrane (19).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gallery\\4f4bbf8b-202e-4adf-bb6c-930ff8c099dc_pobrane (19).jpg"
     },
     {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\5256a058-7651-4d75-98e2-bfda42261f8f_pobrane (11).jpg",
@@ -1443,6 +1494,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\gallery\\5582c9b1-1794-42dd-acc0-5f3764ca7ab6_MONTBLANC62.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\59e5bca8-d25f-4b07-998c-fd44d62224cd_pobrane (16).jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "gallery/59e5bca8-d25f-4b07-998c-fd44d62224cd_pobrane (16).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gallery\\59e5bca8-d25f-4b07-998c-fd44d62224cd_pobrane (16).jpg"
     },
     {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\5c3d3f7c-7c95-43cd-9404-eb5149e0b187_pobrane (4).jpg",
@@ -1717,6 +1785,23 @@
       "OriginalItemSpec": "wwwroot\\gallery\\c0c86655-c3d5-4521-9d1b-77b8654520c6_pobrane (11).jpg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\c3f5b6c1-668e-427a-b0ab-e690433139f4_fo_piz_bernina_DSC_0506p_l.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "gallery/c3f5b6c1-668e-427a-b0ab-e690433139f4_fo_piz_bernina_DSC_0506p_l.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gallery\\c3f5b6c1-668e-427a-b0ab-e690433139f4_fo_piz_bernina_DSC_0506p_l.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\ca3250b1-f2e0-4149-a89d-44a6510b3c49_pobrane (13).jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
@@ -1904,6 +1989,23 @@
       "OriginalItemSpec": "wwwroot\\gallery\\f21f5491-aeb3-465d-9916-f4261c931aae_pobrane (5).jpg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\f3dc4fad-c1bb-4198-9114-e1a9427d510e_Mont_maudit.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "gallery/f3dc4fad-c1bb-4198-9114-e1a9427d510e_Mont_maudit.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gallery\\f3dc4fad-c1bb-4198-9114-e1a9427d510e_Mont_maudit.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\f6e01848-4734-4a72-8767-df7aeaa52165_pobrane (17).jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
@@ -1972,6 +2074,40 @@
       "OriginalItemSpec": "wwwroot\\gallery\\fce392c1-aeb1-4384-a5c1-38f0b814645b_pobrane (17).jpg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\gallery\\feb9c295-de7e-477a-8a4b-63db3c43e768_pobrane (15).jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "gallery/feb9c295-de7e-477a-8a4b-63db3c43e768_pobrane (15).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gallery\\feb9c295-de7e-477a-8a4b-63db3c43e768_pobrane (15).jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\056721e2-d94f-4409-931e-a8443b202ba9_montmaudit.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/056721e2-d94f-4409-931e-a8443b202ba9_montmaudit.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\056721e2-d94f-4409-931e-a8443b202ba9_montmaudit.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\0c5f1d45-8b78-414a-b5a3-7674264a3875_pobrane (16).jpg",
       "SourceId": "AlpsTrips.MVC",
       "SourceType": "Discovered",
@@ -1987,6 +2123,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\0c5f1d45-8b78-414a-b5a3-7674264a3875_pobrane (16).jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\0eb0e4a7-d5a6-4a9d-b8ef-99b98abd4773_160px-Piz_Bernina_mit_Biancograt.jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/0eb0e4a7-d5a6-4a9d-b8ef-99b98abd4773_160px-Piz_Bernina_mit_Biancograt.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0eb0e4a7-d5a6-4a9d-b8ef-99b98abd4773_160px-Piz_Bernina_mit_Biancograt.jpg"
     },
     {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\18575b4a-22ac-42bf-b594-26b8ee69e588_MONTBLANC62.jpg",
@@ -2242,6 +2395,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\66f0ccd8-e97e-4b54-ae59-e1fe109e99a1_Skrlatica2.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\7eb238ec-0767-409c-9bcd-f1cad4fc5e1c_pobrane (16).jpg",
+      "SourceId": "AlpsTrips.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\",
+      "BasePath": "_content/AlpsTrips.MVC",
+      "RelativePath": "images/7eb238ec-0767-409c-9bcd-f1cad4fc5e1c_pobrane (16).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7eb238ec-0767-409c-9bcd-f1cad4fc5e1c_pobrane (16).jpg"
     },
     {
       "Identity": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.MVC\\wwwroot\\images\\81c8bf9e-9377-4529-9be0-aae3e5819313_lag.jpg",

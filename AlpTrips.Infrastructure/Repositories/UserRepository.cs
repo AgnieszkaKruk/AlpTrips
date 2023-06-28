@@ -1,9 +1,11 @@
 ﻿using AlpTrips.Application.ApplicationUser;
 using AlpTrips.Application.Dtos;
+using AlpTrips.Application.Event;
 using AlpTrips.Domain.Entities;
 using AlpTrips.Domain.Interfaces;
 using AlpTrips.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +38,7 @@ namespace AlpTrips.Infrastructure.Repositories
 
         public async Task<IEnumerable<Trip>> UserTrips(string userId)
         {
-            var userTrips = await _context.Trips.Include(t => t.Gallery).Where(t => t.UserId == userId).ToListAsync();
+            var userTrips = await _context.Trips.Include(t => t.Gallery).Where(t => t.CreatedById == userId).ToListAsync();
             return userTrips;
         }
 
@@ -57,6 +59,29 @@ namespace AlpTrips.Infrastructure.Repositories
                 return favouriteTrips;
 
         }
+
+
+        public async Task AddEvent(Event eventt)
+        {
+            var currentUser = _userContext.GetCurrentUser();
+            var user = _context.Users.Include(u => u.Events).Where(u => u.Id == currentUser.Id).FirstOrDefault();
+
+            if (!EventDateValidator.ValidateOverlapping(user.Events, eventt))
+            {
+                user.Events.Add(eventt);
+            }
+            else
+            {
+                throw new Exception("This date is already booked");
+            }
+           
+            await _context.SaveChangesAsync();
+
+        }
+
+
+
+
 
 
     }

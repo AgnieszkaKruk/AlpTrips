@@ -62,6 +62,43 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.ToTable("Comments");
                 });
 
+            modelBuilder.Entity("AlpTrips.Domain.Entities.Event", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("End")
+                        .HasPrecision(3)
+                        .HasColumnType("datetime2(3)");
+
+                    b.Property<DateTime>("Start")
+                        .HasPrecision(3)
+                        .HasColumnType("datetime2(3)");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId1")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId1");
+
+                    b.ToTable("Events");
+                });
+
             modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
                 {
                     b.Property<int>("Id")
@@ -390,6 +427,15 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AlpTrips.Domain.Entities.Event", b =>
+                {
+                    b.HasOne("AlpTrips.Domain.Entities.User", "User")
+                        .WithMany("Events")
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
                 {
                     b.HasOne("AlpTrips.Domain.Entities.User", "CreatedBy")
@@ -479,6 +525,8 @@ namespace AlpTrips.Infrastructure.Migrations
             modelBuilder.Entity("AlpTrips.Domain.Entities.User", b =>
                 {
                     b.Navigation("CommentsList");
+
+                    b.Navigation("Events");
 
                     b.Navigation("FavouriteTripsList");
                 });

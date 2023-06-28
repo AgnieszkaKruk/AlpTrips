@@ -1,9 +1,12 @@
 ﻿@using AlpTrips.Application.Dtos;
 
+
+
 @{
     ViewData["Title"] = "Home Page";
+ 
 }
-
+ 
 
 @if (TempData["logout_message"] != null)
 {
@@ -29,7 +32,7 @@
         </div>
         <form asp-action="Search" asp-controller="Home" class="row">
             <div class="col-md-6" style="margin-left:220px;">
-                <input type="text" name="search" placeholder="Wpisz nazwę szczytu" class="form-control">
+                <input type="text" style="font-size:15px;" name="search" placeholder="Wpisz nazwę szczytu" class="form-control">
             </div>
             <div class="col-auto">
                 <button type="submit" class="btn btn-primary">Znajdź wycieczkę</button>

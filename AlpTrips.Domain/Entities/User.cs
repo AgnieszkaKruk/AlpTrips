@@ -8,7 +8,7 @@ namespace AlpTrips.Domain.Entities
         public ICollection<Trip>? FavouriteTripsList { get; set; } = new List<Trip>();
         public List<Comment> CommentsList { get; set; } = new List<Comment>();
 
-        
-        
+
+        public List<Event> Events { get; set; } = new List<Event>();
     }
 }

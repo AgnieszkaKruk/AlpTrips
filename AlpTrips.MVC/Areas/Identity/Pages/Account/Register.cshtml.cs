@@ -91,7 +91,7 @@ namespace AlpsTrips.MVC.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(100, ErrorMessage = "Hasło uzytkownika musi mieć co najmniej 6 liter", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
@@ -102,7 +102,7 @@ namespace AlpsTrips.MVC.Areas.Identity.Pages.Account
             /// </summary>
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Compare("Password", ErrorMessage = "Hasło i potwierdzenie nie są takie same")]
             public string ConfirmPassword { get; set; }
         }
 
@@ -121,9 +121,10 @@ namespace AlpsTrips.MVC.Areas.Identity.Pages.Account
             {
                 var user = CreateUser();
 
-                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+                await _userStore.SetUserNameAsync(user, Input.Name, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-                SetName(user, Input.Name, CancellationToken.None);
+               SetName(user, Input.Name, CancellationToken.None);
+                SetUserName(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
@@ -191,5 +192,13 @@ namespace AlpsTrips.MVC.Areas.Identity.Pages.Account
             user.Name = name;
             return Task.CompletedTask;
         }
+
+        private Task SetUserName(User user, string username, CancellationToken cancellationToken = default(CancellationToken))
+        {
+
+            user.UserName = username;
+            return Task.CompletedTask;
+        }
+
     }
 }

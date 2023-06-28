@@ -13,5 +13,7 @@ namespace AlpTrips.Domain.Interfaces
         Task<IEnumerable<Trip>> UserTrips(string userId);
         Task AddToFavourite(Trip trip);
         Task<IEnumerable<Trip>> UserFavouriteTrips(string userId);
+
+        Task AddEvent(Event eventt);
     }
 }

@@ -13,9 +13,11 @@ namespace AlpTrips.Infrastructure.Persistence
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Trip> Trips { get; set; }
         public DbSet<TripGallery> Galleries { get; set; }
+        public DbSet<Event> Events { get; set; }
 
-       
-        
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -26,9 +28,13 @@ namespace AlpTrips.Infrastructure.Persistence
 
             });
 
+            modelBuilder.Entity<Event>(eb =>
+            {
+                eb.Property(u => u.Start).HasPrecision(3);
+                eb.Property(u => u.End).HasPrecision(3);
+            });
 
-
-            modelBuilder.Entity<User>(eb =>
+                modelBuilder.Entity<User>(eb =>
             {
                 eb.Property(p => p.Name).IsRequired();
                 eb.HasMany(p => p.CommentsList).WithOne(c => c.User);
