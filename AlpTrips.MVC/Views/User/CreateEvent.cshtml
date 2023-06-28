@@ -1,6 +1,10 @@
 ﻿@using AlpTrips.Application.User.Commands.AddEvent;
 @model AddEventCommand;
-
+<head>
+    <!-- Inne elementy head -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
 <div class="container">
     <h3 class="display-4">Zaplanuj swoją wycieczkę!</h3>
     <hr />
@@ -18,17 +22,19 @@
                         <div id="suggestions"></div>
                     </div>
 
-                    <div class="form-group mb-3">
-                        <label class="control-label" asp-for="Start">Data rozpoczęcia</label>
-                        <input class="form-control" type="text" asp-for="Start">
-                        <span asp-validation-for="Start" class="text-danger"></span>
-                    </div>
+                        <div class="form-group mb-3">
+                            <label class="control-label" asp-for="Start">Data rozpoczęcia</label>
+                            <input class="form-control datepicker" type="text" asp-for="Start">
+                            <span asp-validation-for="Start" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group mb-3">
-                        <label class="control-label" asp-for="End">Data zakończenia</label>
-                        <input class="form-control" type="text" asp-for="End">
-                        <span asp-validation-for="End" class="text-danger"></span>
-                    </div>
+                        <div class="form-group mb-3">
+                            <label class="control-label" asp-for="End">Data zakończenia</label>
+                            <input class="form-control datepicker" type="text" asp-for="End" disabled>
+                            <span asp-validation-for="End" class="text-danger"></span>
+                        </div>
+
+
 
                     <div class="form-group mb-3">
                         <label class="control-label" asp-for="Text">Opis</label>
@@ -44,15 +50,14 @@
             </div>
         </div>
     </div>
+        
+</body>
     <script>
 
         var currentFocus = -1;
 
         function getSuggestions(query) {
-            // Wywołanie żądania asynchronicznego do serwera w celu pobrania sugestii
-            // Tutaj możesz użyć Ajax lub fetch, aby pobrać dane z serwera
-
-            // Przykład użycia fetch:
+         
             fetch('/User/GetDestinations?query=' + query)
                 .then(response => response.json())
                 .then(data => {
@@ -146,3 +151,39 @@
 
 
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const startDateInput = document.querySelector('input[name="Start"]');
+        const endDateInput = document.querySelector('input[name="End"]');
+
+        const startDatePicker = flatpickr(startDateInput, {
+            dateFormat: "Y-m-d",
+            minDate: "tomorrow",
+            onChange: function (selectedDates, dateStr, instance) {
+                const startDate = selectedDates[0];
+                const endDatePicker = flatpickr(endDateInput);
+                endDatePicker.set("minDate", startDate);
+                endDateInput.disabled = false;
+            }
+        });
+
+        const endDatePicker = flatpickr(endDateInput, {
+            dateFormat: "Y-m-d",
+        });
+
+        startDatePicker.config.onClose.push(function (selectedDates) {
+            const endDatePicker = flatpickr(endDateInput);
+            if (!endDatePicker.selectedDates.length) {
+                endDateInput.disabled = true;
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
