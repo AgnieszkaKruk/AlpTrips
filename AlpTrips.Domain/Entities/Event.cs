@@ -14,10 +14,11 @@ namespace AlpTrips.Domain.Entities
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
         public string Text { get; set; }
-        public Trip Destination { get; set; }
+        public string Destination { get; set; }
+        public Trip Trip { get; set; }
         public int TripId { get; set; }
         public User User { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         //  public EventStatus Status { get; set; }
 

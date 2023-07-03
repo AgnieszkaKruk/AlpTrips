@@ -34,7 +34,7 @@ namespace AlpTrips.Infrastructure.Persistence
                 eb.Property(u => u.End).HasPrecision(3);
             });
 
-                modelBuilder.Entity<User>(eb =>
+            modelBuilder.Entity<User>(eb =>
             {
                 eb.Property(p => p.Name).IsRequired();
                 eb.HasMany(p => p.CommentsList).WithOne(c => c.User);

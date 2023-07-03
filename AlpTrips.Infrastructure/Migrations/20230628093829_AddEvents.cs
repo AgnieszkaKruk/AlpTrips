@@ -20,24 +20,24 @@ namespace AlpTrips.Infrastructure.Migrations
                     Start = table.Column<DateTime>(type: "datetime2(3)", precision: 3, nullable: false),
                     End = table.Column<DateTime>(type: "datetime2(3)", precision: 3, nullable: false),
                     Text = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId1 = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    Destination = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    TripId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Events", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Events_AspNetUsers_UserId1",
-                        column: x => x.UserId1,
+                        name: "FK_Events_AspNetUsers_UserId",
+                        column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Events_UserId1",
+                name: "IX_Events_UserId",
                 table: "Events",
-                column: "UserId1");
+                column: "UserId");
         }
 
         /// <inheritdoc />

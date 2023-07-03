@@ -70,7 +70,7 @@ namespace AlpTrips.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Color")
+                    b.Property<string>("Destination")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -86,15 +86,18 @@ namespace AlpTrips.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("TripId")
                         .HasColumnType("int");
 
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("TripId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Events");
                 });
@@ -429,9 +432,19 @@ namespace AlpTrips.Infrastructure.Migrations
 
             modelBuilder.Entity("AlpTrips.Domain.Entities.Event", b =>
                 {
+                    b.HasOne("AlpTrips.Domain.Entities.Trip", "Trip")
+                        .WithMany("Events")
+                        .HasForeignKey("TripId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("AlpTrips.Domain.Entities.User", "User")
                         .WithMany("Events")
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Trip");
 
                     b.Navigation("User");
                 });
@@ -518,6 +531,8 @@ namespace AlpTrips.Infrastructure.Migrations
             modelBuilder.Entity("AlpTrips.Domain.Entities.Trip", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Events");
 
                     b.Navigation("Gallery");
                 });

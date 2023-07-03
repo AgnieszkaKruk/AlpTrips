@@ -54,9 +54,9 @@ namespace AlpTrips.Infrastructure.Repositories
         public async Task<IEnumerable<Trip>> UserFavouriteTrips(string userId)
         {
             var user = await _context.Users.Include(u => u.FavouriteTripsList).FirstOrDefaultAsync(u => u.Id == userId);
-            
-                var favouriteTrips = user.FavouriteTripsList.ToList();
-                return favouriteTrips;
+
+            var favouriteTrips = user.FavouriteTripsList.ToList();
+            return favouriteTrips;
 
         }
 
@@ -65,8 +65,14 @@ namespace AlpTrips.Infrastructure.Repositories
         {
             var currentUser = _userContext.GetCurrentUser();
             var user = _context.Users.Include(u => u.Events).Where(u => u.Id == currentUser.Id).FirstOrDefault();
+            var trip = _context.Trips.Where(t => t.Name == eventt.Destination).FirstOrDefault();
+            eventt.Trip = trip;
+            eventt.TripId = trip.Id;
+            User userr = User.FromCurrentUser(currentUser);
+            eventt.User = userr;
+            eventt.UserId = userr.Id;
 
-            if (!EventDateValidator.ValidateOverlapping(user.Events, eventt))
+            if (EventDateValidator.ValidateOverlapping(user.Events, eventt))
             {
                 user.Events.Add(eventt);
             }
@@ -74,10 +80,20 @@ namespace AlpTrips.Infrastructure.Repositories
             {
                 throw new Exception("This date is already booked");
             }
-           
+
             await _context.SaveChangesAsync();
 
         }
+
+        public async Task<IEnumerable<Event>> UserEvents(string userId)
+        {
+            var user = await _context.Users.Include(u => u.Events).FirstOrDefaultAsync(u => u.Id == userId);
+
+            var events = user.Events.ToList();
+            return events;
+
+        }
+
 
 
 

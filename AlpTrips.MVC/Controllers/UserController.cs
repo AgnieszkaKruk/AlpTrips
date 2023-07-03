@@ -82,7 +82,7 @@ namespace AlpsTrips.MVC.Controllers
         [HttpGet]
         public async Task <IActionResult> GetDestinations(string query)
         {
-            // Pobranie sugestii z bazy danych na podstawie wpisanego query
+            
             var trips = await _mediator.Send(new GetAllTripsQuery());
             var suggestions = trips.Select(trip => trip.Name).ToList();
             return Json(suggestions);

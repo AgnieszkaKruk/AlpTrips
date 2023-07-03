@@ -1,0 +1,35 @@
+﻿@using AlpTrips.Domain.Entities;
+@model IEnumerable<Event>;
+
+<div class="container">
+    <h3 class="display-4">Zaplanowane wycieczki</h3>
+    </hr>
+    <div class="row">
+
+        @foreach (var trip in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+
+                    <div class="card body">
+                        <h3 class="card-title">@trip.Destination</h3>
+                        <p class="card-text">@trip.Text</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><span class="font-weight-bold">Od: </span>
+                                <span class="bold-date">@trip.Start.ToString("dd.MM.yyyy")</span> </li>
+                            <li class="list-group-item"><span class="font-weight-bold">Do: </span>
+                                <span class="bold-date">@trip.End.ToString("dd.MM.yyyy")</span> </li>
+                        </ul>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btnbtn-group">
+                                @{
+                                    var encodedName = trip.Destination.ToLower().Replace(" ", "-");
+                                }
+                                <a class="btn btn-sm btn-outline-secondary" asp-controller="Trip" asp-action="Details" asp-route-encodedName="@encodedName">Szczegóły</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }

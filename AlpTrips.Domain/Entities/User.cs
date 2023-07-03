@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AlpTrips.Application.ApplicationUser;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace AlpTrips.Domain.Entities
 {
@@ -10,5 +12,17 @@ namespace AlpTrips.Domain.Entities
 
 
         public List<Event> Events { get; set; } = new List<Event>();
+
+        public static User FromCurrentUser(CurrentUser currentUser)
+        {
+            var user = new User
+            {
+                Id = currentUser.Id,
+                Name = currentUser.Name,
+                // Przypisz inne właściwości, jeśli istnieją
+            };
+
+            return user;
+        }
     }
 }

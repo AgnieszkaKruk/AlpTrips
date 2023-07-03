@@ -1,6 +1,10 @@
 html {
   font-size: 14px;
 }
+.bold-date {
+    font-weight: bold;
+}
+
 .card-text {
     margin-left: 10px;
     display: -webkit-box;
