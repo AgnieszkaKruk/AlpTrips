@@ -6,6 +6,7 @@ namespace AlpsTrips.MVC.Models
     {
         public TripDto TripDto1 { get; set; }
         public TripDto TripDto2 { get; set; }
+        public TripDto TripDto3 { get; set; }
     }
 
 }

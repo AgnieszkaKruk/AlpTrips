@@ -87,5 +87,7 @@ namespace AlpsTrips.MVC.Controllers
             var suggestions = trips.Select(trip => trip.Name).ToList();
             return Json(suggestions);
         }
+
+       
     }
 }

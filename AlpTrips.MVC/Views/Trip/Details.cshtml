@@ -211,7 +211,7 @@
 </div>
 
 <hr />
-<h4 style="margin-top= 10px">Prognoza na najbliższy tydzień</h4>
+<h4 style="margin-top= 10px">Prognoza na najbliższe dni</h4>
 <div id="weekly-weather" class="forecast-container"></div>
 
 <hr />
@@ -299,15 +299,16 @@
         var longitude = @Model.Longitude; // pobierz długość geograficzną góry z Modelu
 
         var apiUrl = 'https://api.weatherapi.com/v1/forecast.json?key=' + apiKey + '&q=' + latitude + ',' + longitude + '&days=7';
-
+       
         $.ajax({
             url: apiUrl,
             method: 'GET',
             success: function (response) {
                 var forecastData = response.forecast;
                 var forecastHtml = '';
+                console.log(forecastData.forecastday.length);
 
-                for (var i = 1; i < forecastData.forecastday.length; i++) {
+                for (var i = 0; i < forecastData.forecastday.length; i++) {
                     var forecastDay = forecastData.forecastday[i];
                     var date = forecastDay.date;
                     var maxTemp = forecastDay.day.maxtemp_c;

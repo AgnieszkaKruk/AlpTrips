@@ -142,7 +142,7 @@ namespace AlpTrips.Infrastructure.Repositories
 
         public async Task<Trip> FindBestWeatherNow()
         {
-            List<Trip> alltrips = await _context.Trips.Include(t=>t.Gallery).ToListAsync();
+            List<Trip> alltrips = await _context.Trips.Include(t => t.Gallery).ToListAsync();
 
             Trip bestTrip = null;
             int maxPoints = 0;
@@ -151,7 +151,7 @@ namespace AlpTrips.Infrastructure.Repositories
             {
                 if (trip.Latitude.IsNullOrEmpty() || trip.Longitude.IsNullOrEmpty() == null)
                 {
-                   
+
                     continue;
                 }
 
@@ -160,7 +160,7 @@ namespace AlpTrips.Infrastructure.Repositories
                 int points = 0;
 
                 if (weatherData.Precipitation == 0)
-                    points+=3;
+                    points += 3;
 
                 if (weatherData.Precipitation <= 1)
                     points += 2;
@@ -168,16 +168,16 @@ namespace AlpTrips.Infrastructure.Repositories
                     points++;
 
                 if (weatherData.WindStrength <= 10)
-                    points+=3;
+                    points += 3;
                 if (weatherData.WindStrength > 10 && weatherData.WindStrength <= 30)
-                    points+=2;
+                    points += 2;
                 if (weatherData.WindStrength > 30 && weatherData.WindStrength <= 50)
                     points++;
 
                 if (weatherData.Condition == "Sunny")
-                    points+=3;
+                    points += 3;
                 if (weatherData.Condition == "Partly cloudy")
-                    points+=2;
+                    points += 2;
                 if (weatherData.Condition == "Cloudy")
                     points++;
 
@@ -212,27 +212,32 @@ namespace AlpTrips.Infrastructure.Repositories
 
                 foreach (var forecastDay in forecastData.Forecast)
                 {
-                    if (forecastDay.Precipitation == 0)
-                        points += 3;
+                    if (forecastDay.Date >= DateTime.Now && forecastDay.Date <= forecastDay.Date.AddDays(7))
+                    {
 
-                    if (forecastDay.Precipitation <= 1)
-                        points += 2;
-                    if (forecastDay.Precipitation > 1 && forecastDay.Precipitation <= 3)
-                        points++;
 
-                    if (forecastDay.WindStrength <= 10)
-                        points += 3;
-                    if (forecastDay.WindStrength > 10 && forecastDay.WindStrength <= 30)
-                        points += 2;
-                    if (forecastDay.WindStrength > 30 && forecastDay.WindStrength <= 50)
-                        points++;
+                        if (forecastDay.Precipitation == 0)
+                            points += 3;
 
-                    if (forecastDay.Condition == "Sunny")
-                        points += 3;
-                    if (forecastDay.Condition == "Partly cloudy")
-                        points += 2;
-                    if (forecastDay.Condition == "Cloudy")
-                        points++;
+                        if (forecastDay.Precipitation <= 1)
+                            points += 2;
+                        if (forecastDay.Precipitation > 1 && forecastDay.Precipitation <= 3)
+                            points++;
+
+                        if (forecastDay.WindStrength <= 10)
+                            points += 3;
+                        if (forecastDay.WindStrength > 10 && forecastDay.WindStrength <= 30)
+                            points += 2;
+                        if (forecastDay.WindStrength > 30 && forecastDay.WindStrength <= 50)
+                            points++;
+
+                        if (forecastDay.Condition == "Sunny")
+                            points += 3;
+                        if (forecastDay.Condition == "Partly cloudy")
+                            points += 2;
+                        if (forecastDay.Condition == "Cloudy")
+                            points++;
+                    }
                 }
 
                 if (points > maxPoints)
@@ -245,7 +250,66 @@ namespace AlpTrips.Infrastructure.Repositories
             return bestTrip;
         }
 
-       
+        public async Task<Trip> FindBestWeatherInDates(DateTime start, DateTime end)
+        {
+            List<Trip> allTrips = await _context.Trips.Include(t => t.Gallery).ToListAsync();
+
+            Trip bestTrip = null;
+            int maxPoints = 0;
+
+            foreach (var trip in allTrips)
+            {
+                if (trip.Latitude.IsNullOrEmpty() || trip.Longitude.IsNullOrEmpty())
+                {
+                    continue;
+                }
+
+                WeatherApiClient weatherApi = new WeatherApiClient();
+                ForecastData forecastData = await weatherApi.GetWeatherForecastAsync(trip.Latitude, trip.Longitude);
+
+                int points = 0;
+
+                foreach (var forecastDay in forecastData.Forecast)
+                {
+                    if (forecastDay.Date >= start && forecastDay.Date <= end)
+                    {
+                        if (forecastDay.Precipitation == 0)
+                            points += 3;
+
+                        if (forecastDay.Precipitation <= 1)
+                            points += 2;
+                        if (forecastDay.Precipitation > 1 && forecastDay.Precipitation <= 3)
+                            points++;
+
+                        if (forecastDay.WindStrength <= 10)
+                            points += 3;
+                        if (forecastDay.WindStrength > 10 && forecastDay.WindStrength <= 30)
+                            points += 2;
+                        if (forecastDay.WindStrength > 30 && forecastDay.WindStrength <= 50)
+                            points++;
+
+                        if (forecastDay.Condition == "Sunny")
+                            points += 3;
+                        if (forecastDay.Condition == "Partly cloudy")
+                            points += 2;
+                        if (forecastDay.Condition == "Cloudy")
+                            points++;
+                    }
+                }
+
+                if (points > maxPoints)
+                {
+                    maxPoints = points;
+                    bestTrip = trip;
+                }
+            }
+
+            return bestTrip;
+        }
+
+
+
+
 
     }
 }

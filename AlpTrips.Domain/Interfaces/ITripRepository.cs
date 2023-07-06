@@ -17,5 +17,6 @@ namespace AlpTrips.Domain.Interfaces
         Task<IEnumerable<Trip>> SearchTripByParams(int? level, string? length, string? elevation, string? time);
         Task<Trip> FindBestWeatherNow();
         Task<Trip> FindBestWeatherNextWeek();
+        Task<Trip> FindBestWeatherInDates(DateTime start, DateTime end);
     }
 }

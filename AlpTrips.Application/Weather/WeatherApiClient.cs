@@ -35,7 +35,7 @@ namespace AlpTrips.Application.Weather
 
         public async Task<ForecastData> GetWeatherForecastAsync(string latitude, string longitude)
         {
-            string apiUrl = $"https://api.weatherapi.com/v1/forecast.json?key={apiKey}&q={latitude},{longitude}&days=7";
+            string apiUrl = $"https://api.weatherapi.com/v1/forecast.json?key={apiKey}&q={latitude},{longitude}&days=10";
 
             try
             {

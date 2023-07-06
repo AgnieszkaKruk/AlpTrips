@@ -1,19 +1,185 @@
 ﻿@model TripsViewModel
 
-<div class="row">
-    <div class="col-md-6">
-        <h2>Najlepsza pogoda obecnie:</h2>
+<head>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container">
        
-            <partial name="_OneTrip" for="@Model.TripDto1" />
+        
+        @if (Model.TripDto3 == null)
+        {
+            <h2>Wybierz kiedy chcesz wyszukać najlepszą pogodę:</h2>
+            <div class="row">
+                <form asp-action="FindBestWeather" enctype="multipart/form-data" method="post" asp-controller="Trip">
+                    <div class="form-group mb-3 col-md-4">
+                        <label class="control-label" name="start">Początek</label>
+                        <input class="form-control datepicker" type="text" name="start">
+                    </div>
+
+                    <div class="form-group mb-3 col-md-4">
+                        <label class="control-label" name="end">Koniec</label>
+                        <input class="form-control datepicker" type="text" name="end" disabled>
+                        <p id="dateErrorMessage" class="text-danger" style="display: none;">Maksymalny okres prognozy to 10 dni.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-outline-primary" style="margin-left:0; margin-bottom:30px">Sprawdź pogodę</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <hr />
+        }
+
+        @if (Model.TripDto3 != null)
+        {
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Najlepsza pogoda w wybranym okresie:</h2>
+                    <partial name="_OneTrip" for="@Model.TripDto3" />
+                </div>
+            </div>
+
+            <hr />
+            
+        }
+    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Najlepsza pogoda obecnie:</h2>
+                <partial name="_OneTrip" for="@Model.TripDto1" />
+            </div>
+
+            <div class="col-md-6">
+                <h2>Najlepsza pogoda w ciągu tygodnia:</h2>
+                <partial name="_OneTrip" for="@Model.TripDto2" />
+            </div>
         
     </div>
-
-    <div class="col-md-6">
-        <h2>Najlepsza pogoda w ciągu tygodnia:</h2>
-       
-            <partial name="_OneTrip" for="@Model.TripDto2" />
-      
     </div>
-</div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const startDateInput = document.querySelector('input[name="start"]');
+        const endDateInput = document.querySelector('input[name="end"]');
+        const submitButton = document.querySelector('button[type="submit"]');
+        const dateErrorMessage = document.getElementById("dateErrorMessage");
+
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+
+        const startDatePicker = flatpickr(startDateInput, {
+            dateFormat: "Y-m-d",
+            minDate: tomorrow,
+            onChange: function (selectedDates, dateStr, instance) {
+                const startDate = selectedDates[0];
+                const endDatePicker = flatpickr(endDateInput);
+                endDatePicker.set("minDate", startDate);
+                endDateInput.disabled = false;
+
+                const maxForecastDays = 10;
+                const maxEndDate = new Date();
+                maxEndDate.setDate(maxEndDate.getDate() + maxForecastDays);
+
+                if (startDate > maxEndDate || (endDateInput.value && new Date(endDateInput.value) > maxEndDate)) {
+                    endDateInput.disabled = true;
+                    endDatePicker.clear();
+                    dateErrorMessage.style.display = "block";
+                    submitButton.disabled = true;
+                } else {
+                    dateErrorMessage.style.display = "none";
+                    submitButton.disabled = false;
+                }
+            }
+        });
+
+        const endDatePicker = flatpickr(endDateInput, {
+            dateFormat: "Y-m-d",
+            onClose: function (selectedDates, dateStr, instance) {
+                const startDatePicker = flatpickr(startDateInput);
+                const startDate = startDatePicker.selectedDates[0];
+                const endDate = selectedDates[0];
+                const maxForecastDays = 10;
+                const maxEndDate = new Date();
+                maxEndDate.setDate(maxEndDate.getDate() + maxForecastDays);
+
+                if (startDate > maxEndDate || endDate > maxEndDate || endDate < startDate) {
+                    endDateInput.disabled = true;
+                    endDatePicker.clear();
+                    dateErrorMessage.style.display = "block";
+                    submitButton.disabled = true;
+                } else {
+                    dateErrorMessage.style.display = "none";
+                    submitButton.disabled = false;
+                }
+            }
+        });
+
+        startDatePicker.config.onClose.push(function (selectedDates) {
+            const endDatePicker = flatpickr(endDateInput);
+            if (!endDatePicker.selectedDates.length) {
+                endDateInput.disabled = true;
+                dateErrorMessage.style.display = "none";
+                submitButton.disabled = false;
+            } else {
+                const startDate = selectedDates[0];
+                const endDate = endDatePicker.selectedDates[0];
+                const maxForecastDays = 10;
+                const maxEndDate = new Date();
+                maxEndDate.setDate(maxEndDate.getDate() + maxForecastDays);
+
+                if (endDate > maxEndDate || endDate < startDate) {
+                    endDatePicker.clear();
+                    dateErrorMessage.style.display = "block";
+                    submitButton.disabled = true;
+                } else {
+                    dateErrorMessage.style.display = "none";
+                    submitButton.disabled = false;
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    var startDateInput = document.querySelector('input[name="start"]');
+    var endDateInput = document.querySelector('input[name="end"]');
+    
+    var startDateElement = document.getElementById('startDate');
+    var endDateElement = document.getElementById('endDate');
+
+    if (startDateInput && endDateInput ) {
+        startDateInput.addEventListener('change', function () {
+            
+            startDateElement.innerText = startDateInput.value;
+           
+        });
+
+        endDateInput.addEventListener('change', function () {
+            
+           
+            endDateElement.innerText = endDateInput.value;
+        });
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
 

@@ -770,19 +770,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {}
+    "C:\\Users\\KOMPUTER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.Domain\\AlpTrips.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\KOMPUTER\\Source\\Repos\\AlpTrips\\AlpTrips.Domain\\AlpTrips.Domain.csproj",
       "projectName": "AlpTrips.Domain",
-      "projectPath": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.Domain\\AlpTrips.Domain.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\source\\repos\\AlpTrips\\AlpTrips.Domain\\obj\\",
+      "projectPath": "C:\\Users\\KOMPUTER\\Source\\Repos\\AlpTrips\\AlpTrips.Domain\\AlpTrips.Domain.csproj",
+      "packagesPath": "C:\\Users\\KOMPUTER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KOMPUTER\\Source\\Repos\\AlpTrips\\AlpTrips.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KOMPUTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -833,7 +833,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

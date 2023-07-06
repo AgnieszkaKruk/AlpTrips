@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,9 @@ namespace AlpTrips.Domain.Entities
         public DateTime End { get; set; }
         public string Text { get; set; }
         public string Destination { get; set; }
-        public Trip Trip { get; set; }
+       
+        public  Trip Trip { get; set; }
+       
         public int TripId { get; set; }
         public User User { get; set; }
         public string UserId { get; set; }

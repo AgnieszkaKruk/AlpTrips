@@ -192,6 +192,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\2e0dd0bc-1388-4b25-b691-860272f51a3a_pobrane (15).jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\2e30865a-8e51-4c78-bd67-a38f99454af7_licensed-image.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>gallery/2e30865a-8e51-4c78-bd67-a38f99454af7_licensed-image.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\2e30865a-8e51-4c78-bd67-a38f99454af7_licensed-image.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\300ae4dc-f3be-4d79-8daf-3aae019156a5_pobrane (10).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AlpsTrips.MVC</SourceId>
@@ -448,6 +464,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\5c3d3f7c-7c95-43cd-9404-eb5149e0b187_pobrane (4).jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\5ec6121a-bb7e-4439-87bc-62dc2d6ca361_matterhorn-4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>gallery/5ec6121a-bb7e-4439-87bc-62dc2d6ca361_matterhorn-4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\5ec6121a-bb7e-4439-87bc-62dc2d6ca361_matterhorn-4.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\5ffa5a46-cc27-4d28-9678-4b5b274553a9_800px-Weissmies01.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AlpsTrips.MVC</SourceId>
@@ -495,6 +527,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\66154aee-761a-45a2-9313-e59d87773d0d_pobrane (16).jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\6a0bc57c-1ff6-49ae-83ae-d219e7dd5953_Matterhorn_from_Domhütte_-_2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>gallery/6a0bc57c-1ff6-49ae-83ae-d219e7dd5953_Matterhorn_from_Domhütte_-_2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\6a0bc57c-1ff6-49ae-83ae-d219e7dd5953_Matterhorn_from_Domhütte_-_2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\6b83b1b2-ecc5-44db-8d3b-a58d0edb54de_pobrane (16).jpg))">
       <SourceType>Package</SourceType>
@@ -639,6 +687,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\99200b0c-de86-41ca-9abc-feacdc6420cb_MONTBLANC50.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\aaa19283-80a4-46f6-b01f-e7dfc26b29bb_MONTBLANC50.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>gallery/aaa19283-80a4-46f6-b01f-e7dfc26b29bb_MONTBLANC50.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\aaa19283-80a4-46f6-b01f-e7dfc26b29bb_MONTBLANC50.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\ae130bfc-bc3d-4622-8150-b6ffe00b7fcb_pobrane (13).jpg))">
       <SourceType>Package</SourceType>
@@ -848,6 +912,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\e9e6f0c8-506f-4a0d-b310-baca10d1bce9_pobrane (18).jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\ed99db38-479b-40c9-85af-c5db5cdfc61a_matter716.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>gallery/ed99db38-479b-40c9-85af-c5db5cdfc61a_matter716.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\ed99db38-479b-40c9-85af-c5db5cdfc61a_matter716.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\ee129c8e-ecb7-4deb-b3df-debb5e4a3cc8_pobrane (10).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AlpsTrips.MVC</SourceId>
@@ -959,6 +1039,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\fce392c1-aeb1-4384-a5c1-38f0b814645b_pobrane (17).jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\fe5d8516-01ce-4be7-b781-baa42e7f5746_Mont-Blanc_from_Planpraz_station.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>gallery/fe5d8516-01ce-4be7-b781-baa42e7f5746_Mont-Blanc_from_Planpraz_station.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\fe5d8516-01ce-4be7-b781-baa42e7f5746_Mont-Blanc_from_Planpraz_station.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\gallery\feb9c295-de7e-477a-8a4b-63db3c43e768_pobrane (15).jpg))">
       <SourceType>Package</SourceType>
@@ -1184,6 +1280,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\438200d9-4cab-48d4-a79a-2be02214fef1_pobrane (18).jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\43c98e9e-5f6c-4d8a-9f72-e28a87897e57_matt.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>images/43c98e9e-5f6c-4d8a-9f72-e28a87897e57_matt.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\43c98e9e-5f6c-4d8a-9f72-e28a87897e57_matt.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\5072f0c1-e570-4736-a265-fd13b6ff2b09_pobrane (2).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AlpsTrips.MVC</SourceId>
@@ -1231,6 +1343,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\564f17e7-8239-46a8-a2d5-d0ea55975c81_MONTBLANC62.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\63d8a44c-78a4-4e8e-b86d-49485f19b06e_1024px-Mont_Blanc_from_Punta_Helbronner,_2010_July.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AlpsTrips.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AlpsTrips.MVC</BasePath>
+      <RelativePath>images/63d8a44c-78a4-4e8e-b86d-49485f19b06e_1024px-Mont_Blanc_from_Punta_Helbronner,_2010_July.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\63d8a44c-78a4-4e8e-b86d-49485f19b06e_1024px-Mont_Blanc_from_Punta_Helbronner,_2010_July.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\653bc44b-d9e9-41eb-b632-fe868e936b15_pobrane (7).jpg))">
       <SourceType>Package</SourceType>

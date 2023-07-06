@@ -280,19 +280,22 @@ namespace AlpsTrips.MVC.Controllers
             return RedirectToAction(nameof(Details), new { encodedName = encodedName });
         }
 
-        public async Task<IActionResult> FindBestWeather()
+        public async Task<IActionResult> FindBestWeather(DateTime start,DateTime end)
         {
             var tripDtoNow= await _mediator.Send(new FindBestWeatherNowQuery());   
             var tripDtoNextWeek = await _mediator.Send(new FindBestWeatherNextWeekQuery());
+            var tripDtoInDates = await _mediator.Send(new FindBestWeatherInDatesQuery(start,end));
            
             TripsViewModel viewModel = new TripsViewModel
             {
                 TripDto1 = tripDtoNow,
-                TripDto2 = tripDtoNextWeek
+                TripDto2 = tripDtoNextWeek,
+                TripDto3 = tripDtoInDates
             };
             return View(viewModel);
 
         }
+
 
 
 

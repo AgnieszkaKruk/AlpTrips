@@ -1,6 +1,7 @@
 ﻿using AlpTrips.Domain.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing;
 
 namespace AlpTrips.Infrastructure.Persistence
 {
@@ -32,23 +33,27 @@ namespace AlpTrips.Infrastructure.Persistence
             {
                 eb.Property(u => u.Start).HasPrecision(3);
                 eb.Property(u => u.End).HasPrecision(3);
+                eb.HasOne(x => x.Trip).WithMany().HasForeignKey(x => x.TripId).OnDelete(DeleteBehavior.Restrict);  
+
             });
+            
+    
 
             modelBuilder.Entity<User>(eb =>
             {
                 eb.Property(p => p.Name).IsRequired();
                 eb.HasMany(p => p.CommentsList).WithOne(c => c.User);
-               
-                
+
+
             });
             modelBuilder.Entity<Trip>(eb =>
             {
                 eb.Property(p => p.Name).IsRequired();
                 eb.Property(p => p.CreatedDate).HasPrecision(3);
-  
+
 
             });
-          
+
 
 
 

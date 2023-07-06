@@ -89,6 +89,9 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.Property<int>("TripId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("TripId1")
+                        .HasColumnType("int");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -96,6 +99,8 @@ namespace AlpTrips.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("TripId");
+
+                    b.HasIndex("TripId1");
 
                     b.HasIndex("UserId");
 
@@ -433,10 +438,14 @@ namespace AlpTrips.Infrastructure.Migrations
             modelBuilder.Entity("AlpTrips.Domain.Entities.Event", b =>
                 {
                     b.HasOne("AlpTrips.Domain.Entities.Trip", "Trip")
-                        .WithMany("Events")
+                        .WithMany()
                         .HasForeignKey("TripId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.HasOne("AlpTrips.Domain.Entities.Trip", null)
+                        .WithMany("Events")
+                        .HasForeignKey("TripId1");
 
                     b.HasOne("AlpTrips.Domain.Entities.User", "User")
                         .WithMany("Events")
